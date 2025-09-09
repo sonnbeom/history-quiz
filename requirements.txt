@@ -1,0 +1,26 @@
+# History Quiz 프로젝트 의존성 패키지
+
+# 데이터 처리
+pandas>=1.5.0
+numpy>=1.21.0
+
+# 머신러닝 및 유사도 계산
+scikit-learn>=1.1.0
+
+# OpenAI API (OpenAI 버전용)
+openai>=1.0.0
+
+# FAISS 벡터 검색 (FAISS 버전용)
+faiss-cpu>=1.7.0
+# GPU 사용 시: faiss-gpu>=1.7.0
+
+# 로컬 임베딩 모델 (FAISS 버전용)
+sentence-transformers>=2.2.0
+torch>=1.12.0
+
+# 시각화 (선택사항)
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# 기타 유틸리티
+python-dotenv>=0.19.0

@@ -1,0 +1,17 @@
+{
+  "model_info": {
+    "model_name": "jhgan/ko-sroberta-multitask",
+    "embedding_dimensions": 768,
+    "cost": "무료 (로컬 실행)"
+  },
+  "quiz_target": {
+    "name": "영조",
+    "chinese_name": "英祖",
+    "era": "조선 후기",
+    "achievements": "균역법 실시, 탕평책 추진"
+  },
+  "similar_persons": [
+    {
+      "rank": 1,
+      "person_name": "정조",
+      "similarity": 
