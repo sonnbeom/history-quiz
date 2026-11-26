@@ -14,15 +14,15 @@ tools: Read, Write, Edit, Glob, Grep
 ```json
 {
   "sejong": [
-    { "level": 1, "text": "...", "source": { "title": "...", "url": "..." } },
-    { "level": 2, "text": "...", "source": { ... } },
+    { "level": 1, "text": "...", "sources": [{ "title": "...", "url": "..." }] },
+    { "level": 2, "text": "...", "sources": [ ... ] },
     ...
-    { "level": 5, "text": "...", "source": { ... } }
+    { "level": 5, "text": "...", "sources": [ ... ] }
   ]
 }
 ```
 - 인물 id마다 정확히 5개. 1번이 가장 어렵고 5번이 가장 쉽다.
-- 각 힌트의 `source`는 figures.json의 sources나 신뢰할 만한 백과·교과 자료 중 그 힌트 내용을 뒷받침하는 것. 근거가 없는 내용은 쓰지 않는다.
+- 각 힌트의 `sources`(배열, 1개 이상. 내용이 여러 항목에 걸치면 여러 개)는 figures.json의 sources나 신뢰할 만한 백과·교과 자료 중 그 힌트 내용을 뒷받침하는 것. 근거가 없는 내용은 쓰지 않는다.
 
 ## 작성 원칙
 - 1번: 넓은 정보(시대, 국가, 신분 정도). 1번만으로 답이 바로 나오면 안 된다. 같은 시대의 여러 인물에게 들어맞아야 한다.

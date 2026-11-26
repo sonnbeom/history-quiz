@@ -66,7 +66,8 @@ if (fs.existsSync(path.join(root, 'content/hints.json'))) {
     h.forEach((x, i) => {
       if (x.level !== i + 1) errors.push(`${p.id}: 힌트 ${i + 1} level=${x.level}`);
       if (!x.text) errors.push(`${p.id}: 힌트 ${i + 1} text 없음`);
-      if (!x.source || !x.source.title) errors.push(`${p.id}: 힌트 ${i + 1} source 없음`);
+      if (!Array.isArray(x.sources) || !x.sources.length || x.sources.some((s) => !s.title)) errors.push(`${p.id}: 힌트 ${i + 1} sources 없음`);
+      else if (x.sources.every((s) => !s.url)) warnings.push(`${p.id}: 힌트 ${i + 1} 확인된 url 없음`);
       // 두 글자 이상 이름·별칭이 힌트에 들어가면 오류
       for (const n of [p.name, ...(p.aliases || [])]) {
         if (n.length >= 2 && x.text && x.text.includes(n)) errors.push(`${p.id}: 힌트 ${i + 1}에 이름·별칭 '${n}'`);

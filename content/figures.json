@@ -538,12 +538,13 @@
     ],
     "active_period": {
       "start": 1919,
-      "end": 1942
+      "end": 1945
     },
     "achievements": [
       "1919년 만주 길림에서 의열단을 조직해 의열 투쟁을 이끌었다.",
       "1938년 중국 한커우에서 조선의용대를 창설했다.",
-      "1942년 조선의용대 일부를 한국광복군에 합류시키고 광복군 부사령관을 맡았다."
+      "1942년 조선의용대 일부를 한국광복군에 합류시키고 광복군 부사령관을 맡았다.",
+      "1944년 임시정부 군무부장에 취임했다. 활동 시기는 광복까지 잡았다."
     ],
     "related_events": [
       "의열단",
@@ -554,7 +555,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김원봉'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0010036"
       }
     ],
     "confusable_ids": [
@@ -600,7 +601,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '이승만'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0044938"
       }
     ],
     "confusable_ids": [
@@ -645,7 +646,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '지청천'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0054421"
       }
     ],
     "confusable_ids": [
@@ -688,7 +689,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '공민왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0004295"
       }
     ],
     "confusable_ids": [
@@ -731,8 +732,12 @@
     "exam_count": 5,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '정조(조선)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '정조'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0050867"
+      },
+      {
+        "title": "한국민족문화대백과사전 '규장각'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0007273"
       }
     ],
     "confusable_ids": [
@@ -775,8 +780,8 @@
     "exam_count": 5,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '숙종(조선)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '숙종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0031837"
       }
     ],
     "confusable_ids": [
@@ -820,7 +825,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '신문왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0032950"
+      },
+      {
+        "title": "한국민족문화대백과사전 '관료전'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0004812"
       }
     ],
     "confusable_ids": [
@@ -849,7 +858,7 @@
       "end": 1948
     },
     "achievements": [
-      "1919년 대한민국 임시정부 대표로 파리 강화 회의에 파견되어 독립을 호소했다.",
+      "1919년 신한청년당 대표로 파리 강화 회의에 파견되었고, 임시정부 외무총장 겸 파리위원부 대표로 독립을 호소했다.",
       "1946년 여운형 등과 좌우 합작 위원회를 이끌었다.",
       "1948년 김구와 함께 남북 협상에 참석했다."
     ],
@@ -862,7 +871,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김규식'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0008781"
       }
     ],
     "confusable_ids": [
@@ -911,8 +920,12 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '흥선대원군'",
-        "url": null
+        "title": "한국민족문화대백과사전 '이하응'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0046384"
+      },
+      {
+        "title": "한국민족문화대백과사전 '척화비'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0055752"
       }
     ],
     "confusable_ids": [
@@ -942,7 +955,7 @@
       "end": 1105
     },
     "achievements": [
-      "1101년 주전도감을 두고 해동통보 등 화폐를 만들어 유통하려 했다.",
+      "1097년 주전도감(주전관)을 두어 화폐를 만들기 시작했고, 1102년 해동통보를 만들어 유통하려 했다.",
       "남경(지금의 서울) 건설을 추진했다.",
       "1104년 윤관의 건의로 여진 정벌을 위해 별무반을 편성했다."
     ],
@@ -954,8 +967,12 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '숙종(고려)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '숙종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0031836"
+      },
+      {
+        "title": "한국민족문화대백과사전 '주전도감'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0053417"
       }
     ],
     "confusable_ids": [
@@ -999,8 +1016,12 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '세조(조선)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '세조'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0029849"
+      },
+      {
+        "title": "한국민족문화대백과사전 '간경도감'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0000505"
       }
     ],
     "confusable_ids": [
@@ -1046,8 +1067,8 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '세종(조선)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '세종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0029857"
       }
     ],
     "confusable_ids": [
@@ -1089,8 +1110,8 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '광종(고려)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '광종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0005220"
       }
     ],
     "confusable_ids": [
@@ -1134,7 +1155,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '견훤'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0002178"
       }
     ],
     "confusable_ids": [
@@ -1158,10 +1179,11 @@
       "정치"
     ],
     "active_period": {
-      "start": 1884,
+      "start": 1881,
       "end": 1894
     },
     "achievements": [
+      "1881년 일본을 시찰하며 개화 활동을 본격화했다. 활동 시기는 이 해부터 잡았다.",
       "박영효, 서광범 등과 개화당을 이끌었다.",
       "1884년 갑신정변을 일으켜 14개조 개혁 정강을 발표했으나 3일 만에 실패했다.",
       "실패 뒤 일본으로 망명했다가 1894년 상하이에서 암살되었다."
@@ -1174,7 +1196,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김옥균'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0009911"
       }
     ],
     "confusable_ids": [
@@ -1213,7 +1235,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '민겸호'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0020068"
       }
     ],
     "confusable_ids": [
@@ -1249,7 +1271,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '양헌수'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0035852"
       }
     ],
     "confusable_ids": [
@@ -1293,7 +1315,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김홍집'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0011098"
       }
     ],
     "confusable_ids": [
@@ -1380,7 +1402,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김대중'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0078635"
       }
     ],
     "confusable_ids": [
@@ -1423,7 +1445,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김영삼'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0078653"
+      },
+      {
+        "title": "한국민족문화대백과사전 '역사바로세우기'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0080725"
       }
     ],
     "confusable_ids": [
@@ -1455,7 +1481,7 @@
     "achievements": [
       "1383년 함주에서 이성계를 만나 새 왕조 건국을 함께 준비했다.",
       "1394년 『조선경국전』을 지어 재상 중심의 통치 구상을 밝혔다.",
-      "한양 천도와 도성 설계에 관여했다.",
+      "한양 천도를 계획하고 새 도읍의 운영을 이끌었다.",
       "1398년 제1차 왕자의 난 때 이방원에게 죽임을 당했다."
     ],
     "related_events": [
@@ -1468,7 +1494,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '정도전'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0050093"
       }
     ],
     "confusable_ids": [
@@ -1496,7 +1522,7 @@
     "achievements": [
       "딸들을 예종과 인종의 왕비로 들여 외척으로 권세를 누렸다.",
       "1122년 외손자 인종이 즉위하자 권력을 장악했다.",
-      "1126년 척준경과 함께 난을 일으켜 인종을 가두려 했으나 척준경이 돌아서 실패했다."
+      "1126년 척준경과 함께 궁궐을 불태우고 인종을 자기 집에 연금했으나, 척준경이 왕 편으로 돌아서면서 몰락해 영광으로 유배되었다."
     ],
     "related_events": [
       "이자겸의 난",
@@ -1506,7 +1532,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '이자겸'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0045669"
+      },
+      {
+        "title": "한국민족문화대백과사전 '이자겸의 난'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0045670"
       }
     ],
     "confusable_ids": [
@@ -1546,8 +1576,12 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '순종(대한제국)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '순종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0031947"
+      },
+      {
+        "title": "한국민족문화대백과사전 '6·10만세운동'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0042124"
       }
     ],
     "confusable_ids": [
@@ -1586,8 +1620,8 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '대조영'",
-        "url": null
+        "title": "한국민족문화대백과사전 '고왕'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0003841"
       }
     ],
     "confusable_ids": [
@@ -1630,8 +1664,8 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '성왕(백제)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '성왕'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0029457"
       }
     ],
     "confusable_ids": [
@@ -1672,8 +1706,12 @@
     "exam_count": 3,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '성종(고려)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '성종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0029553"
+      },
+      {
+        "title": "한국민족문화대백과사전 '국자감'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0006422"
       }
     ],
     "confusable_ids": [
@@ -1716,7 +1754,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '궁예'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0006789"
       }
     ],
     "confusable_ids": [
@@ -1753,7 +1791,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '어재연'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0036069"
       }
     ],
     "confusable_ids": [
@@ -1794,7 +1832,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '허위'",
-        "url": null
+        "url": "http://encykorea.aks.ac.kr/Contents/Item/E0063111"
       }
     ],
     "confusable_ids": [

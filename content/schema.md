@@ -184,7 +184,7 @@
 
 ## 7. hints.json 참조
 
-- 형식(hint-writer 정의를 따름): `{ "<figure id>": [ {"level": 1, "text": "...", "source": {"title": "...", "url": "..."}}, ... level 5까지 ] }`. 인물마다 정확히 5개, level 1이 가장 어렵고 5가 가장 쉽다.
+- 형식(hint-writer 정의를 따름): `{ "<figure id>": [ {"level": 1, "text": "...", "sources": [{"title": "...", "url": "..."}]}, ... level 5까지 ] }` (sources는 1개 이상. 2026-11-26 단일 source에서 배열로 변경). 인물마다 정확히 5개, level 1이 가장 어렵고 5가 가장 쉽다.
 - 이 문서가 정하는 것은 연결 규칙뿐이다: hints.json은 인물을 **figures.json의 `id`**로 가리킨다. 존재하지 않는 id를 참조하면 안 되고, figures.json 인물마다 힌트가 있는지는 hints 담당이 검사한다.
 - 힌트에는 인물 이름(`name`, `aliases`)을 그대로 쓰지 않는다(정답 노출 방지).
 
