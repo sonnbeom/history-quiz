@@ -1,0 +1,517 @@
+[
+  {
+    "id": "bak-jeong-hui",
+    "name": "박정희",
+    "aliases": [
+      "박정희 대통령"
+    ],
+    "era": "현대",
+    "state": "대한민국",
+    "roles": [
+      "정치인"
+    ],
+    "fields": [
+      "정치",
+      "경제"
+    ],
+    "active_period": {
+      "start": 1961,
+      "end": 1979
+    },
+    "achievements": [
+      "5·16 군사 정변으로 집권한 뒤 대통령으로 장기간 정권을 이끌었다.",
+      "경제 개발 5개년 계획을 추진해 수출 중심의 산업화를 이끌었다.",
+      "경부 고속도로를 건설하고 한일 협정을 체결했다.",
+      "베트남 파병을 결정했고 유신 체제를 수립해 장기 집권 체제를 만들었다."
+    ],
+    "related_events": [
+      "5·16 군사 정변",
+      "경제 개발 5개년 계획",
+      "경부 고속도로",
+      "한일 협정",
+      "베트남 파병",
+      "유신 체제",
+      "YH 사건"
+    ],
+    "exam_count": 10,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '박정희'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0021134"
+      },
+      {
+        "title": "한국민족문화대백과사전 '경부고속도로'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0002460"
+      },
+      {
+        "title": "한국민족문화대백과사전 '5·16 군사 정변'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0038494"
+      }
+    ],
+    "confusable_ids": [
+      "jeon-du-hwan",
+      "yi-seung-man",
+      "no-tae-u"
+    ]
+  },
+  {
+    "id": "wang-geon",
+    "name": "왕건",
+    "aliases": [
+      "고려 태조",
+      "태조 왕건"
+    ],
+    "era": "고려",
+    "state": "고려",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "군사"
+    ],
+    "active_period": {
+      "start": 918,
+      "end": 943
+    },
+    "achievements": [
+      "918년 철원에서 고려를 세우고 이듬해 송악(개경)으로 도읍을 옮겼다.",
+      "936년 후백제를 멸망시키고 후삼국을 통일했다.",
+      "호족 세력을 포섭하기 위해 혼인 정책을 펴고 역분전을 지급했다.",
+      "훈요 10조를 남겨 후대 왕에게 정치 지침을 제시했다.",
+      "발해 유민을 받아들이고 북진 정책을 추진했다."
+    ],
+    "related_events": [
+      "후삼국 통일",
+      "역분전",
+      "훈요 10조",
+      "만부교 사건",
+      "발해 유민 수용"
+    ],
+    "exam_count": 7,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '태조(고려)'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0059032"
+      },
+      {
+        "title": "한국민족문화대백과사전 '만부교사건'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0017609"
+      },
+      {
+        "title": "한국민족문화대백과사전 '북진 정책'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0024747"
+      }
+    ],
+    "confusable_ids": [
+      "gyeon-hwon",
+      "gung-ye",
+      "gwangjong",
+      "yi-seong-gye"
+    ]
+  },
+  {
+    "id": "gim-gu",
+    "name": "김구",
+    "aliases": [
+      "백범",
+      "김창수"
+    ],
+    "era": "일제강점기",
+    "state": "대한민국 임시정부",
+    "roles": [
+      "독립운동가",
+      "정치인"
+    ],
+    "fields": [
+      "독립운동",
+      "정치"
+    ],
+    "active_period": {
+      "start": 1919,
+      "end": 1948
+    },
+    "achievements": [
+      "대한민국 임시정부에 참여해 경무국장과 주석을 지냈다.",
+      "1931년 한인애국단을 조직해 이봉창·윤봉길 의거를 이끌었다.",
+      "1940년 한국광복군 창설을 주도했다.",
+      "광복 후 단독 정부 수립에 반대하며 1948년 남북 협상에 참석했다."
+    ],
+    "related_events": [
+      "한인애국단",
+      "이봉창 의거",
+      "윤봉길 의거",
+      "한국광복군 창설",
+      "남북 협상"
+    ],
+    "exam_count": 6,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '김구'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0008753"
+      },
+      {
+        "title": "한국민족문화대백과사전 '남북협상'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0011936"
+      }
+    ],
+    "confusable_ids": [
+      "gim-won-bong",
+      "gim-gyu-sik",
+      "yeo-un-hyeong",
+      "yi-seung-man"
+    ]
+  },
+  {
+    "id": "choe-u",
+    "name": "최우",
+    "aliases": [
+      "최이"
+    ],
+    "era": "고려",
+    "state": "고려",
+    "roles": [
+      "무신·장수"
+    ],
+    "fields": [
+      "정치",
+      "군사"
+    ],
+    "active_period": {
+      "start": 1219,
+      "end": 1249
+    },
+    "achievements": [
+      "아버지 최충헌의 뒤를 이어 무신 정권의 집권자가 되었다.",
+      "인사 행정을 맡는 정방을 설치해 권력 기반을 굳혔다.",
+      "1232년 몽골의 침입에 맞서 강화도로 도읍을 옮겼다.",
+      "야별초를 조직해 치안과 군사 활동에 활용했다."
+    ],
+    "related_events": [
+      "정방 설치",
+      "강화도 천도",
+      "야별초",
+      "몽골 침입",
+      "무신 정권"
+    ],
+    "exam_count": 6,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '최우'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0057502"
+      },
+      {
+        "title": "한국민족문화대백과사전 '정방'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0050231"
+      }
+    ],
+    "confusable_ids": [
+      "choe-chung-heon",
+      "jeong-jung-bu",
+      "yi-ui-bang"
+    ]
+  },
+  {
+    "id": "yeongjo",
+    "name": "영조",
+    "aliases": [
+      "연잉군"
+    ],
+    "era": "조선 후기",
+    "state": "조선",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "경제"
+    ],
+    "active_period": {
+      "start": 1724,
+      "end": 1776
+    },
+    "achievements": [
+      "붕당 간 균형을 꾀하는 탕평책을 시행하고 탕평비를 세웠다.",
+      "군역 부담을 줄이기 위해 균역법을 시행했다.",
+      "청계천을 준설하는 준천 사업을 벌였다.",
+      "즉위 초 이인좌의 난을 진압했다."
+    ],
+    "related_events": [
+      "탕평책",
+      "균역법",
+      "준천 사업",
+      "이인좌의 난",
+      "속대전"
+    ],
+    "exam_count": 6,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '영조'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0037669"
+      },
+      {
+        "title": "한국민족문화대백과사전 '탕평비'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0058858"
+      }
+    ],
+    "confusable_ids": [
+      "jeongjo",
+      "joseon-sukjong",
+      "gwanghaegun"
+    ]
+  },
+  {
+    "id": "yi-seong-gye",
+    "name": "이성계",
+    "aliases": [
+      "조선 태조",
+      "태조 이성계",
+      "이단"
+    ],
+    "era": "조선 전기",
+    "state": "조선",
+    "roles": [
+      "국왕",
+      "무신·장수"
+    ],
+    "fields": [
+      "정치",
+      "군사"
+    ],
+    "active_period": {
+      "start": 1362,
+      "end": 1398
+    },
+    "achievements": [
+      "1362년 홍건적에게 빼앗긴 개경을 되찾는 데 참전하며 무장으로 두각을 나타냈다.",
+      "1388년 요동 정벌에 나섰다가 위화도에서 군대를 돌려 정권을 장악했다.",
+      "1392년 조선을 건국하고 국왕으로 즉위했다.",
+      "한양으로 도읍을 옮겼다.",
+      "정도전 등 신진 사대부와 함께 새 왕조의 기틀을 세웠다."
+    ],
+    "related_events": [
+      "위화도 회군",
+      "조선 건국",
+      "한양 천도",
+      "제1차 왕자의 난"
+    ],
+    "exam_count": 5,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '태조(조선)'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0059033"
+      }
+    ],
+    "confusable_ids": [
+      "jeong-do-jeon",
+      "joseon-taejong",
+      "choe-yeong",
+      "wang-geon"
+    ]
+  },
+  {
+    "id": "joseon-gojong",
+    "name": "고종",
+    "aliases": [
+      "고종 황제"
+    ],
+    "era": "개항기",
+    "state": "대한제국",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "외교"
+    ],
+    "active_period": {
+      "start": 1863,
+      "end": 1907
+    },
+    "achievements": [
+      "어린 나이에 즉위해 즉위 초에는 아버지 흥선 대원군이 실권을 쥐고 정치를 이끌었다.",
+      "1897년 대한제국을 선포하고 황제에 올랐다.",
+      "광무개혁을 추진하고 원수부를 설치해 군권을 장악했다.",
+      "헤이그 특사 파견 문제로 1907년 강제 퇴위되었다."
+    ],
+    "related_events": [
+      "강화도 조약",
+      "임오군란",
+      "아관 파천",
+      "대한제국 수립",
+      "광무개혁",
+      "헤이그 특사",
+      "홍범 14조"
+    ],
+    "exam_count": 5,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '고종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0003939"
+      },
+      {
+        "title": "한국민족문화대백과사전 '원수부'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0040727"
+      }
+    ],
+    "confusable_ids": [
+      "heungseon-daewongun",
+      "sunjong",
+      "gim-ok-gyun"
+    ]
+  },
+  {
+    "id": "jang-bo-go",
+    "name": "장보고",
+    "aliases": [
+      "궁복",
+      "궁파"
+    ],
+    "era": "남북국",
+    "state": "신라",
+    "roles": [
+      "무신·장수",
+      "기타"
+    ],
+    "fields": [
+      "군사",
+      "경제",
+      "외교"
+    ],
+    "active_period": {
+      "start": 828,
+      "end": 846
+    },
+    "achievements": [
+      "당에서 군인으로 활약한 뒤 신라로 돌아왔다.",
+      "828년 완도에 청해진을 설치해 해적을 소탕했다.",
+      "신라, 당, 일본을 잇는 해상 무역을 주도했다.",
+      "왕위 계승 분쟁에 개입했다가 암살당했다."
+    ],
+    "related_events": [
+      "청해진 설치",
+      "해상 무역",
+      "신무왕 옹립",
+      "법화원"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '장보고'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0048474"
+      },
+      {
+        "title": "한국민족문화대백과사전 '청해진'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0056856"
+      }
+    ],
+    "confusable_ids": [
+      "choe-chi-won",
+      "gyeon-hwon"
+    ]
+  },
+  {
+    "id": "gwanggaeto",
+    "name": "광개토대왕",
+    "aliases": [
+      "광개토왕",
+      "광개토태왕",
+      "호태왕",
+      "담덕"
+    ],
+    "era": "삼국",
+    "state": "고구려",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "군사",
+      "정치"
+    ],
+    "active_period": {
+      "start": 391,
+      "end": 413
+    },
+    "achievements": [
+      "영락이라는 독자적인 연호를 사용했다.",
+      "후연을 공격하고 거란, 숙신, 동부여 등을 정벌해 영토를 크게 넓혔다.",
+      "백제를 공격해 한강 이북의 여러 성을 차지했다.",
+      "신라의 요청으로 군대를 보내 왜군을 물리쳤다."
+    ],
+    "related_events": [
+      "영락 연호",
+      "광개토대왕릉비",
+      "신라 구원 원정",
+      "후연 정벌"
+    ],
+    "exam_count": 3,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '광개토왕'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0005057"
+      },
+      {
+        "title": "한국민족문화대백과사전 '광개토왕릉비'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0005058"
+      }
+    ],
+    "confusable_ids": [
+      "jangsu",
+      "gogugwon"
+    ]
+  },
+  {
+    "id": "gim-jeong-hui",
+    "name": "김정희",
+    "aliases": [
+      "추사",
+      "완당"
+    ],
+    "era": "조선 후기",
+    "state": "조선",
+    "roles": [
+      "학자·사상가",
+      "예술가·문인",
+      "문신·관료"
+    ],
+    "fields": [
+      "문화·예술",
+      "학문"
+    ],
+    "active_period": {
+      "start": 1816,
+      "end": 1856
+    },
+    "achievements": [
+      "독창적인 서체인 추사체를 완성했다.",
+      "금석학 연구로 북한산비가 신라 진흥왕 순수비임을 밝혀냈다.",
+      "제주도 유배 시기에 세한도를 그렸다.",
+      "청나라 학문을 받아들여 실사구시를 강조한 고증학을 발전시켰다."
+    ],
+    "related_events": [
+      "추사체",
+      "세한도",
+      "북한산비 고증",
+      "제주도 유배"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '김정희'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0010428"
+      },
+      {
+        "title": "한국민족문화대백과사전 '실사구시'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0033652"
+      },
+      {
+        "title": "한국민족문화대백과사전 '서울 북한산 신라 진흥왕 순수비'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0024795"
+      }
+    ],
+    "confusable_ids": [
+      "jeong-seon",
+      "bak-je-ga"
+    ]
+  }
+]
