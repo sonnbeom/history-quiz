@@ -36,14 +36,14 @@
   ],
   "yi-seong-gye": [
     { "level": 1, "text": "고려 말에 활동한 무장이다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } },
-    { "level": 2, "text": "홍건적과 왜구 등 외적의 침입을 물리치며 이름을 떨쳤다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } },
-    { "level": 3, "text": "정도전 등 신진 사대부와 손잡고 새 왕조의 기틀을 마련했다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } },
-    { "level": 4, "text": "1388년 요동 정벌에 나섰다가 위화도에서 군대를 되돌려 정권을 장악했다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } },
-    { "level": 5, "text": "1392년 새 왕조를 열어 첫 국왕으로 즉위했고, 도읍을 한양으로 옮겼다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } }
+    { "level": 2, "text": "여러 차례 왜구의 침입을 물리쳐 이름을 떨쳤다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } },
+    { "level": 3, "text": "1362년 홍건적에게 빼앗겼던 개경을 되찾는 싸움에 참여했다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } },
+    { "level": 4, "text": "1388년 명의 요동을 치러 나선 정벌군에서 지휘를 맡았다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } },
+    { "level": 5, "text": "요동으로 가던 중 위화도에서 군대를 되돌려 정권을 잡았고, 신진 사대부의 지지를 받아 1392년 새 왕조의 첫 국왕이 되었다.", "source": { "title": "한국민족문화대백과사전 '태조(조선)'", "url": "https://encykorea.aks.ac.kr/Article/E0059033" } }
   ],
   "joseon-gojong": [
     { "level": 1, "text": "왕실 종친 집안에서 태어나, 19세기 후반 조선 정치의 중심에 섰던 인물이다.", "source": { "title": "한국민족문화대백과사전 '고종'", "url": "https://encykorea.aks.ac.kr/Article/E0003939" } },
-    { "level": 2, "text": "강화도 조약 체결, 임오군란, 갑신정변 같은 사건이 일어나던 시기에 정치의 한가운데에 있었다.", "source": { "title": "한국민족문화대백과사전 '고종'", "url": "https://encykorea.aks.ac.kr/Article/E0003939" } },
+    { "level": 2, "text": "병인양요와 신미양요처럼 서양 세력과 무력으로 맞부딪치던 시기에 이미 나라 정치의 중심에 있었다.", "source": { "title": "한국민족문화대백과사전 '이하응'", "url": "https://encykorea.aks.ac.kr/Article/E0046384" } },
     { "level": 3, "text": "어린 나이에 왕위에 올라 즉위 초에는 아버지가 실권을 쥐고 정치를 이끌었다. 뒤에 한때 러시아 공사관으로 거처를 옮겼다가 이듬해 궁궐로 돌아왔다.", "source": { "title": "한국민족문화대백과사전 '고종'", "url": "https://encykorea.aks.ac.kr/Article/E0003939" } },
     { "level": 4, "text": "1899년 황제 직속의 최고 군 통수 기관인 원수부를 두어 군대를 직접 장악했다.", "source": { "title": "한국민족문화대백과사전 '원수부'", "url": "https://encykorea.aks.ac.kr/Article/E0040727" } },
     { "level": 5, "text": "1897년 대한제국을 선포하고 황제로 즉위했으며, 1907년 헤이그 특사 파견을 구실로 강제 퇴위되었다.", "source": { "title": "한국민족문화대백과사전 '고종'", "url": "https://encykorea.aks.ac.kr/Article/E0003939" } }
@@ -66,7 +66,7 @@
     { "level": 1, "text": "조선 후기에 활동한 학자이자 문인이다.", "source": { "title": "한국민족문화대백과사전 '김정희'", "url": "https://encykorea.aks.ac.kr/Article/E0010428" } },
     { "level": 2, "text": "청나라 학문을 적극 받아들여, 사실에 근거해 진리를 찾는 실사구시를 강조했다.", "source": { "title": "한국민족문화대백과사전 '김정희'", "url": "https://encykorea.aks.ac.kr/Article/E0010428" } },
     { "level": 3, "text": "고증학과 함께 옛 비석과 금석문을 연구하는 금석학에 힘썼다.", "source": { "title": "한국민족문화대백과사전 '김정희'", "url": "https://encykorea.aks.ac.kr/Article/E0010428" } },
-    { "level": 4, "text": "북한산의 옛 비석을 조사해 그것이 신라 진흥왕의 순수비임을 밝혀냈다.", "source": { "title": "한국민족문화대백과사전 '김정희'", "url": "https://encykorea.aks.ac.kr/Article/E0010428" } },
+    { "level": 4, "text": "북한산의 옛 비석을 조사해 그것이 신라 진흥왕의 순수비임을 밝혀냈다.", "source": { "title": "한국민족문화대백과사전 '서울 북한산 신라 진흥왕 순수비'", "url": "https://encykorea.aks.ac.kr/Article/E0024795" } },
     { "level": 5, "text": "독창적인 서체를 완성했고, 제주도 유배 시절에 「세한도」를 그렸다.", "source": { "title": "한국민족문화대백과사전 '김정희'", "url": "https://encykorea.aks.ac.kr/Article/E0010428" } }
   ]
 }
