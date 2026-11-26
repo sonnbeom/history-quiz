@@ -1069,6 +1069,10 @@
       {
         "title": "한국민족문화대백과사전 '세종'",
         "url": "https://encykorea.aks.ac.kr/Article/E0029857"
+      },
+      {
+        "title": "한국민족문화대백과사전 '파저강 야인정벌'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0059589"
       }
     ],
     "confusable_ids": [
@@ -1302,7 +1306,7 @@
     "achievements": [
       "1880년 수신사로 일본에 다녀오며 『조선책략』을 들여왔다.",
       "1894년 군국기무처를 이끌며 갑오개혁을 주도했다.",
-      "1895년 총리대신으로 을미개혁을 추진했다.",
+      "1895년 을미사변 뒤 다시 내각을 이끌며 을미개혁을 추진했다.",
       "1896년 아관 파천 직후 성난 군중에게 피살되었다."
     ],
     "related_events": [
@@ -1316,6 +1320,10 @@
       {
         "title": "한국민족문화대백과사전 '김홍집'",
         "url": "https://encykorea.aks.ac.kr/Article/E0011098"
+      },
+      {
+        "title": "한국민족문화대백과사전 '을미개혁'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0042947"
       }
     ],
     "confusable_ids": [
@@ -1356,8 +1364,24 @@
     "exam_count": 4,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '노태우'",
-        "url": null
+        "title": "대통령기록관 '제13대 노태우 약력'",
+        "url": "https://www.pa.go.kr/online_contents/president/history13.jsp"
+      },
+      {
+        "title": "한국민족문화대백과사전 '북방외교'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0066460"
+      },
+      {
+        "title": "한국민족문화대백과사전 '3당합당'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0080747"
+      },
+      {
+        "title": "한국민족문화대백과사전 '서울올림픽대회'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0028046"
+      },
+      {
+        "title": "한국민족문화대백과사전 '한반도 비핵화와 평화구축을 위한 선언'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0068575"
       }
     ],
     "confusable_ids": [
@@ -1403,6 +1427,14 @@
       {
         "title": "한국민족문화대백과사전 '김대중'",
         "url": "https://encykorea.aks.ac.kr/Article/E0078635"
+      },
+      {
+        "title": "한국민족문화대백과사전 '외환위기'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0068313"
+      },
+      {
+        "title": "한국민족문화대백과사전 'DJP연합'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0080712"
       }
     ],
     "confusable_ids": [
@@ -1450,6 +1482,10 @@
       {
         "title": "한국민족문화대백과사전 '역사바로세우기'",
         "url": "https://encykorea.aks.ac.kr/Article/E0080725"
+      },
+      {
+        "title": "한국민족문화대백과사전 '전국동시지방선거'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0080754"
       }
     ],
     "confusable_ids": [
