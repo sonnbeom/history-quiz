@@ -22,7 +22,7 @@
 - [x] 1. exam-researcher → exam_figures.md (2026-11-26 완료, 사용자 승인 대기)
 - [x] 2. figure-db-builder → schema.md (2026-11-26)
 - [x] 3. 샘플 10명: figure-db-builder → hint-writer → fact-checker 반복 (2026-11-26 완료, 4차 검수 통과)
-- [ ] 4. 나머지를 30명 단위로 (단위마다 보고)
+- [ ] 4. 나머지를 30명 단위로 (단위마다 보고) — 1묶음 완료, 2묶음 진행
 - [ ] 5. 최종 정리: 전체 인물 수, 시대별 분포, 자주 나온 검수 문제, 사용자가 직접 확인할 출처 이용 조건
 
 ## 결정된 사항
@@ -51,3 +51,7 @@
 - 흐름: builder는 sources url null → fact-checker가 열람 URL을 review.md에 제시 → builder·writer가 반영. 검수 지적에서 얻은 규칙은 에이전트 정의에 추가함.
 - 개발 때 참고: 힌트 source.title에 인물명이 들어 있으므로 출처는 정답 공개 후에만 보여야 한다.
 - 남은 수록 후보: 2회 이상 출제 한국인 119명 중 109명 → 30/30/30/19명 단위로 진행.
+### 4단계 1묶음 (2026-11-26) — 30명, 검수 3차 통과 (총 40명)
+- 추가: gim-won-bong, yi-seung-man, ji-cheong-cheon, gongmin, jeongjo, joseon-sukjong, sinmun, gim-gyu-sik, heungseon-daewongun, goryeo-sukjong, sejo, sejong, gwangjong, gyeon-hwon, gim-ok-gyun, min-gyeom-ho, yang-heon-su, gim-hong-jip, no-tae-u, gim-dae-jung, gim-yeong-sam, jeong-do-jeon, yi-ja-gyeom, sunjong, dae-jo-yeong, baekje-seong, goryeo-seongjong, gung-ye, eo-jae-yeon, heo-wi
+- 결정: 힌트 출처 형식을 `source`→`sources` 배열로 변경(schema 7절, validate.js, hint-writer 반영). 흥선 대원군 별칭 "대원군" 유지(다른 대원군 수록 시 재검토). 같은 묘호 이름 표기는 "숙종(조선)"/"숙종(고려)" 식(고려 고종 수록 시 "고종"→"고종(조선)"으로 정리). 노태우는 대백과 인물 항목이 없어 대통령기록관 약력 + 대백과 사건 항목 사용.
+- 다음 2묶음 후보: 3회 출제 중 표 40번(박상진)부터 — 양기탁, 민영환, 최익현, 안중근, 최영 등.

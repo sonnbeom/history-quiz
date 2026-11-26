@@ -571,3 +571,54 @@ validate.js는 이름·별칭 **전체 문자열**만 찾는다. 그래서 검�
 - 문제 없음으로 통과한 id (20명): **gim-won-bong, ji-cheong-cheon, gongmin, jeongjo, joseon-sukjong, gim-gyu-sik, goryeo-sukjong, sejo, gwangjong, gyeon-hwon, gim-ok-gyun, min-gyeom-ho, yang-heon-su, jeong-do-jeon, yi-ja-gyeom, dae-jo-yeong, baekje-seong, gung-ye, eo-jae-yeon, heo-wi**. 기존 10명은 이번 회차에 바뀐 것이 없다(Node 비교).
 - 미해결이 남은 id (10명): goryeo-seongjong, no-tae-u, gim-dae-jung, gim-yeong-sam, heungseon-daewongun, yi-seung-man, sinmun, sunjong, gim-hong-jip, sejong.
 - 남은 미해결: **11건**(이 가운데 확인 필요 2건: A1-23, A2-6).
+
+## 4단계 1묶음 3차 검수 (goryeo-seongjong, no-tae-u, gim-dae-jung, gim-yeong-sam, heungseon-daewongun, yi-seung-man, sinmun, sunjong, gim-hong-jip, sejong / 2026-11-26)
+
+범위: 2차 미해결 11건의 반영 여부를 확인했다. 바뀐 부분을 점검 항목 1~8로 다시 봤다. 바뀐 부분은 다음과 같다.
+- no-tae-u: figures와 힌트 전체
+- figures: gim-dae-jung, gim-yeong-sam, gim-hong-jip, sejong
+- 힌트 sources: 고려 성종 5, 김대중 5, 이승만 3, 신문왕 5, 순종 5, 세종 4
+
+### A. 기계 검사
+
+- `node tools/validate.js`: **오류 0건, 경고 0건**, 종료 코드 0. "미등록 confusable id 34개"는 안내 출력이다.
+- 힌트 형식(검수자 스크립트): 40명 모두 힌트가 5개다. url이 null인 힌트 출처는 0건이다(2차 때 no-tae-u 5건이 있었다).
+- 항목 2: 위 10명의 era·state·roles·fields는 허용 목록 안에 있다. no-tae-u는 현대 / 대한민국 / [정치인] / [정치, 외교]다. achievements는 3~5개이고 start ≤ end다. era·state·roles·fields가 바뀐 인물은 없다.
+- 항목 6(검수자 스크립트): 바뀐 7명의 힌트 35개를 DB 전체의 name·aliases로 훑었다. 괄호 뗀 이름과 세 글자 이름의 앞뒤 두 글자도 넣었다. no-tae-u는 "노태우·노태·태우·용당(호)"도 따로 훑었다. **걸린 것은 0건**이다. no-tae-u 힌트 5개는 눈으로도 확인했다.
+- 항목 7: no-tae-u 4·5번은 출처 원문을 풀어 쓴 문장이다. 원문을 그대로 옮긴 문장은 없다.
+
+### B. 2차 미해결 항목 상태 갱신
+
+| # | 인물 id | 대상 | 점검 항목 | 확인 내용 | 근거 URL | 상태 |
+|---|---|---|---|---|---|---|
+| A1-15 | goryeo-seongjong | hint 5 sources | 8 | hint 5 sources가 '성종' E0029553과 '국자감' E0006422 두 개가 되었다. 2차 수정안 그대로다. | https://encykorea.aks.ac.kr/Article/E0006422 (2차 열람) | 해결 |
+| A1-16 | no-tae-u | figures sources, hint 1~5 sources | 8 | url이 null인 '노태우' 표제 출처는 모두 빠졌다. 출처 배치는 2차 수정안과 같다. hint 1: 대통령기록관 + 6·29민주화선언. hint 2: 대통령기록관. hint 3: 신군부 + 대통령기록관. hint 4: 대통령기록관 + 서울올림픽대회. figures: 5개. hint 5에는 북방외교 외에 '한반도 비핵화와 평화구축을 위한 선언' E0068575가 더해졌다. 다시 열어 보니 이 항목에 "남북한은 1991년 12월 13일「남북기본합의서」에 남북 총리가 서명함과 더불어"가 있다. 그래서 이 항목은 5번의 "재임 중 … 남북 기본 합의서가 채택되었다"를 뒷받침한다. 정의도 "1991년 11월 8일 노태우 대통령이 발표한 …"이라 재임 중의 일임이 함께 확인된다. 5번의 나머지는 북방외교 항목이 뒷받침한다. 원문은 다음과 같다. "노태우 대통령이 1988년 2월 25일 취임사에서", "1990년 9월 30일 … 한 · 소수교", "1992년 8월 24일 … 한중간의 정식수교", "1991년 9월 18일 유엔 동시가입". 북방외교 항목에도 "1992년 2월 19일 남북기본합의서와 비핵화 공동선언 등으로"가 있다. figures achievements[3]의 "1991년 … 한반도 비핵화 공동 선언이 채택되었다"도 근거가 있다. E0068575의 "12월 31일에는 남북한이「한반도의 비핵화에 관한 공동선언문안」에 합의한 후"와 맞는다. 참고로 정식 서명은 1992년 1월 20일, 발효는 1992년 2월 19일이다. 그래도 '1991년 채택'은 합의 시점을 가리키는 통상 표기라 오류로 보지 않는다. | https://encykorea.aks.ac.kr/Article/E0068575 (열람), https://encykorea.aks.ac.kr/Article/E0066460 (열람), https://www.pa.go.kr/online_contents/president/history13.jsp (2차 열람), https://encykorea.aks.ac.kr/Article/E0073743 (2차 열람), https://encykorea.aks.ac.kr/Article/E0028046 (2차 열람), https://encykorea.aks.ac.kr/Article/E0042141 (2차 열람), https://encykorea.aks.ac.kr/Article/E0080747 (2차 열람), https://encykorea.aks.ac.kr/Article/E0078904 (검색만) | 해결 |
+| A1-19 | gim-dae-jung | hint 5 sources, figures sources | 8 | hint 5 sources에 'DJP연합' E0080712가 더해졌고 '김대중'도 남았다. figures sources에는 '외환위기' E0068313과 'DJP연합' E0080712가 더해졌다. 2차 수정안 그대로다. 그래서 achievements[0](최초의 여야 정권 교체)과 [1](외환 위기 극복)도 근거가 생겼다. | https://encykorea.aks.ac.kr/Article/E0080712 (2차 열람), https://encykorea.aks.ac.kr/Article/E0068313 (2차 열람) | 해결 |
+| A1-20 | gim-yeong-sam | achievements[3], figures sources | 8 | figures sources에 '전국동시지방선거' E0080754가 더해졌다. 그래서 "1995년 지방 자치제를 전면 실시"가 근거를 얻었다. 근거 원문은 "제1회 선거는 1995년 6월 27일에 실시", "본격적인 지방자치 시대가 시작되었다"이다. 1995년은 김영삼 재임기(1993~1998)다. achievements 문장은 바뀌지 않았다. | https://encykorea.aks.ac.kr/Article/E0080754 (2차 열람) | 해결 |
+| A1-23 | heungseon-daewongun | aliases "대원군" | 8 | 오케스트레이터가 결정했다. 별칭을 유지하고, 다른 대원군(예: 전계대원군, 덕흥대원군)을 DB에 넣을 때 다시 검토한다. 지금 DB에서 별칭 '대원군'과 겹치는 인물은 없다(validate 별칭 충돌 0건). | https://encykorea.aks.ac.kr/Article/E0046384 (1차 열람) | 해결(오케스트레이터 결정: 유지, 다른 대원군 수록 시 재검토) |
+| A2-1 | yi-seung-man | hint 3 sources | 8 | '신탁통치 반대운동' E0033478이 더해졌고 '반탁독립투쟁위원회' E0073503도 남았다. 그래서 모스크바 3국 외상 회의 부분과 이승만의 참여가 둘 다 뒷받침된다. | https://encykorea.aks.ac.kr/Article/E0033478 (2차 열람) | 해결 |
+| A2-2 | sinmun | hint 5 sources | 8 | '관료전' E0004812가 더해졌고 '신문왕'도 남았다. figures sources에도 두 항목이 있다. | https://encykorea.aks.ac.kr/Article/E0004812 (2차 열람) | 해결 |
+| A2-3 | sunjong | hint 5 sources | 8 | sources가 '순종' E0031947과 '6·10만세운동' E0042124 두 개가 되었다. 1907년 즉위·마지막 황제 부분과 6·10 부분이 각각 뒷받침된다. | https://encykorea.aks.ac.kr/Article/E0031947 (1차 열람), https://encykorea.aks.ac.kr/Article/E0042124 (2차 열람) | 해결 |
+| A2-4 | gim-hong-jip | achievements[2], figures sources | 1, 8 | achievements[2]가 2차 수정안 그대로 "1895년 을미사변 뒤 다시 내각을 이끌며 을미개혁을 추진했다."로 바뀌었다. figures sources에는 '을미개혁' E0042947이 더해졌다. 이 항목의 "1895년 명성황후 시해사건 이후 김홍집(金弘集)내각이 추진한 근대적 개혁운동"과 맞는다. '총리대신'이라는 말이 빠졌으므로 '총리대신' 출처는 필요 없다. | https://encykorea.aks.ac.kr/Article/E0042947 (2차 열람) | 해결 |
+| A2-5 | sejong | hint 4 sources, figures sources | 8 | hint 4 sources와 figures sources에 '파저강 야인정벌' E0059589가 더해졌다. 그래서 "여진을 정벌하게 해"와 achievements[2]의 최윤덕 부분이 뒷받침된다. 근거 원문은 "정벌군의 총사령관에 평안도절제사 최윤덕(崔閏德)을 임명"이다. 4번은 세조·태종·성종(조선)의 여진 정벌과도 겹치는 힌트로 남는다. | https://encykorea.aks.ac.kr/Article/E0059589 (2차 열람) | 해결 |
+| A2-6 | no-tae-u | hint 4 | 1, 8 | 4번이 2차 수정안 그대로 "서울 올림픽을 준비하고 치르는 과정에 깊이 관여했다."로 바뀌었다. '유치'가 빠졌으므로 확인 필요였던 부분은 없어졌다. 근거는 두 가지다. 대통령기록관 약력의 1983~1986년 서울올림픽 조직위원장(준비)과, 서울올림픽대회 항목의 "노태우 대통령의 개회 선언"(치름)이다. 전두환(그의 정부가 대회를 준비)과의 겹침도 유지된다. | https://www.pa.go.kr/online_contents/president/history13.jsp (2차 열람), https://encykorea.aks.ac.kr/Article/E0028046 (2차 열람) | 해결 |
+
+### C. 새 문제 항목
+
+없음.
+
+### D. 바뀐 부분 난이도 재판단 (항목 3·4·5)
+
+| 인물 id | 확정 단계 | 판단 |
+|---|---|---|
+| no-tae-u | 5 | 1번(광복 후 대통령)은 박정희·김영삼·김대중·전두환에게도 맞고, 2번(육군 장성 출신)은 박정희·전두환에게도 맞는다. 3번(신군부 핵심)과 4번(올림픽 준비와 개최)은 전두환에게도 맞는다. 5번(북방 외교로 소련·중국과 수교, 유엔 동시 가입, 남북 기본 합의서)은 노태우만 가리킨다. 김영삼(1992 한중 수교 뒤 1993 취임)과 김대중에게는 맞지 않는다. 1번만으로 정해지지 않고 5번에서 하나로 좁혀진다. 통과 |
+| goryeo-seongjong, gim-dae-jung, yi-seung-man, sinmun, sunjong, sejong | 2차와 같음 | 힌트 문안은 바뀌지 않았고 sources만 늘었다. 2차·1차의 판단 그대로다. 통과 |
+
+- 항목 8(별칭): 바뀐 별칭은 없다. validate.js 별칭 충돌 0건. no-tae-u는 aliases가 비어 있다. 다른 인물과 겹칠 별칭이 없다.
+
+### 4단계 1묶음 3차 회차 요약
+
+- 2차 미해결 11건은 **모두 해결**되었다: A1-15, A1-16, A1-19, A1-20, A1-23(오케스트레이터 결정), A2-1~A2-6.
+- 새 문제: 0건.
+- 문제 없음으로 통과한 id: goryeo-seongjong, no-tae-u, gim-dae-jung, gim-yeong-sam, heungseon-daewongun, yi-seung-man, sinmun, sunjong, gim-hong-jip, sejong. 2차까지 통과한 20명과 합쳐 **4단계 1묶음 30명이 모두 통과**했다.
+- 남은 미해결: **0건**.
