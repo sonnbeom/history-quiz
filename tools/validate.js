@@ -33,7 +33,7 @@ for (const p of figures) {
   const ap = p.active_period || {};
   for (const y of [ap.start, ap.end]) if (y !== null && (!Number.isInteger(y) || y === 0)) errors.push(`${t}: 연도 '${y}'`);
   if (ap.start != null && ap.end != null && ap.start > ap.end) errors.push(`${t}: start > end`);
-  if (!Array.isArray(p.achievements) || p.achievements.length < 1) errors.push(`${t}: achievements 없음`);
+  if (!Array.isArray(p.achievements) || p.achievements.length < 2 || p.achievements.length > 5) errors.push(`${t}: achievements 개수 ${(p.achievements || []).length} (2~5)`);
   if (!Number.isInteger(p.exam_count)) errors.push(`${t}: exam_count`);
   if (!Array.isArray(p.sources) || p.sources.length < 1) errors.push(`${t}: sources 없음`);
   else if (p.sources.every((s) => !s.url)) warnings.push(`${t}: 확인된 source url 없음`);

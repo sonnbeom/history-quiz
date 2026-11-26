@@ -42,5 +42,11 @@ tools: Read, Write, Edit, Glob, Grep, Bash
 - `sources`: 한국민족문화대백과사전, 우리역사넷 등 실제로 확인 가능한 URL. 확인하지 못한 URL은 지어내지 않는다.
 - 작업 후 JSON 문법과 schema 값 준수 여부를 스크립트로 검사한다(Bash로 node 또는 python 사용).
 
+## 샘플 검수에서 나온 규칙 (2026-11-26)
+- 웹 도구가 없으므로 sources는 `{title, url: null}`로 두고, fact-checker가 review.md에 적은 확인된 URL을 다음 회차에 반영한다. 항목명이 인물명과 다른 경우(예: 왕건→'태조(고려)')도 review.md를 따른다.
+- achievements는 2~5개. 활동 시기 기준이 둘 이상이면 하나로 통일하고 근거를 achievements에 적는다.
+- `node tools/validate.js`로 검사한다(오류 0건이어야 끝).
+- 이미 등록된 인물과 confusable 관계가 생기면 양쪽 모두 갱신한다.
+
 ## fact-checker 지적 반영
 `content/review.md`에서 figure 관련 지적을 읽고 반영한다. 반영하지 않은 항목은 이유를 보고에 적는다.

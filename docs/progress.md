@@ -21,7 +21,7 @@
 ## 단계
 - [x] 1. exam-researcher → exam_figures.md (2026-11-26 완료, 사용자 승인 대기)
 - [x] 2. figure-db-builder → schema.md (2026-11-26)
-- [ ] 3. 샘플 10명: figure-db-builder → hint-writer → fact-checker 반복 (보고에 10명 이름 + 힌트 5개 전부)
+- [x] 3. 샘플 10명: figure-db-builder → hint-writer → fact-checker 반복 (2026-11-26 완료, 4차 검수 통과)
 - [ ] 4. 나머지를 30명 단위로 (단위마다 보고)
 - [ ] 5. 최종 정리: 전체 인물 수, 시대별 분포, 자주 나온 검수 문제, 사용자가 직접 확인할 출처 이용 조건
 
@@ -44,3 +44,10 @@
 - schema.md 작성. 시대 10개(사용자 예시 그대로), 국가 18개(통일신라는 신라로 통합), 역할 12개(복수 1~3), 분야 10개(복수 1~3), active_period는 대표 활동 기간(+approx).
 - 오케스트레이터 결정: 외국인은 수록 제외 / 수록 후보 = 2회 이상 출제 한국인 119명, 빈도순 / 샘플 10명은 상위 빈도 중 시대 고르게 / hints.json 형식을 schema 7절에 명시.
 - 보류된 변경 제안(schema.md 끝 "변경 제안"): 선사+고조선 통합, 개항기→근대 명칭, 후삼국 별도 시대. 기본안 유지.
+### 3단계 (2026-11-26)
+- 샘플 10명: bak-jeong-hui, wang-geon, gim-gu, choe-u, yeongjo, yi-seong-gye, joseon-gojong, jang-bo-go, gwanggaeto, gim-jeong-hui. 검수 4차에 걸쳐 미해결 0건.
+- 결정: 고종 id는 joseon-gojong(고려 고종 충돌, schema 접두 목록에 추가). 별칭 "광무제" 삭제. 건국자 활동 시기 예외(즉위 전 대표 활동부터, schema 5절). 광개토 시기는 능비 기준 391~412.
+- 검사 도구: `node tools/validate.js`(허용 값, 형식, achievements 2~5, 힌트 내 이름·별칭, confusable 양방향 경고).
+- 흐름: builder는 sources url null → fact-checker가 열람 URL을 review.md에 제시 → builder·writer가 반영. 검수 지적에서 얻은 규칙은 에이전트 정의에 추가함.
+- 개발 때 참고: 힌트 source.title에 인물명이 들어 있으므로 출처는 정답 공개 후에만 보여야 한다.
+- 남은 수록 후보: 2회 이상 출제 한국인 119명 중 109명 → 30/30/30/19명 단위로 진행.
