@@ -163,7 +163,8 @@
       "gim-won-bong",
       "gim-gyu-sik",
       "yeo-un-hyeong",
-      "yi-seung-man"
+      "yi-seung-man",
+      "ji-cheong-cheon"
     ]
   },
   {
@@ -361,7 +362,8 @@
     "confusable_ids": [
       "heungseon-daewongun",
       "sunjong",
-      "gim-ok-gyun"
+      "gim-ok-gyun",
+      "min-gyeom-ho"
     ]
   },
   {
@@ -517,6 +519,1288 @@
     "confusable_ids": [
       "jeong-seon",
       "bak-je-ga"
+    ]
+  },
+  {
+    "id": "gim-won-bong",
+    "name": "김원봉",
+    "aliases": [
+      "약산"
+    ],
+    "era": "일제강점기",
+    "state": "해당 없음",
+    "roles": [
+      "독립운동가"
+    ],
+    "fields": [
+      "독립운동",
+      "군사"
+    ],
+    "active_period": {
+      "start": 1919,
+      "end": 1942
+    },
+    "achievements": [
+      "1919년 만주 길림에서 의열단을 조직해 의열 투쟁을 이끌었다.",
+      "1938년 중국 한커우에서 조선의용대를 창설했다.",
+      "1942년 조선의용대 일부를 한국광복군에 합류시키고 광복군 부사령관을 맡았다."
+    ],
+    "related_events": [
+      "의열단",
+      "조선 혁명 선언",
+      "조선의용대"
+    ],
+    "exam_count": 6,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '김원봉'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "gim-gu",
+      "ji-cheong-cheon"
+    ]
+  },
+  {
+    "id": "yi-seung-man",
+    "name": "이승만",
+    "aliases": [
+      "우남",
+      "이승만 대통령"
+    ],
+    "era": "현대",
+    "state": "대한민국",
+    "roles": [
+      "정치인",
+      "독립운동가"
+    ],
+    "fields": [
+      "정치",
+      "독립운동"
+    ],
+    "active_period": {
+      "start": 1948,
+      "end": 1960
+    },
+    "achievements": [
+      "1948년 대한민국 정부 수립과 함께 초대 대통령에 취임했다.",
+      "1952년 부산 정치 파동 속에서 발췌 개헌을 추진했다.",
+      "1954년 사사오입 개헌을 통해 초대 대통령의 중임 제한을 없앴다.",
+      "1960년 4·19 혁명으로 대통령직에서 물러났다.",
+      "일제강점기에는 대한민국 임시정부 대통령으로 선출되어 외교 독립론을 펼쳤다."
+    ],
+    "related_events": [
+      "대한민국 정부 수립",
+      "발췌 개헌",
+      "사사오입 개헌",
+      "4·19 혁명"
+    ],
+    "exam_count": 6,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '이승만'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "bak-jeong-hui",
+      "gim-gu",
+      "gim-gyu-sik"
+    ]
+  },
+  {
+    "id": "ji-cheong-cheon",
+    "name": "지청천",
+    "aliases": [
+      "이청천",
+      "지대형"
+    ],
+    "era": "일제강점기",
+    "state": "대한민국 임시정부",
+    "roles": [
+      "독립운동가",
+      "무신·장수"
+    ],
+    "fields": [
+      "독립운동",
+      "군사"
+    ],
+    "active_period": {
+      "start": 1919,
+      "end": 1945
+    },
+    "achievements": [
+      "1919년 만주로 망명해 신흥무관학교 교관으로 독립군을 길렀다.",
+      "1932~1933년 한국독립군을 이끌고 쌍성보 전투와 대전자령 전투에서 일본군에 맞섰다.",
+      "1940년 한국광복군이 창설되자 총사령관을 맡았다."
+    ],
+    "related_events": [
+      "신흥무관학교",
+      "쌍성보 전투",
+      "대전자령 전투",
+      "한국광복군 창설"
+    ],
+    "exam_count": 5,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '지청천'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "gim-gu",
+      "gim-won-bong"
+    ]
+  },
+  {
+    "id": "gongmin",
+    "name": "공민왕",
+    "aliases": [
+      "왕기",
+      "왕전"
+    ],
+    "era": "고려",
+    "state": "고려",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "군사"
+    ],
+    "active_period": {
+      "start": 1351,
+      "end": 1374
+    },
+    "achievements": [
+      "1356년 기철 등 부원 세력을 숙청하고 쌍성총관부를 되찾았다.",
+      "원의 간섭을 줄이려 정동행성 이문소를 없애는 등 반원 자주 정책을 폈다.",
+      "신돈을 등용해 전민변정도감을 설치하고 토지와 노비 문제를 바로잡으려 했다."
+    ],
+    "related_events": [
+      "기철 제거",
+      "쌍성총관부 수복",
+      "전민변정도감",
+      "신돈 등용"
+    ],
+    "exam_count": 5,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '공민왕'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "choe-yeong",
+      "gi-cheol"
+    ]
+  },
+  {
+    "id": "jeongjo",
+    "name": "정조",
+    "aliases": [
+      "이산",
+      "홍재"
+    ],
+    "era": "조선 후기",
+    "state": "조선",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "학문"
+    ],
+    "active_period": {
+      "start": 1776,
+      "end": 1800
+    },
+    "achievements": [
+      "1776년 즉위한 뒤 규장각을 설치해 학문과 정책 연구를 뒷받침했다.",
+      "왕의 친위 부대인 장용영을 두어 왕권을 강화했다.",
+      "수원에 화성을 쌓고 도시를 새로 키우려 했다.",
+      "1791년 신해통공으로 시전 상인의 금난전권을 없앴다."
+    ],
+    "related_events": [
+      "규장각 설치",
+      "장용영",
+      "수원 화성 건설",
+      "신해통공"
+    ],
+    "exam_count": 5,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '정조(조선)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "yeongjo",
+      "chae-je-gong",
+      "bak-je-ga"
+    ]
+  },
+  {
+    "id": "joseon-sukjong",
+    "name": "숙종(조선)",
+    "aliases": [
+      "이순"
+    ],
+    "era": "조선 후기",
+    "state": "조선",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "경제"
+    ],
+    "active_period": {
+      "start": 1674,
+      "end": 1720
+    },
+    "achievements": [
+      "경신환국, 기사환국, 갑술환국을 거치며 붕당을 교체해 왕권을 강화했다.",
+      "1678년 상평통보를 주조해 전국에 유통시켰다.",
+      "1712년 백두산정계비를 세워 청과 국경을 정했다.",
+      "대동법을 황해도까지 확대해 전국으로 퍼뜨렸다."
+    ],
+    "related_events": [
+      "환국",
+      "상평통보",
+      "백두산정계비",
+      "대동법 확대"
+    ],
+    "exam_count": 5,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '숙종(조선)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "yeongjo",
+      "goryeo-sukjong",
+      "song-si-yeol"
+    ]
+  },
+  {
+    "id": "sinmun",
+    "name": "신문왕",
+    "aliases": [
+      "김정명"
+    ],
+    "era": "남북국",
+    "state": "신라",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치"
+    ],
+    "active_period": {
+      "start": 681,
+      "end": 692
+    },
+    "achievements": [
+      "681년 김흠돌의 난을 진압하고 귀족 세력을 숙청해 왕권을 높였다.",
+      "682년 국학을 세워 유학 교육을 시작했다.",
+      "687년 관료전을 지급하고 689년 녹읍을 폐지했다.",
+      "685년 전국을 9주 5소경으로 정비했다."
+    ],
+    "related_events": [
+      "김흠돌의 난",
+      "국학 설립",
+      "관료전 지급",
+      "녹읍 폐지",
+      "9주 5소경"
+    ],
+    "exam_count": 5,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '신문왕'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "munmu",
+      "gim-heum-dol"
+    ]
+  },
+  {
+    "id": "gim-gyu-sik",
+    "name": "김규식",
+    "aliases": [
+      "우사"
+    ],
+    "era": "일제강점기",
+    "state": "대한민국 임시정부",
+    "roles": [
+      "독립운동가",
+      "정치인"
+    ],
+    "fields": [
+      "독립운동",
+      "정치"
+    ],
+    "active_period": {
+      "start": 1919,
+      "end": 1948
+    },
+    "achievements": [
+      "1919년 대한민국 임시정부 대표로 파리 강화 회의에 파견되어 독립을 호소했다.",
+      "1946년 여운형 등과 좌우 합작 위원회를 이끌었다.",
+      "1948년 김구와 함께 남북 협상에 참석했다."
+    ],
+    "related_events": [
+      "파리 강화 회의",
+      "좌우 합작 운동",
+      "남북 협상"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '김규식'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "gim-gu",
+      "yeo-un-hyeong",
+      "yi-seung-man"
+    ]
+  },
+  {
+    "id": "heungseon-daewongun",
+    "name": "흥선 대원군",
+    "aliases": [
+      "이하응",
+      "흥선군",
+      "대원군",
+      "석파"
+    ],
+    "era": "개항기",
+    "state": "조선",
+    "roles": [
+      "왕족",
+      "개혁가·혁명가"
+    ],
+    "fields": [
+      "정치",
+      "외교"
+    ],
+    "active_period": {
+      "start": 1863,
+      "end": 1873
+    },
+    "achievements": [
+      "1863년 아들 고종이 즉위하자 실권을 잡고 정치를 이끌었다.",
+      "비변사를 폐지하고 1865년 경복궁 중건을 시작해 왕권을 높이려 했다.",
+      "1871년 서원을 철폐하고 호포제를 실시해 양반에게도 군포를 거두었다.",
+      "병인양요와 신미양요를 겪은 뒤 통상 수교를 거부하고 척화비를 세웠다."
+    ],
+    "related_events": [
+      "경복궁 중건",
+      "서원 철폐",
+      "호포제",
+      "병인양요",
+      "신미양요",
+      "척화비"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '흥선대원군'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "joseon-gojong",
+      "yang-heon-su",
+      "eo-jae-yeon",
+      "min-gyeom-ho"
+    ]
+  },
+  {
+    "id": "goryeo-sukjong",
+    "name": "숙종(고려)",
+    "aliases": [
+      "왕옹"
+    ],
+    "era": "고려",
+    "state": "고려",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "경제"
+    ],
+    "active_period": {
+      "start": 1095,
+      "end": 1105
+    },
+    "achievements": [
+      "1101년 주전도감을 두고 해동통보 등 화폐를 만들어 유통하려 했다.",
+      "남경(지금의 서울) 건설을 추진했다.",
+      "1104년 윤관의 건의로 여진 정벌을 위해 별무반을 편성했다."
+    ],
+    "related_events": [
+      "해동통보",
+      "남경 건설",
+      "별무반 편성"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '숙종(고려)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "goryeo-yejong",
+      "yun-gwan",
+      "joseon-sukjong"
+    ]
+  },
+  {
+    "id": "sejo",
+    "name": "세조",
+    "aliases": [
+      "수양대군"
+    ],
+    "era": "조선 전기",
+    "state": "조선",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "경제"
+    ],
+    "active_period": {
+      "start": 1455,
+      "end": 1468
+    },
+    "achievements": [
+      "1455년 조카 단종을 몰아내고 왕위에 올랐다.",
+      "1461년 간경도감을 설치해 불경을 한글로 옮겨 펴냈다.",
+      "1466년 직전법을 실시해 현직 관리에게만 토지를 주었다.",
+      "1467년 함경도에서 일어난 이시애의 난을 진압했다."
+    ],
+    "related_events": [
+      "계유정난",
+      "단종 폐위",
+      "간경도감",
+      "직전법",
+      "이시애의 난"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '세조(조선)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "sejong",
+      "danjong",
+      "joseon-seongjong"
+    ]
+  },
+  {
+    "id": "sejong",
+    "name": "세종대왕",
+    "aliases": [
+      "세종",
+      "이도"
+    ],
+    "era": "조선 전기",
+    "state": "조선",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "학문",
+      "과학기술"
+    ],
+    "active_period": {
+      "start": 1418,
+      "end": 1450
+    },
+    "achievements": [
+      "1443년 훈민정음을 만들어 1446년 반포했다.",
+      "집현전을 두어 학문을 키우고 사가독서제를 시행했다.",
+      "김종서와 최윤덕을 보내 4군 6진을 개척해 북쪽 국경을 넓혔다.",
+      "측우기와 자격루 등 과학 기구를 만들게 하고 농사직설을 펴냈다."
+    ],
+    "related_events": [
+      "훈민정음 창제",
+      "집현전",
+      "4군 6진",
+      "농사직설",
+      "측우기"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '세종(조선)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "sejo",
+      "joseon-taejong",
+      "joseon-seongjong"
+    ]
+  },
+  {
+    "id": "gwangjong",
+    "name": "광종",
+    "aliases": [
+      "왕소"
+    ],
+    "era": "고려",
+    "state": "고려",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치"
+    ],
+    "active_period": {
+      "start": 949,
+      "end": 975
+    },
+    "achievements": [
+      "956년 노비안검법을 실시해 호족의 경제력과 군사력을 약화시켰다.",
+      "958년 쌍기의 건의로 과거제를 실시했다.",
+      "960년 관리의 공복을 정해 신분 질서를 세웠다.",
+      "광덕, 준풍 등 독자 연호를 사용하고 황제를 칭했다."
+    ],
+    "related_events": [
+      "노비안검법",
+      "과거제 실시",
+      "공복 제정",
+      "연호 사용"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '광종(고려)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "wang-geon",
+      "goryeo-seongjong"
+    ]
+  },
+  {
+    "id": "gyeon-hwon",
+    "name": "견훤",
+    "aliases": [
+      "진훤"
+    ],
+    "era": "남북국",
+    "state": "후백제",
+    "roles": [
+      "국왕",
+      "무신·장수"
+    ],
+    "fields": [
+      "정치",
+      "군사"
+    ],
+    "active_period": {
+      "start": 892,
+      "end": 936
+    },
+    "achievements": [
+      "892년 신라 군대를 이끌다 무진주를 점령하며 세력을 키웠다.",
+      "900년 완산주에서 후백제를 세우고 왕을 칭했다.",
+      "927년 신라 경주를 습격해 경애왕을 죽이고 경순왕을 세웠다.",
+      "935년 아들 신검에게 금산사에 갇혔다가 탈출해 왕건에게 귀순했다."
+    ],
+    "related_events": [
+      "후백제 건국",
+      "경주 습격",
+      "금산사 유폐",
+      "후삼국 시대"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '견훤'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "wang-geon",
+      "gung-ye",
+      "jang-bo-go"
+    ]
+  },
+  {
+    "id": "gim-ok-gyun",
+    "name": "김옥균",
+    "aliases": [
+      "고균"
+    ],
+    "era": "개항기",
+    "state": "조선",
+    "roles": [
+      "개혁가·혁명가"
+    ],
+    "fields": [
+      "정치"
+    ],
+    "active_period": {
+      "start": 1884,
+      "end": 1894
+    },
+    "achievements": [
+      "박영효, 서광범 등과 개화당을 이끌었다.",
+      "1884년 갑신정변을 일으켜 14개조 개혁 정강을 발표했으나 3일 만에 실패했다.",
+      "실패 뒤 일본으로 망명했다가 1894년 상하이에서 암살되었다."
+    ],
+    "related_events": [
+      "갑신정변",
+      "14개조 개혁 정강"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '김옥균'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "bak-yeong-hyo",
+      "gim-hong-jip",
+      "joseon-gojong"
+    ]
+  },
+  {
+    "id": "min-gyeom-ho",
+    "name": "민겸호",
+    "aliases": [],
+    "era": "개항기",
+    "state": "조선",
+    "roles": [
+      "문신·관료"
+    ],
+    "fields": [
+      "정치"
+    ],
+    "active_period": {
+      "start": 1882,
+      "end": 1882
+    },
+    "achievements": [
+      "명성 황후의 척족으로 권세를 누렸다.",
+      "선혜청 당상으로 군인들의 급료 지급을 맡았다.",
+      "1882년 임오군란 때 급료 문제로 분노한 구식 군인들에게 피살되었다."
+    ],
+    "related_events": [
+      "임오군란",
+      "선혜청",
+      "별기군"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '민겸호'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "heungseon-daewongun",
+      "joseon-gojong"
+    ]
+  },
+  {
+    "id": "yang-heon-su",
+    "name": "양헌수",
+    "aliases": [],
+    "era": "개항기",
+    "state": "조선",
+    "roles": [
+      "무신·장수"
+    ],
+    "fields": [
+      "군사"
+    ],
+    "active_period": {
+      "start": 1866,
+      "end": 1866
+    },
+    "achievements": [
+      "1866년 병인양요 때 강화도를 점령한 프랑스군에 맞서 포수들을 이끌고 정족산성을 지켰다.",
+      "정족산성 전투에서 프랑스군을 물리쳐 프랑스군이 강화도에서 물러나는 계기를 만들었다."
+    ],
+    "related_events": [
+      "병인양요",
+      "정족산성 전투"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '양헌수'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "eo-jae-yeon",
+      "heungseon-daewongun"
+    ]
+  },
+  {
+    "id": "gim-hong-jip",
+    "name": "김홍집",
+    "aliases": [
+      "김굉집"
+    ],
+    "era": "개항기",
+    "state": "조선",
+    "roles": [
+      "문신·관료",
+      "개혁가·혁명가"
+    ],
+    "fields": [
+      "정치",
+      "외교"
+    ],
+    "active_period": {
+      "start": 1880,
+      "end": 1896
+    },
+    "achievements": [
+      "1880년 수신사로 일본에 다녀오며 『조선책략』을 들여왔다.",
+      "1894년 군국기무처를 이끌며 갑오개혁을 주도했다.",
+      "1895년 총리대신으로 을미개혁을 추진했다.",
+      "1896년 아관 파천 직후 성난 군중에게 피살되었다."
+    ],
+    "related_events": [
+      "수신사 파견",
+      "군국기무처",
+      "갑오개혁",
+      "을미개혁"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '김홍집'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "gim-ok-gyun",
+      "yu-gil-jun",
+      "bak-yeong-hyo"
+    ]
+  },
+  {
+    "id": "no-tae-u",
+    "name": "노태우",
+    "aliases": [],
+    "era": "현대",
+    "state": "대한민국",
+    "roles": [
+      "정치인"
+    ],
+    "fields": [
+      "정치",
+      "외교"
+    ],
+    "active_period": {
+      "start": 1988,
+      "end": 1993
+    },
+    "achievements": [
+      "1988년 대통령에 취임했고 같은 해 서울 올림픽이 열렸다.",
+      "1990년 3당 합당으로 민주자유당을 만들었다.",
+      "북방 정책을 추진해 소련(1990), 중국(1992)과 국교를 맺었다.",
+      "1991년 남북한이 유엔에 동시 가입하고 남북 기본 합의서와 한반도 비핵화 공동 선언이 채택되었다."
+    ],
+    "related_events": [
+      "서울 올림픽",
+      "3당 합당",
+      "북방 정책",
+      "남북 기본 합의서"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '노태우'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "jeon-du-hwan",
+      "gim-yeong-sam",
+      "bak-jeong-hui",
+      "gim-dae-jung"
+    ]
+  },
+  {
+    "id": "gim-dae-jung",
+    "name": "김대중",
+    "aliases": [
+      "후광"
+    ],
+    "era": "현대",
+    "state": "대한민국",
+    "roles": [
+      "정치인"
+    ],
+    "fields": [
+      "정치",
+      "외교"
+    ],
+    "active_period": {
+      "start": 1998,
+      "end": 2003
+    },
+    "achievements": [
+      "1998년 최초의 여야 정권 교체로 대통령에 취임했다.",
+      "외환 위기를 맞아 구조 조정과 국제 통화 기금 지원 체제 극복에 나섰다.",
+      "햇볕 정책을 펴고 2000년 평양에서 남북 정상 회담을 열어 6·15 공동 선언을 발표했다.",
+      "2000년 노벨 평화상을 받았다."
+    ],
+    "related_events": [
+      "외환 위기",
+      "햇볕 정책",
+      "남북 정상 회담",
+      "6·15 공동 선언"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '김대중'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "gim-yeong-sam",
+      "no-tae-u"
+    ]
+  },
+  {
+    "id": "gim-yeong-sam",
+    "name": "김영삼",
+    "aliases": [
+      "거산"
+    ],
+    "era": "현대",
+    "state": "대한민국",
+    "roles": [
+      "정치인"
+    ],
+    "fields": [
+      "정치"
+    ],
+    "active_period": {
+      "start": 1993,
+      "end": 1998
+    },
+    "achievements": [
+      "1993년 문민정부를 출범시켰다.",
+      "군 내 사조직 하나회를 해체했다.",
+      "1993년 금융 실명제를 실시했다.",
+      "1995년 지방 자치제를 전면 실시하고 옛 조선총독부 건물 철거를 시작했다."
+    ],
+    "related_events": [
+      "문민정부",
+      "하나회 해체",
+      "금융 실명제",
+      "지방 자치제",
+      "조선총독부 건물 철거"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '김영삼'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "no-tae-u",
+      "gim-dae-jung",
+      "jeon-du-hwan"
+    ]
+  },
+  {
+    "id": "jeong-do-jeon",
+    "name": "정도전",
+    "aliases": [
+      "삼봉"
+    ],
+    "era": "조선 전기",
+    "state": "조선",
+    "roles": [
+      "문신·관료",
+      "학자·사상가"
+    ],
+    "fields": [
+      "정치",
+      "학문"
+    ],
+    "active_period": {
+      "start": 1383,
+      "end": 1398
+    },
+    "achievements": [
+      "1383년 함주에서 이성계를 만나 새 왕조 건국을 함께 준비했다.",
+      "1394년 『조선경국전』을 지어 재상 중심의 통치 구상을 밝혔다.",
+      "한양 천도와 도성 설계에 관여했다.",
+      "1398년 제1차 왕자의 난 때 이방원에게 죽임을 당했다."
+    ],
+    "related_events": [
+      "조선 건국",
+      "조선경국전",
+      "한양 천도",
+      "제1차 왕자의 난"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '정도전'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "yi-seong-gye",
+      "joseon-taejong",
+      "choe-yeong"
+    ]
+  },
+  {
+    "id": "yi-ja-gyeom",
+    "name": "이자겸",
+    "aliases": [],
+    "era": "고려",
+    "state": "고려",
+    "roles": [
+      "문신·관료"
+    ],
+    "fields": [
+      "정치"
+    ],
+    "active_period": {
+      "start": 1122,
+      "end": 1126
+    },
+    "achievements": [
+      "딸들을 예종과 인종의 왕비로 들여 외척으로 권세를 누렸다.",
+      "1122년 외손자 인종이 즉위하자 권력을 장악했다.",
+      "1126년 척준경과 함께 난을 일으켜 인종을 가두려 했으나 척준경이 돌아서 실패했다."
+    ],
+    "related_events": [
+      "이자겸의 난",
+      "외척 집권"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '이자겸'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "myo-cheong",
+      "cheok-jun-gyeong"
+    ]
+  },
+  {
+    "id": "sunjong",
+    "name": "순종",
+    "aliases": [
+      "이척",
+      "융희제"
+    ],
+    "era": "개항기",
+    "state": "대한제국",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치"
+    ],
+    "active_period": {
+      "start": 1907,
+      "end": 1910
+    },
+    "achievements": [
+      "1907년 고종이 강제 퇴위당한 뒤 황제에 올라 연호를 융희로 정했다.",
+      "1910년 국권 피탈로 대한제국의 마지막 황제가 되었다.",
+      "1926년 순종의 죽음을 계기로 6·10 만세 운동이 일어났다."
+    ],
+    "related_events": [
+      "고종 강제 퇴위",
+      "국권 피탈",
+      "6·10 만세 운동"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '순종(대한제국)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "joseon-gojong"
+    ]
+  },
+  {
+    "id": "dae-jo-yeong",
+    "name": "대조영",
+    "aliases": [
+      "고왕"
+    ],
+    "era": "남북국",
+    "state": "발해",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "군사"
+    ],
+    "active_period": {
+      "start": 696,
+      "end": 719
+    },
+    "achievements": [
+      "696년 거란의 반란으로 당이 혼란한 틈에 무리를 이끌고 동쪽으로 이동했다.",
+      "698년 동모산에서 나라를 세웠다.",
+      "713년 당에서 발해군왕으로 책봉받아 국호를 발해로 정했다."
+    ],
+    "related_events": [
+      "발해 건국",
+      "동모산",
+      "발해군왕 책봉"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '대조영'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "balhae-mu"
+    ]
+  },
+  {
+    "id": "baekje-seong",
+    "name": "성왕(백제)",
+    "aliases": [
+      "명농",
+      "성명왕"
+    ],
+    "era": "삼국",
+    "state": "백제",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치",
+      "외교",
+      "군사"
+    ],
+    "active_period": {
+      "start": 523,
+      "end": 554
+    },
+    "achievements": [
+      "538년 도읍을 웅진에서 사비로 옮기고 국호를 남부여로 바꾸었다.",
+      "양과 교류하며 불교와 선진 문물을 받아들이고 일본에 불교를 전했다.",
+      "551년 신라와 연합해 한강 하류를 되찾았으나 신라에 다시 빼앗겼다.",
+      "554년 관산성 전투에서 신라군에 전사했다."
+    ],
+    "related_events": [
+      "사비 천도",
+      "남부여",
+      "한강 유역 회복",
+      "관산성 전투"
+    ],
+    "exam_count": 4,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '성왕(백제)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "jinheung",
+      "muryeong"
+    ]
+  },
+  {
+    "id": "goryeo-seongjong",
+    "name": "성종(고려)",
+    "aliases": [
+      "왕치"
+    ],
+    "era": "고려",
+    "state": "고려",
+    "roles": [
+      "국왕"
+    ],
+    "fields": [
+      "정치"
+    ],
+    "active_period": {
+      "start": 981,
+      "end": 997
+    },
+    "achievements": [
+      "982년 최승로의 시무 28조를 받아들여 유교 정치를 정비했다.",
+      "983년 전국의 주요 지역에 12목을 설치하고 지방관을 보냈다.",
+      "992년 국자감을 설치해 유학 교육을 키웠다.",
+      "993년 거란의 침입에 맞서 서희의 외교 담판으로 강동 6주를 얻었다."
+    ],
+    "related_events": [
+      "시무 28조",
+      "12목 설치",
+      "국자감",
+      "서희 담판"
+    ],
+    "exam_count": 3,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '성종(고려)'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "gwangjong",
+      "choe-seung-ro",
+      "seo-hui"
+    ]
+  },
+  {
+    "id": "gung-ye",
+    "name": "궁예",
+    "aliases": [],
+    "era": "남북국",
+    "state": "태봉",
+    "roles": [
+      "국왕",
+      "무신·장수"
+    ],
+    "fields": [
+      "정치",
+      "군사"
+    ],
+    "active_period": {
+      "start": 894,
+      "end": 918
+    },
+    "achievements": [
+      "894년 명주를 차지하며 세력을 키웠다.",
+      "901년 후고구려를 세우고 왕을 칭했다.",
+      "904년 국호를 마진으로 바꾸고 연호를 쓴 뒤 911년 태봉으로 고쳤다.",
+      "905년 도읍을 철원으로 옮겼다.",
+      "918년 신하들에게 쫓겨나 최후를 맞고 왕건이 즉위했다."
+    ],
+    "related_events": [
+      "후고구려 건국",
+      "철원 천도",
+      "태봉"
+    ],
+    "exam_count": 3,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '궁예'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "wang-geon",
+      "gyeon-hwon"
+    ]
+  },
+  {
+    "id": "eo-jae-yeon",
+    "name": "어재연",
+    "aliases": [],
+    "era": "개항기",
+    "state": "조선",
+    "roles": [
+      "무신·장수"
+    ],
+    "fields": [
+      "군사"
+    ],
+    "active_period": {
+      "start": 1871,
+      "end": 1871
+    },
+    "achievements": [
+      "1871년 신미양요 때 강화도 광성보에서 미군과 맞서 싸웠다.",
+      "광성보 전투에서 전사했고 그의 수자기는 미군에게 빼앗겼다."
+    ],
+    "related_events": [
+      "신미양요",
+      "광성보 전투",
+      "수자기"
+    ],
+    "exam_count": 3,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '어재연'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "yang-heon-su",
+      "heungseon-daewongun"
+    ]
+  },
+  {
+    "id": "heo-wi",
+    "name": "허위",
+    "aliases": [
+      "왕산"
+    ],
+    "era": "개항기",
+    "state": "대한제국",
+    "roles": [
+      "독립운동가"
+    ],
+    "fields": [
+      "독립운동",
+      "군사"
+    ],
+    "active_period": {
+      "start": 1907,
+      "end": 1908
+    },
+    "achievements": [
+      "1907년 군대 해산 뒤 경기도에서 의병을 일으켰다.",
+      "1908년 13도 창의군의 군사장으로 서울 진공 작전을 이끌었다.",
+      "1908년 일본군에게 체포되어 순국했다."
+    ],
+    "related_events": [
+      "정미의병",
+      "13도 창의군",
+      "서울 진공 작전"
+    ],
+    "exam_count": 3,
+    "sources": [
+      {
+        "title": "한국민족문화대백과사전 '허위'",
+        "url": null
+      }
+    ],
+    "confusable_ids": [
+      "yi-in-yeong",
+      "choe-ik-hyeon",
+      "min-yeong-hwan"
     ]
   }
 ]
