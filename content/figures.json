@@ -3202,14 +3202,15 @@
       "군사"
     ],
     "active_period": {
-      "start": 1126,
+      "start": 1104,
       "end": 1127
     },
     "achievements": [
+      "1104년과 1107년 여진 정벌에 나가 공을 세웠다.",
       "이자겸과 손잡고 1126년 이자겸의 난 때 궁궐을 공격하는 데 가담했다.",
       "이후 이자겸 일파를 제거하는 데 앞장서 인종의 신임을 얻었다.",
       "1127년 탄핵을 받아 유배되었다.",
-      "활동 시기는 이자겸의 난이 일어난 1126년부터 유배된 1127년까지로 잡았다."
+      "활동 시기는 첫 여진 정벌 참전(1104)부터 유배(1127)까지로 잡았다."
     ],
     "related_events": [
       "이자겸의 난"
@@ -3218,7 +3219,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '척준경'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0055748"
+      },
+      {
+        "title": "한국민족문화대백과사전 '이자겸의 난'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0045670"
       }
     ],
     "confusable_ids": [
@@ -3234,7 +3239,8 @@
     "era": "고려",
     "state": "고려",
     "roles": [
-      "무신·장수"
+      "문신·관료",
+      "개혁가·혁명가"
     ],
     "fields": [
       "정치",
@@ -3257,7 +3263,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '조위총'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0052463"
+      },
+      {
+        "title": "한국민족문화대백과사전 '무신란'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0019113"
       }
     ],
     "confusable_ids": [
@@ -3293,17 +3303,21 @@
     "related_events": [
       "별무반",
       "여진 정벌",
-      "동북 9성"
+      "구성(동북 9성)"
     ],
     "exam_count": 2,
     "sources": [
       {
         "title": "한국민족문화대백과사전 '윤관'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0042215"
       },
       {
-        "title": "한국민족문화대백과사전 '동북 9성'",
-        "url": null
+        "title": "한국민족문화대백과사전 '구성'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0005847"
+      },
+      {
+        "title": "한국민족문화대백과사전 '별무반'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023022"
       }
     ],
     "confusable_ids": [
@@ -3329,13 +3343,14 @@
       "학문"
     ],
     "active_period": {
-      "start": 1283,
-      "end": 1289
+      "start": 1277,
+      "end": 1289,
+      "approx": true
     },
     "achievements": [
       "승려로서 1283년 국사(국존)에 책봉되었다.",
       "말년에 『삼국유사』를 지어 고대의 신화와 설화, 불교 이야기를 정리했다.",
-      "활동 시기는 국존 책봉(1283)부터 입적(1289)까지로 잡았다."
+      "활동 시기는 삼국유사 집필 시작 추정(1277)부터 입적(1289)까지로 잡았다."
     ],
     "related_events": [
       "삼국유사",
@@ -3345,11 +3360,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '일연'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0047280"
       },
       {
         "title": "한국민족문화대백과사전 '삼국유사'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0069669"
       }
     ],
     "confusable_ids": [
@@ -3390,11 +3405,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김부식'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0009275"
       },
       {
         "title": "한국민족문화대백과사전 '삼국사기'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0026478"
       }
     ],
     "confusable_ids": [
@@ -3406,7 +3421,10 @@
   {
     "id": "yi-seung-hyu",
     "name": "이승휴",
-    "aliases": [],
+    "aliases": [
+      "동안거사",
+      "휴휴"
+    ],
     "era": "고려",
     "state": "고려",
     "roles": [
@@ -3432,11 +3450,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '이승휴'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0044965"
       },
       {
         "title": "한국민족문화대백과사전 '제왕운기'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0069879"
       }
     ],
     "confusable_ids": [
@@ -3475,11 +3493,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '최무선'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0057297"
       },
       {
         "title": "한국민족문화대백과사전 '화통도감'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0064918"
       }
     ],
     "confusable_ids": [
@@ -3491,31 +3509,44 @@
   {
     "id": "in-hu",
     "name": "인후",
-    "aliases": [],
+    "aliases": [
+      "훌라타이"
+    ],
     "era": "고려",
     "state": "고려",
     "roles": [
-      "문신·관료"
+      "문신·관료",
+      "무신·장수"
     ],
     "fields": [
-      "정치"
+      "정치",
+      "외교"
     ],
     "active_period": {
-      "start": null,
-      "end": null
+      "start": 1274,
+      "end": 1311
     },
     "achievements": [
-      "고려 후기 원 간섭기에 원과 결탁해 세력을 키운 부원 세력의 한 사람으로 다루어진다.",
-      "구체적 이력의 연도는 확인하지 못해 활동 시기를 비워 두었다."
+      "몽골 출신으로, 1274년 원 공주(제국대장공주)가 충렬왕과 혼인할 때 공주의 사속인(겁령구)으로 고려에 와 귀화했다.",
+      "충렬왕의 신임을 받는 측근이 되었고, 여러 차례 원에 사신으로 다녀오며 재상 반열까지 올랐다.",
+      "1281년 진변만호로 합포에 머물며 백성을 괴롭혔고, 남의 토지와 노비를 빼앗았다는 평을 받았다.",
+      "1299년 한희유 무고 사건으로 파면되었다가 충선왕 복위 뒤 돌아와 공신에 책록되었다.",
+      "활동 시기는 고려에 온 1274년부터 사망한 1311년까지로 잡았다."
     ],
     "related_events": [
+      "겁령구",
+      "한희유 무고 사건",
       "원 간섭기"
     ],
     "exam_count": 2,
     "sources": [
       {
         "title": "한국민족문화대백과사전 '인후'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0047135"
+      },
+      {
+        "title": "한국민족문화대백과사전 '겁령구'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0002111"
       }
     ],
     "confusable_ids": [
@@ -3526,7 +3557,9 @@
   {
     "id": "gi-cheol",
     "name": "기철",
-    "aliases": [],
+    "aliases": [
+      "바얀부카"
+    ],
     "era": "고려",
     "state": "고려",
     "roles": [
@@ -3552,7 +3585,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '기철'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0008454"
       }
     ],
     "confusable_ids": [
@@ -3581,7 +3614,7 @@
     },
     "achievements": [
       "송에 건너가 불교를 공부하고 돌아왔다.",
-      "교장(속장경)을 모아 간행하는 일을 이끌었다.",
+      "대장경의 주석서(장소)를 모은 교장을 간행하는 일을 이끌었다(흔히 속장경으로 잘못 불린다).",
       "교종과 선종을 아우르려 해동 천태종을 열었다.",
       "활동 시기는 송 유학(1085)부터 입적(1101)까지로 잡았다."
     ],
@@ -3593,11 +3626,15 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '의천'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0043423"
       },
       {
         "title": "한국민족문화대백과사전 '천태종'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0056076"
+      },
+      {
+        "title": "한국민족문화대백과사전 '교장'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0005560"
       }
     ],
     "confusable_ids": [

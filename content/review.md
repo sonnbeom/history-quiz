@@ -1019,3 +1019,47 @@ validate.js는 이름·별칭 **전체 문자열**만 찾는다. 그래서 검�
 - 확인을 요청받은 표제: 진포대첩은 대백과 독립 표제를 찾지 못했다(확인 필요). 무신정변의 실제 표제는 '무신란' E0019113이다. 교장은 '교장' E0005560, 묘청의 난은 '묘청의 난' E0018893, 이자겸의 난은 '이자겸의 난' E0045670이다. 이 밖에 '동북 9성'의 실제 표제는 '구성' E0005847이다.
 - 문제 없음으로 통과한 id: 없음(10명 모두 C1-1 url 미기입). C1-1만 남은 id는 **gim-bu-sik**이다.
 - 남은 미해결: **16건**.
+
+## 4단계 3a 2차 검수 (2026-11-27)
+
+대상: cheok-jun-gyeong, jo-wi-chong, yun-gwan, il-yeon, gim-bu-sik, yi-seung-hyu, choe-mu-seon, in-hu, gi-cheol, ui-cheon. 범위는 작업 트리의 figures.json·hints.json에 1차 지적 C1-1~C1-16이 반영됐는지와, 고친 부분이 새 문제를 만들었는지다.
+
+- 기계 검사: `node tools/validate.js` 오류 0건. 10명에 대한 url 경고는 더 나오지 않는다. figures·힌트 source에 url이 null인 것은 0건이다. era·state·roles·fields 값은 모두 허용 목록 안에 있다.
+- 이름 노출 검사: 힌트 50개에서 name, aliases(새로 넣은 동안거사·휴휴·훌라타이·바얀부카·대각국사 포함)와 견명·회연·목암·보각·장혜·충근·대각·우세·왕후·동안을 문자열로 찾았다. 0건이다.
+- 1차에서 본문을 열지 않았던 출처 2건을 이번에 열람했다.
+  - '화통도감' https://encykorea.aks.ac.kr/Article/E0064918 : "1377년(우왕 3)에 판사 최무선의 건의로 설치", "염초자취술을 배웠다", "20여 종에 가까운 화기를 제조", "1380년(우왕 6)의 진포 싸움"에서 "큰 위력을 발휘". choe-mu-seon hint 3(1380년 왜구 격퇴)과 hint 5(화약 제조법, 화통도감 설치)를 뒷받침한다. 배를 불태웠다는 표현은 이 항목에도 없다. hint 5는 "무찔렀다"로 고쳐졌으므로 문제없다.
+  - '겁령구' https://encykorea.aks.ac.kr/Article/E0002111 : 정의 "고려 후기, 몽골의 공주를 따라온 사속인". 제국대장공주를 따라온 몽골인 인후가 나오고, 인후가 충렬왕의 입조를 따라가고 황제에게 아뢸 일을 처리했다는 서술이 있다. in-hu figures sources와 achievements ①·②에 맞다. 1274년과 귀화는 이 항목 본문에 없고 '인후'(E0047135)에 있다. achievements ①은 두 출처를 합치면 뒷받침된다.
+
+### C1 항목 상태
+
+| 번호 | 인물 id | 반영 내용 | 상태 |
+|---|---|---|---|
+| C1-1 | 10명 공통 | figures·힌트 source의 url을 모두 채웠다. 표제도 고쳤다(무신란, 구성, 진포대첩 제외). | 해결 |
+| C1-2 | cheok-jun-gyeong | active_period 1104~1127. 여진 정벌 업적과 근거 문장을 수정안대로 넣었다. | 해결 |
+| C1-3 | jo-wi-chong | roles `["문신·관료","개혁가·혁명가"]`. | 해결 |
+| C1-4 | jo-wi-chong | hint 2를 병부상서·서경유수로, hint 4를 무신 축출 명분·40여 성 호응·금 원병 요청으로 고쳤다. 3번은 묘청과 겹치고 4번에서 확정된다. | 해결 |
+| C1-5 | jo-wi-chong | '무신란' E0019113. figures sources와 hint 4·5에 있고 hint 2에서는 뺐다. | 해결 |
+| C1-6 | yun-gwan | '구성' E0005847, '별무반' E0023022. figures sources와 hint 3·4·5에 들어갔다. | 해결 |
+| C1-7 | il-yeon | active_period `{1277,1289,approx:true}`. 근거 문장을 고쳤다. | 해결 |
+| C1-8 | il-yeon | hint 4 sources에 '일연' E0047280을 넣었다. | 해결 |
+| C1-9 | yi-seung-hyu | aliases `["동안거사","휴휴"]`. 힌트에는 들어 있지 않다. | 해결 |
+| C1-10 | choe-mu-seon | hint 4를 수정안대로 고쳤다(높은 벼슬, 조선 건국 뒤 사망). 이성계와 겹치고 5번에서 확정된다. | 해결 |
+| C1-11 | choe-mu-seon | '진포대첩' source를 빼고 '최무선'·'화통도감'으로 바꿨다. hint 4는 '최무선'만 둔다. hint 5는 "무찔렀다"로 고쳤다. '화통도감' 본문 열람으로 뒷받침을 확인했다. | 해결 |
+| C1-12 | in-hu | aliases, roles, fields, active_period 1274~1311, achievements ①~⑤, related_events를 수정안대로 바꿨다. sources에 '겁령구'를 넣었고 열람으로 확인했다. | 해결 |
+| C1-13 | in-hu | hint 3~5를 수정안대로 고쳤다. "부원 세력", 메타 문장이 빠졌다. 5번의 몽골 출신과 공주 시종이 기철과 갈린다. source는 '인후' E0047135. | 해결 |
+| C1-14 | gi-cheol | aliases `["바얀부카"]`. | 해결 |
+| C1-15 | ui-cheon | achievements 2를 "교장 … (흔히 속장경으로 잘못 불린다)"로 고쳤다. | 해결 |
+| C1-16 | ui-cheon | hint 4를 교관겸수 취지(지눌과 겹침)로, hint 5를 송 유학·교장·천태종으로 고쳤다. aliases에 '대각국사'를 넣었고 힌트에는 들어 있지 않다. | 해결 |
+
+### 새 지적
+
+없음. 고친 힌트(jo-wi-chong 2·4, choe-mu-seon 4·5, in-hu 3~5, ui-cheon 4·5)를 다시 보았다. 이름·별칭 노출이 없고, 1~2번에 결정적 단서가 없으며, 내용이 출처 본문(1차 열람분과 이번 열람 2건)에 있다.
+
+참고(지적 아님): in-hu confusable_ids의 gongmin은 시기가 맞지 않는다. 1차에서 권고한 대로 충렬왕이 DB에 들어오면 교체한다.
+
+### 4단계 3a 2차 회차 요약
+
+- C1-1~C1-16: 16건 모두 해결.
+- 새 지적: 0건.
+- 문제 없음으로 통과한 id: cheok-jun-gyeong, jo-wi-chong, yun-gwan, il-yeon, gim-bu-sik, yi-seung-hyu, choe-mu-seon, in-hu, gi-cheol, ui-cheon.
+- 남은 미해결: **0건**.
