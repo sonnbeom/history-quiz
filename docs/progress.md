@@ -22,8 +22,22 @@
 - [x] 1. exam-researcher → exam_figures.md (2026-11-26 완료, 사용자 승인 대기)
 - [x] 2. figure-db-builder → schema.md (2026-11-26)
 - [x] 3. 샘플 10명: figure-db-builder → hint-writer → fact-checker 반복 (2026-11-26 완료, 4차 검수 통과)
-- [ ] 4. 나머지를 30명 단위로 (단위마다 보고) — 1묶음 완료, 2묶음 진행
+- [ ] 4. 나머지 인물 힌트·검수 — 1묶음·2묶음·3a 완료(80명 검수 통과), 3b 힌트만 작성
 - [ ] 5. 최종 정리: 전체 인물 수, 시대별 분포, 자주 나온 검수 문제, 사용자가 직접 확인할 출처 이용 조건
+
+## TODO (새 세션은 여기부터) — 2026-11-27 기준
+현재 작업 방식: 사용자가 토큰을 아끼려 해서 **작업 하나(아래 체크 한 칸)씩만 하고 기록·커밋·push 후 멈춘다.** 사용자가 "이어서 해"라고 하면 다음 칸을 한다. 묶음 하나 ≈ 28만 토큰, 약 15분.
+각 묶음 순서: ① hint-writer(힌트 작성, url은 figures에 있는 것만, 없으면 null) → ② fact-checker 1차 검수(인물당 대백과 1항목만 열람, review.md에 "4단계 3x 1차 검수" 절) → ③ figure-db-builder(figures.json만)·hint-writer(hints.json만) 병렬 수정 → ④ fact-checker 재검수(지적 항목만, 새 열람 최소) → `node tools/validate.js` 오류 0 확인.
+
+- [x] 3a 10명 (척준경~의천) — 검수 통과
+- [x] 3b ① 힌트 작성 — ji-nul, yo-se, gwanghaegun, jeong-seon, bak-je-ga, chae-je-gong, yeonsangun, gwon-yul, sin-rip, gim-si-min
+- [ ] 3b ② 1차 검수 ← **다음 할 일**. 함께 볼 것: yi-won-ik 힌트 3의 "광해군" 노출, 아래 "4단계 3·4묶음" 기록의 3b 확인 목록
+- [ ] 3b ③ 수정 → ④ 재검수
+- [ ] 3c ①~④ — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
+- [ ] 4a ①~④ — hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
+- [ ] 4b ①~④ — hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
+- [ ] 5단계 최종 정리 (위 5번 항목 내용) → 단계 4·5 체크
+- 남은 자잘한 것: 미등록 confusable id 4개(gim-heum-dol, danjong, choe-seung-ro, seo-hui), in-hu confusable gongmin 시기 불일치 — 5단계 때 정리 방침 결정.
 
 ## 결정된 사항
 - 2026-11-26: 사용자가 단계별 승인 없이 끝까지 진행하라고 지시했다("승인 없이 계속, 모두 허용"). 단계마다 progress 기록과 커밋은 계속한다. schema 변경 제안은 오케스트레이터가 판단해 반영하고 여기에 기록한다.
