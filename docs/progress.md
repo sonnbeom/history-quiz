@@ -73,4 +73,5 @@
   - 4b: hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
 - 2026-11-27: 3a 힌트 작성 완료(힌트 있는 인물 80명, validate 오류 0). url은 전부 null. 검수 전.
   - 검수 때 볼 것: in-hu는 5번까지 기철과 구별 안 됨(figures 정보 부족) → 이력 확인해 5번 보강 또는 수록 제외. 최무선 4번이 한 단계 빨리 확정. 출처 표제 미확인: 진포대첩, 무신정변, 교장, 묘청의 난, 이자겸의 난.
-- 다음 할 일: 3a(10명) fact-checker → 수정 반복 → 커밋 후 멈춤. 이후 3b → 3c → 4a → 4b → 5단계.
+- 2026-11-27: 3a 1차 검수 완료 → review.md "4단계 3a 1차 검수" 절, 지적 C1-1~C1-16 미해결. in-hu는 대백과 E0047135로 확인됨(몽골 출신 겁령구, 1250~1311) → 수록 유지, C1-12·C1-13대로 보강.
+- 다음 할 일: 3a 수정(builder는 figures.json, writer는 hints.json, 병렬) → 재검수(지적 항목만, 새 웹 열람 최소) → 커밋 후 멈춤. 이후 3b → 3c → 4a → 4b → 5단계.
