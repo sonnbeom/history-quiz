@@ -916,3 +916,19 @@ validate.js는 이름·별칭 **전체 문자열**만 찾는다. 그래서 검�
 - 1차 기록 정정 2건: B1-9의 '중방' 인용, C절 yi-in-yeong의 '의병' 인용. 둘 다 검색 요약을 옮긴 것이고 본문에 없었다.
 - 문제 없음으로 통과한 id(26명): **bak-sang-jin, yang-gi-tak, min-yeong-hwan, choe-ik-hyeon, an-jung-geun, choe-yeong, choe-chung-heon, yi-ui-bang, gang-jo, goryeo-hyeonjong, myo-cheong, song-si-yeol, yi-won-ik, yeo-un-hyeong, jinheung, jangsu, gogugwon, gaero, ugeo, joseon-seongjong, gim-han-jong, bak-jong-cheol, yi-han-yeol, yu-gil-jun, bak-yeong-hyo, jeong-jung-bu**. 기존 40명은 이번에 바뀌지 않아 통과 상태를 유지한다.
 - 남은 미해결: **4건**(B2-1 muryeong, B2-2 jeon-du-hwan, B2-3 yi-in-yeong, B2-4 jo-gwang-jo).
+
+## 4단계 2묶음 3차 검수 (muryeong, jeon-du-hwan, yi-in-yeong, jo-gwang-jo / 2026-11-27)
+
+범위: 2차 B2-1~B2-4 반영 여부만 확인. 커밋 f571c47의 figures.json·hints.json diff를 대조했다. URL은 모두 2차에서 열람한 것이라 다시 열지 않았다.
+
+| 번호 | 인물 id | 대상 | 점검 항목 | 확인 내용 | 근거 URL | 상태 |
+|---|---|---|---|---|---|---|
+| B2-1 | muryeong | hint 5 source, figures sources | 8 | 우리역사넷 '무령왕'(kc_n100930)이 hint 5와 figures sources에 추가됐다. 이 면이 "무령왕대에는 22개의 담로 … 왕족들을 파견"을 뒷받침한다. 힌트 문장은 바뀌지 않았다. | https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_n100930&code=kc_age_10 | 해결 |
+| B2-2 | jeon-du-hwan | hint 4·5 source, figures sources | 8 | '5·18광주민주화운동' E0038496이 hint 4, hint 5, figures sources에 추가됐다. "무력진압"과 "통일주체국민회의 대의원의 선거에 의해 제11대 대통령으로 취임"이 각각 4번 "무력으로"와 5번 "간접 선거"를 뒷받침한다. 힌트 문장은 바뀌지 않았다. | https://encykorea.aks.ac.kr/Contents/Item/E0038496 | 해결 |
+| B2-3 | yi-in-yeong | hint 5 source | 8 | '의병' E0043232가 빠졌다. 남은 '십삼도창의군'과 '이인영'이 5번 내용을 모두 뒷받침한다. | https://encykorea.aks.ac.kr/Article/E0033997 , https://encykorea.aks.ac.kr/Article/E0045622 | 해결 |
+| B2-4 | jo-gwang-jo | hint 3 문장·source | 1, 6, 7, 8 | 문장이 "향약을 널리 보급하고, 『소학』을 인재 양성의 바탕으로 삼자고 강조했다."로 바뀌었고, 우리역사넷 「≪소학≫실천운동」이 추가됐다. 사실관계: 향약은 조광조 항목("『여씨향약』을 8도에 실시")이, 소학은 「≪소학≫실천운동」("≪소학≫을 인재양성의 근본으로 … 삼아야 합니다")이 뒷받침한다. 이름 노출: 조광조·정암·효직·문정이 없다(기계 검사). 원문 "근본으로"를 "바탕으로 삼자고 강조했다"로 풀어 써서 사료를 그대로 옮기지 않았다. 3번 힌트라 향약 관련 인물(이황·이이)이 떠올라도 문제 없다. 5번에서 답이 확정되는 것은 그대로다. | https://encykorea.aks.ac.kr/Article/E0051606 , https://contents.history.go.kr/mobile/nh/view.do?levelId=nh_028_0040_0010_0030 | 해결 |
+
+- `node tools/validate.js`: 인물 70명, 힌트 70명, 오류 0건, 경고 0건. 미등록 confusable id 17개는 참고용 출력이다(DB에 아직 없는 인물이고 오류가 아니다).
+- 이번에 바뀐 것은 위 네 사람의 source 추가·삭제와 jo-gwang-jo hint 3 문장뿐이다. 다른 인물은 바뀌지 않았다.
+- 문제 없음으로 통과한 id(이번 회차): **muryeong, jeon-du-hwan, yi-in-yeong, jo-gwang-jo**. 2차에서 통과한 26명과 합쳐 2묶음 30명이 모두 통과했다.
+- 남은 미해결: **0건**.

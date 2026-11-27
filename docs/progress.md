@@ -55,8 +55,9 @@
 - 추가: gim-won-bong, yi-seung-man, ji-cheong-cheon, gongmin, jeongjo, joseon-sukjong, sinmun, gim-gyu-sik, heungseon-daewongun, goryeo-sukjong, sejo, sejong, gwangjong, gyeon-hwon, gim-ok-gyun, min-gyeom-ho, yang-heon-su, gim-hong-jip, no-tae-u, gim-dae-jung, gim-yeong-sam, jeong-do-jeon, yi-ja-gyeom, sunjong, dae-jo-yeong, baekje-seong, goryeo-seongjong, gung-ye, eo-jae-yeon, heo-wi
 - 결정: 힌트 출처 형식을 `source`→`sources` 배열로 변경(schema 7절, validate.js, hint-writer 반영). 흥선 대원군 별칭 "대원군" 유지(다른 대원군 수록 시 재검토). 같은 묘호 이름 표기는 "숙종(조선)"/"숙종(고려)" 식(고려 고종 수록 시 "고종"→"고종(조선)"으로 정리). 노태우는 대백과 인물 항목이 없어 대통령기록관 약력 + 대백과 사건 항목 사용.
 - 다음 2묶음 후보: 3회 출제 중 표 40번(박상진)부터 — 양기탁, 민영환, 최익현, 안중근, 최영 등.
-### 4단계 2묶음 (진행 중, 2026-11-27)
+### 4단계 2묶음 (2026-11-27 완료, 검수 3차 통과 — 총 70명)
 - figures.json에 30명 추가(총 70명): bak-sang-jin ~ jeong-jung-bu(exam_figures 3-1절 40~70번). 힌트 작성 중 사용량 한도로 중단 → 재개.
 - 사용자 지시(2026-11-27): 사용량이 많아지면 멈춘다. /usage의 current가 50%를 넘으면 중단. (Claude는 /usage를 직접 볼 수 없으므로 묶음 단계마다 멈출 수 있는 지점에서 커밋해 둔다.)
 - 2026-11-27: 사용자 전역 설정에 토큰 가드 추가(~/.claude/token-guard.sh, statusline.sh). 프롬프트 1개에서 5시간 사용량 +10%p 이상이거나 사용량이 50% 이상이면 자동으로 멈춘다. 멈추면 progress.md의 "다음 할 일"부터 이어간다.
-- 다음 할 일: 4단계 2묶음 1차 검수(fact-checker) → 수정 반복 → 3묶음(남은 19명).
+- 2묶음 결정: 우거왕 start null(재위 시작 미상), 최익현 state 대한제국, 전두환은 노태우처럼 대통령기록관 약력+대백과 사건 항목. 4번에서 확정되던 6명은 4번을 겹치게 고침(양기탁·묘청·송시열은 허용). 최익현 5번 "흥선 대원군", 박영효 5번 "김홍집" 언급은 허용.
+- 다음 할 일: 3묶음(exam_figures 3-1절의 남은 2회 이상 한국인 약 19명) figure-db-builder → hint-writer → fact-checker → 수정 반복 → 5단계 최종 정리.
