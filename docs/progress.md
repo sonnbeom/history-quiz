@@ -65,4 +65,10 @@
 - figures.json에 남은 49명(exam_figures 3-1절 #71~#119)을 한 번에 추가 → 총 119명. 외국인(#120~#124) 제외. (앞서 "남은 19명"이라 적은 것은 계산 착오: 샘플 이후 109명 = 30+30+30+19.)
 - 30명 단위 규칙을 지키려고 힌트·검수는 나눠서 진행: 3묶음 = cheok-jun-gyeong ~ an-hui-je(30명), 4묶음 = hwang-sang-gyu ~ seong-hyeon(19명).
 - 확인 필요: in-hu(인후) 이력 불확실 — 확인 못하면 수록 제외 검토. 미등록 confusable id 4개 남음(gim-heum-dol, danjong, choe-seung-ro, seo-hui).
-- 다음 할 일: 3묶음 30명 hint-writer → fact-checker → 수정 반복 → 4묶음 19명 → 5단계.
+- 사용자 지시(2026-11-27): 토큰을 아끼려고 작업을 더 잘게 나눈다. 한 번에 10명씩만 힌트 작성 → 검수 → 수정 → 커밋 → 멈춤. "이어서 해"를 들으면 다음 10명을 진행한다.
+  - 3a: cheok-jun-gyeong, jo-wi-chong, yun-gwan, il-yeon, gim-bu-sik, yi-seung-hyu, choe-mu-seon, in-hu, gi-cheol, ui-cheon
+  - 3b: ji-nul, yo-se, gwanghaegun, jeong-seon, bak-je-ga, chae-je-gong, yeonsangun, gwon-yul, sin-rip, gim-si-min
+  - 3c: joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
+  - 4a: hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
+  - 4b: hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
+- 다음 할 일: 3a(10명) hint-writer → fact-checker → 수정 반복 → 커밋 후 멈춤. 이후 3b → 3c → 4a → 4b → 5단계.
