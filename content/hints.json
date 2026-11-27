@@ -2724,9 +2724,10 @@
     },
     {
       "level": 3,
-      "text": "향약을 널리 보급하고 소학 교육을 장려했다.",
+      "text": "향약을 널리 보급하고, 『소학』을 인재 양성의 바탕으로 삼자고 강조했다.",
       "sources": [
-        { "title": "한국민족문화대백과사전 '조광조'", "url": "https://encykorea.aks.ac.kr/Article/E0051606" }
+        { "title": "한국민족문화대백과사전 '조광조'", "url": "https://encykorea.aks.ac.kr/Article/E0051606" },
+        { "title": "우리역사넷 '≪소학≫실천운동'", "url": "https://contents.history.go.kr/mobile/nh/view.do?levelId=nh_028_0040_0010_0030" }
       ]
     },
     {
@@ -2977,6 +2978,7 @@
       "text": "지방 거점인 22담로에 왕족을 보냈고, 1971년 공주에서 발굴된 벽돌무덤의 지석으로 그 무덤의 주인공임이 확인되었다.",
       "sources": [
         { "title": "한국민족문화대백과사전 '무령왕'", "url": "https://encykorea.aks.ac.kr/Article/E0019017" },
+        { "title": "우리역사넷 '무령왕'", "url": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_n100930&code=kc_age_10" },
         { "title": "한국민족문화대백과사전 '담로'", "url": "https://encykorea.aks.ac.kr/Contents/Item/E0013778" },
         { "title": "한국민족문화대백과사전 '무령왕릉'", "url": "https://encykorea.aks.ac.kr/Article/E0019018" }
       ]
@@ -3092,8 +3094,7 @@
       "text": "13도 창의군의 총대장으로 추대되어 서울 진공 작전을 준비하며 각국 영사관에 의병을 교전 단체로 인정해 달라고 요구했으나, 부친상을 당해 고향으로 돌아갔다.",
       "sources": [
         { "title": "한국민족문화대백과사전 '십삼도창의군'", "url": "https://encykorea.aks.ac.kr/Article/E0033997" },
-        { "title": "한국민족문화대백과사전 '이인영'", "url": "https://encykorea.aks.ac.kr/Article/E0045622" },
-        { "title": "한국민족문화대백과사전 '의병'", "url": "https://encykorea.aks.ac.kr/Article/E0043232" }
+        { "title": "한국민족문화대백과사전 '이인영'", "url": "https://encykorea.aks.ac.kr/Article/E0045622" }
       ]
     }
   ],
@@ -3202,7 +3203,8 @@
       "level": 4,
       "text": "1980년 광주의 민주화 운동을 무력으로 진압한 세력의 중심에 있었다.",
       "sources": [
-        { "title": "한국민족문화대백과사전 '신군부'", "url": "https://encykorea.aks.ac.kr/Article/E0073743" }
+        { "title": "한국민족문화대백과사전 '신군부'", "url": "https://encykorea.aks.ac.kr/Article/E0073743" },
+        { "title": "한국민족문화대백과사전 '5·18광주민주화운동'", "url": "https://encykorea.aks.ac.kr/Contents/Item/E0038496" }
       ]
     },
     {
@@ -3210,6 +3212,7 @@
       "text": "1980년 간접 선거로 대통령에 올랐고, 1987년 직선제 개헌 요구를 거부하는 4·13 호헌 조치를 발표했다가 6월 민주 항쟁에 부딪혔다.",
       "sources": [
         { "title": "대통령기록관 '전두환 대통령 약력'", "url": "https://www.pa.go.kr/online_contents/president/history11.jsp" },
+        { "title": "한국민족문화대백과사전 '5·18광주민주화운동'", "url": "https://encykorea.aks.ac.kr/Contents/Item/E0038496" },
         { "title": "한국민족문화대백과사전 '사일삼 호헌조치'", "url": "https://encykorea.aks.ac.kr/Article/E0073741" }
       ]
     }
