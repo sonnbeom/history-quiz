@@ -61,3 +61,8 @@
 - 2026-11-27: 사용자 전역 설정에 토큰 가드 추가(~/.claude/token-guard.sh, statusline.sh). 프롬프트 1개에서 5시간 사용량 +10%p 이상이거나 사용량이 50% 이상이면 자동으로 멈춘다. 멈추면 progress.md의 "다음 할 일"부터 이어간다.
 - 2묶음 결정: 우거왕 start null(재위 시작 미상), 최익현 state 대한제국, 전두환은 노태우처럼 대통령기록관 약력+대백과 사건 항목. 4번에서 확정되던 6명은 4번을 겹치게 고침(양기탁·묘청·송시열은 허용). 최익현 5번 "흥선 대원군", 박영효 5번 "김홍집" 언급은 허용.
 - 다음 할 일: 3묶음(exam_figures 3-1절의 남은 2회 이상 한국인 약 19명) figure-db-builder → hint-writer → fact-checker → 수정 반복 → 5단계 최종 정리.
+### 4단계 3·4묶음 (진행 중, 2026-11-27)
+- figures.json에 남은 49명(exam_figures 3-1절 #71~#119)을 한 번에 추가 → 총 119명. 외국인(#120~#124) 제외. (앞서 "남은 19명"이라 적은 것은 계산 착오: 샘플 이후 109명 = 30+30+30+19.)
+- 30명 단위 규칙을 지키려고 힌트·검수는 나눠서 진행: 3묶음 = cheok-jun-gyeong ~ an-hui-je(30명), 4묶음 = hwang-sang-gyu ~ seong-hyeon(19명).
+- 확인 필요: in-hu(인후) 이력 불확실 — 확인 못하면 수록 제외 검토. 미등록 confusable id 4개 남음(gim-heum-dol, danjong, choe-seung-ro, seo-hui).
+- 다음 할 일: 3묶음 30명 hint-writer → fact-checker → 수정 반복 → 4묶음 19명 → 5단계.
