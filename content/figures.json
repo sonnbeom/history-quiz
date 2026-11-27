@@ -1916,7 +1916,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '박상진'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0020757"
+      },
+      {
+        "title": "한국민족문화대백과사전 '대한광복회'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0014922"
       }
     ],
     "confusable_ids": [
@@ -1957,7 +1961,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '양기탁'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0035440"
       }
     ],
     "confusable_ids": [
@@ -1996,7 +2000,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '민영환'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0020206"
       }
     ],
     "confusable_ids": [
@@ -2012,7 +2016,7 @@
       "면암"
     ],
     "era": "개항기",
-    "state": "조선",
+    "state": "대한제국",
     "roles": [
       "문신·관료",
       "독립운동가"
@@ -2039,7 +2043,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '최익현'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0057582"
       }
     ],
     "confusable_ids": [
@@ -2082,7 +2086,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '안중근'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0035026"
+      },
+      {
+        "title": "우리역사넷 '안중근의 동양평화론'",
+        "url": "https://contents.history.go.kr/front/hm/view.do?treeId=020107&tabId=01&levelId=hm_121_0130"
       }
     ],
     "confusable_ids": [
@@ -2107,14 +2115,14 @@
       "정치"
     ],
     "active_period": {
-      "start": 1350,
+      "start": 1352,
       "end": 1388
     },
     "achievements": [
       "홍건적과 왜구를 물리치며 이름을 떨친 무장이다.",
       "1376년 홍산에서 왜구를 크게 무찔렀다.",
       "1388년 요동 정벌을 추진했으나 위화도 회군 뒤 이성계 세력에게 제거되었다.",
-      "왜구 격퇴 활동이 시작된 1350년부터 처형된 1388년까지를 활동 기간으로 잡았다."
+      "연도가 확인되는 첫 활동인 1352년 조일신의 난 평정부터 처형된 1388년까지를 활동 기간으로 잡았다."
     ],
     "related_events": [
       "홍산 대첩",
@@ -2125,7 +2133,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '최영'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0057469"
       }
     ],
     "confusable_ids": [
@@ -2165,7 +2173,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '최충헌'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0057707"
       }
     ],
     "confusable_ids": [
@@ -2204,7 +2212,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '이의방'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0045521"
       }
     ],
     "confusable_ids": [
@@ -2243,7 +2251,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '강조'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0001383"
       }
     ],
     "confusable_ids": [
@@ -2284,8 +2292,8 @@
     "exam_count": 3,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '현종(고려)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '현종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0063417"
       }
     ],
     "confusable_ids": [
@@ -2308,14 +2316,14 @@
       "사상·종교"
     ],
     "active_period": {
-      "start": 1135,
-      "end": 1136
+      "start": 1128,
+      "end": 1135
     },
     "achievements": [
       "승려로서 서경(평양) 천도를 주장한 서경파의 중심 인물이다.",
       "칭제건원과 금 정벌을 주장했다.",
-      "1135년 서경에서 반란을 일으켰으나 1136년 김부식이 이끈 관군에게 진압되었다.",
-      "난이 일어난 1135년부터 진압된 1136년까지를 활동 기간으로 잡았다."
+      "1135년 서경에서 국호를 대위라 하며 난을 일으켰으나 그해 조광 등 같은 편에게 죽임을 당했고, 난은 1136년 김부식의 관군에게 진압되었다.",
+      "서경 천도를 처음 주장한 1128년부터 죽은 1135년까지를 활동 기간으로 잡았다."
     ],
     "related_events": [
       "서경 천도 운동",
@@ -2326,7 +2334,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '묘청'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0018892"
+      },
+      {
+        "title": "한국민족문화대백과사전 '묘청의 난'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0018893"
       }
     ],
     "confusable_ids": [
@@ -2370,7 +2382,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '송시열'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0030898"
       }
     ],
     "confusable_ids": [
@@ -2410,7 +2422,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '이원익'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0045372"
       }
     ],
     "confusable_ids": [
@@ -2452,7 +2464,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '조광조'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0051606"
       }
     ],
     "confusable_ids": []
@@ -2493,7 +2505,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '여운형'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0036436"
       }
     ],
     "confusable_ids": [
@@ -2538,7 +2550,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '진흥왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0055013"
       }
     ],
     "confusable_ids": [
@@ -2579,7 +2591,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '장수왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0048605"
       }
     ],
     "confusable_ids": [
@@ -2620,7 +2632,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '고국원왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0003339"
       }
     ],
     "confusable_ids": [
@@ -2660,7 +2672,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '개로왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0001616"
       }
     ],
     "confusable_ids": [
@@ -2702,7 +2714,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '무령왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0019017"
       }
     ],
     "confusable_ids": [
@@ -2724,13 +2736,14 @@
       "외교"
     ],
     "active_period": {
-      "start": -109,
+      "start": null,
       "end": -108
     },
     "achievements": [
       "위만의 손자로 고조선의 마지막 왕이다.",
       "한과 대립하다 한 무제의 침략을 받았다.",
-      "기원전 108년 내부 분열 끝에 왕검성이 함락되어 고조선이 멸망했다."
+      "기원전 108년 내부 분열 끝에 왕검성이 함락되어 고조선이 멸망했다.",
+      "재위 시작 연도는 전하지 않아 null로 두었다. 한의 침략은 기원전 109년에 시작되었고 기원전 108년에 멸망했다."
     ],
     "related_events": [
       "한 무제의 침략",
@@ -2741,7 +2754,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '우거왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0039783"
       }
     ],
     "confusable_ids": []
@@ -2779,8 +2792,8 @@
     "exam_count": 2,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '성종(조선)'",
-        "url": null
+        "title": "한국민족문화대백과사전 '성종'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0029554"
       }
     ],
     "confusable_ids": [
@@ -2820,7 +2833,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '이인영'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0045622"
       }
     ],
     "confusable_ids": [
@@ -2847,7 +2860,7 @@
     "achievements": [
       "대한광복회 간부로 활동했다.",
       "친일 부호 처단과 군자금 모금에 참여했다.",
-      "1918년 무렵 일제에 검거되었다."
+      "1918년 1월 조직이 드러나 일제에 체포되었고, 1921년 순국했다."
     ],
     "related_events": [
       "대한광복회",
@@ -2857,7 +2870,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김한종'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0010954"
+      },
+      {
+        "title": "한국민족문화대백과사전 '대한광복회'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0014922"
       }
     ],
     "confusable_ids": [
@@ -2893,7 +2910,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '박종철'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0079003"
       }
     ],
     "confusable_ids": [
@@ -2933,8 +2950,16 @@
     "exam_count": 2,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '전두환'",
-        "url": null
+        "title": "대통령기록관 '전두환 대통령 약력'",
+        "url": "https://www.pa.go.kr/online_contents/president/history11.jsp"
+      },
+      {
+        "title": "한국민족문화대백과사전 '12·12 군사반란'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0034018"
+      },
+      {
+        "title": "한국민족문화대백과사전 '사일삼 호헌조치'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0073741"
       }
     ],
     "confusable_ids": [
@@ -2963,7 +2988,7 @@
     },
     "achievements": [
       "1987년 6월 연세대 학생으로 시위에 참가했다가 최루탄에 맞아 쓰러졌다.",
-      "그해 7월 숨져 6월 민주 항쟁이 확산되는 계기가 되었다."
+      "6월 9일의 최루탄 피격 사건이 6월 민주 항쟁 확산의 계기가 되었고, 그는 7월 5일 숨졌다."
     ],
     "related_events": [
       "6월 민주 항쟁"
@@ -2972,7 +2997,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '이한열'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0079011"
       }
     ],
     "confusable_ids": [
@@ -3012,7 +3037,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '유길준'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0041318"
       }
     ],
     "confusable_ids": [
@@ -3054,7 +3079,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '박영효'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0020961"
       }
     ],
     "confusable_ids": [
@@ -3093,7 +3118,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '정중부'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0050935"
+      },
+      {
+        "title": "한국민족문화대백과사전 '중방'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0053757"
       }
     ],
     "confusable_ids": [

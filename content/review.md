@@ -622,3 +622,166 @@ validate.js는 이름·별칭 **전체 문자열**만 찾는다. 그래서 검�
 - 새 문제: 0건.
 - 문제 없음으로 통과한 id: goryeo-seongjong, no-tae-u, gim-dae-jung, gim-yeong-sam, heungseon-daewongun, yi-seung-man, sinmun, sunjong, gim-hong-jip, sejong. 2차까지 통과한 20명과 합쳐 **4단계 1묶음 30명이 모두 통과**했다.
 - 남은 미해결: **0건**.
+
+## 4단계 2묶음 1차 검수 (bak-sang-jin, yang-gi-tak, min-yeong-hwan, choe-ik-hyeon, an-jung-geun, choe-yeong, choe-chung-heon, yi-ui-bang, gang-jo, goryeo-hyeonjong, myo-cheong, song-si-yeol, yi-won-ik, jo-gwang-jo, yeo-un-hyeong, jinheung, jangsu, gogugwon, gaero, muryeong, ugeo, joseon-seongjong, yi-in-yeong, gim-han-jong, bak-jong-cheol, jeon-du-hwan, yi-han-yeol, yu-gil-jun, bak-yeong-hyo, jeong-jung-bu / 2026-11-27)
+
+범위: 새로 추가된 30명의 figures·hints 전체(점검 항목 1~8). 기존 40명은 confusable_ids 변경분만 확인했다(비교 기준은 e27a25f, 1묶음 완료 커밋).
+"열람"은 WebFetch로 본문을 열어 문장을 확인한 것이고, "검색만"은 검색 결과 요약으로만 본 것이다. 1묶음과 번호가 겹치지 않게 문제 번호는 B1-n으로 매긴다.
+
+### A. 기계 검사
+
+- `node tools/validate.js`: **오류 0건, 경고 157건**, 종료 코드 0. 경고는 모두 "확인된 url 없음"이다. figures 쪽 30건(새 30명 전원)과 hints 쪽 127건이다. 처리는 B1-21과 D절에 적었다. "미등록 confusable id 17개"는 아직 DB에 없는 인물을 알려 주는 안내 출력이라 문제로 세지 않는다. 새 30명에서 생긴 미등록 id는 gim-bu-sik(myo-cheong), gwanghaegun(yi-won-ik) 두 개다.
+- 항목 2: 30명 모두 era·state·roles·fields가 schema.md 허용 목록 안에 있다. roles·fields는 1~3개이고 중복이 없다. achievements는 2~5개이고, active_period는 start ≤ end이며 연도 0이 없다. 목록 안의 값이라도 배정이 맞는지는 B1-1~B1-3에서 따로 본다.
+- 기존 40명 변경분: confusable_ids만 5명 바뀌었고, 힌트와 다른 필드는 바뀌지 않았다.
+  - yi-seung-man에 yeo-un-hyeong 추가
+  - heungseon-daewongun에 choe-ik-hyeon 추가
+  - gim-ok-gyun에 yu-gil-jun 추가
+  - goryeo-seongjong에 goryeo-hyeonjong, joseon-seongjong 추가
+  - heo-wi에 an-jung-geun 추가
+
+  다섯 건 모두 상대 쪽에도 들어 있어 양방향이다. 새 인물과 기존 인물 사이의 나머지 연결(choe-yeong↔yi-seong-gye·gongmin·jeong-do-jeon, choe-chung-heon↔choe-u, jinheung↔baekje-seong, jangsu↔gwanggaeto, jeon-du-hwan↔no-tae-u·bak-jeong-hui·gim-yeong-sam 등)도 단방향 경고가 0건이다. **기존 40명은 역링크 기준으로 통과.**
+- 항목 6(검수자 스크립트): 30명의 힌트 150개를 다음 기준으로 훑었다.
+  - name과 aliases
+  - 괄호를 뗀 이름(현종·성종)
+  - "왕"을 뗀 왕호(진흥·장수·고국원·개로·무령·우거)
+  - 세 글자 이름의 뒤 두 글자
+
+  자기 이름·별칭·묘호·호가 들어간 힌트는 **0건**이다. 최영 3번 "다른 장수들"의 '장수'는 일반 명사다. 다른 DB 인물의 이름이 든 힌트는 70명 전체에서 아래와 같다.
+  - choe-ik-hyeon 5 "흥선 대원군", bak-yeong-hyo 5 "김홍집": C절에서 판단한다.
+  - 기존 heungseon-daewongun 3 "최익현", 기존 gim-jeong-hui 4 "진흥왕": 상대 인물이 이번에 DB에 들어오면서 생겼다. 정답을 드러내지 않으므로 문제로 세지 않는다(E절).
+  - gim-jeong-hui 2 "강조": '강조했다'라는 동사라 해당 없음.
+
+  150개는 눈으로도 확인했다. 묘청 5번의 "대위"는 국호라서 이름·별칭이 아니다.
+- 항목 8(별칭): validate.js 기준 충돌은 0건이다. 별칭이 백과사전 표기와 맞는지도 확인했다.
+  - 장수왕 '거련': "본명은 거련(巨連) 또는 연(璉)"
+  - 개로왕 '여경': "이름은 '여경(餘慶)'"
+  - 현종 '왕순': "이름은 왕순(王詢)"
+  - 성종 '이혈', 진흥왕 '삼맥종', 무령왕 '사마', 박영효 '금릉위': 모두 해당 항목과 맞다.
+
+  고국원왕의 한 글자 별칭 '쇠'는 E절 참고.
+
+### B. 문제 항목
+
+| # | 인물 id | 대상 | 점검 항목 | 이유 | 수정안 | 근거 URL | 상태 |
+|---|---|---|---|---|---|---|---|
+| B1-1 | myo-cheong | active_period, achievements[2·3], hint 5 | 1, 2 | 오케스트레이터 확인 요청분(1135~1136). 묘청 항목: "1128년(인종 6)에 … 서경천도론을 처음 제기하였다." 사망 연도는 1135년(인종 13)이고 "조광의 배신으로 부하들에게 살해"되었다. 1136년(관군의 서경 함락)은 묘청이 죽은 뒤의 일이다. 대표 업적은 서경 천도 운동(1128~1135)인데, 지금 기간은 난만 잡은 데다 묘청 사후까지 이어진다. achievements[2] "1135년 … 반란을 일으켰으나 1136년 김부식이 이끈 관군에게 진압되었다"는 난의 경과로는 맞지만, 묘청 자신은 1135년에 같은 편에게 죽었다는 사실이 빠졌다. hint 5 "반란을 일으켰다가 진압되었다"도 같은 문제가 있으나 오류라고까지 하기는 어렵다. | active_period {start: 1128, end: 1135}. achievements[2]: "1135년 서경에서 국호를 대위라 하며 난을 일으켰으나 그해 조광 등 같은 편에게 죽임을 당했고, 난은 1136년 김부식의 관군에게 진압되었다." achievements[3]: "서경 천도를 처음 주장한 1128년부터 죽은 1135년까지를 활동 기간으로 잡았다." hint 5는 "…반란을 일으켰으나 실패했다"로 쓰면 더 정확하다(선택). | https://encykorea.aks.ac.kr/Article/E0018892 (열람), https://encykorea.aks.ac.kr/Article/E0018893 (검색만) | 미해결 |
+| B1-2 | ugeo | active_period.start | 1, 2 | 오케스트레이터 확인 요청분(-109~-108). schema 5절은 국왕을 "재위 기간"으로 잡고 "미상은 null"로 쓴다. 우거왕 항목은 "위만조선의 제3대(재위: ?~BCE.108) 왕"이라 즉위 연도가 전하지 않는다. -109는 즉위가 아니라 한이 침략을 시작한 해다("서기전 109년 마침내 무력으로 침략해왔다"). 지금 값은 재위 기간이 아니고 achievements에 근거도 없다. 끝 -108은 맞다("서기전 108년 6월 자객을 보내 우거왕을 살해"). 확인 필요: 연도 비교에는 -109가 퀴즈에 더 유리할 수 있어 규칙 해석 문제로 남긴다(1묶음 샘플 L-2 이성계와 같은 유형). | 원칙대로면 {start: null, end: -108}. -109를 유지하려면 achievements에 "한의 침략이 시작된 기원전 109년부터 멸망한 108년까지를 활동 기간으로 잡았다(즉위 연도는 전하지 않음)"를 넣는다(3개 → 4개). 결정은 오케스트레이터. | https://encykorea.aks.ac.kr/Article/E0039783 (열람) | 미해결(확인 필요) |
+| B1-3 | choe-ik-hyeon | state | 2 | 오케스트레이터 확인 요청분(조선). schema 2절은 "대한제국"의 예로 "의병장"을 직접 든다. 3절은 1895년 이후 의병장을 "독립운동가"로 쓰고, 최익현 roles에도 '독립운동가'가 있다. 출제 표지는 "을사의병, 개항 반대 상소"(exam_figures.md 43번)로, 1897년 이전(1873·1876 상소)과 대한제국기(1905 청토오적소, 1906 태인 의병)에 하나씩이라 판단이 갈린다. 힌트도 4·5번 뒷부분은 대한제국기, 3번과 5번 앞부분은 조선기다. '조선'이 틀렸다고 단정할 수는 없다. 다만 같은 의병장인 허위·이인영은 '대한제국'이라 국가 비교가 어긋난다. | '대한제국'으로 바꾸기를 권한다(schema 2절 의병장 예시, roles '독립운동가'와 맞음). '조선'을 유지하려면 "대표 활동을 1873·1876년 상소로 본다"는 근거를 achievements에 적는다. 결정은 오케스트레이터. | https://encykorea.aks.ac.kr/Article/E0057582 (열람) | 미해결(확인 필요) |
+| B1-4 | yi-han-yeol (bak-jong-cheol 동반) | hint 4, achievements[1] | 1 | 공통 문장인 4번 "그의 죽음은 국민의 분노를 불러 6월 민주 항쟁이 커지는 데 큰 영향을 주었다"는 이한열에게 맞지 않는다. 이한열 항목: "이한열의 최루탄 피격 사건은 6월항쟁을 확산하게 하는 중요한 계기가 되었다." 피격은 6월 9일, 사망은 "7월 5일"(6·29 선언 뒤)이다. 항쟁을 키운 것은 죽음이 아니라 피격이다. achievements[1] "그해 7월 숨져 6월 민주 항쟁이 확산되는 계기가 되었다"도 같은 오류다. 박종철에게는 지금 문장이 맞다(고문치사 사건을 계기로 반독재 시위가 전국에 확산). | 4번을 두 사람 모두에게 맞게 고친다: "그가 희생된 사건은 국민의 분노를 불러 6월 민주 항쟁이 커지는 데 큰 영향을 주었다." 1~4번을 같은 문장으로 두는 설계는 유지한다. 이한열 achievements[1]: "6월 9일의 최루탄 피격 사건이 6월 민주 항쟁 확산의 계기가 되었고, 그는 7월 5일 숨졌다." | https://encykorea.aks.ac.kr/Article/E0079011 (열람), https://encykorea.aks.ac.kr/Article/E0068065 (검색만) | 미해결 |
+| B1-5 | choe-yeong | active_period.start, achievements[3] | 1 | achievements[3]의 "왜구 격퇴 활동이 시작된 1350년"은 근거가 없다. 최영 항목은 첫 활동을 연도 없이 "처음에 양광도도순문사 휘하에서 왜구를 토벌하는 데 많은 공을 세워"라고 쓴다. 연도가 있는 첫 활동은 "1352년(공민왕 1)에 안우 · 최원 등과 함께 조일신의 난을 평정"이다. 1350년은 경인년 왜구 침입의 해를 가져다 쓴 것으로 보인다. 확인 필요. | start를 1352로 바꾸고 achievements[3]을 "연도가 확인되는 첫 활동인 1352년 조일신의 난 평정부터 처형된 1388년까지"로 고친다. 1350을 유지하려면 최영의 1350년 활동을 적은 출처를 찾아 넣는다. | https://encykorea.aks.ac.kr/Article/E0057469 (열람) | 미해결(확인 필요) |
+| B1-6 | gim-han-jong | achievements[2] | 1 | "1918년 무렵 일제에 검거되었다"는 연도를 흐렸다. 김한종 항목: "그해 1월 조직이 발각되면서 일본경찰에 붙잡혔다"(1918년). 오케스트레이터 확인 요청분 박상진·김한종의 1915~1918은 **둘 다 맞다**. 근거는 김한종 항목("1915년 … 대구에서 비밀결사인 광복회를 조직"), 대한광복회 항목(지부장 "충청도: 김한종", "1918년 1월 … 주요 인물들이 체포"), 박상진 항목(1915년 7월 조직, 1918년 발각)이다. | "1918년 1월 조직이 드러나 일제에 체포되었고, 1921년 순국했다." | https://encykorea.aks.ac.kr/Article/E0010954 (열람), https://encykorea.aks.ac.kr/Article/E0014922 (열람) | 미해결 |
+| B1-7 | gim-han-jong | hint 4 source (hint 5 표현) | 8 | 4번 "일제에 협력한 부호를 처단하는 활동에 참여했다": 김한종 항목에는 부호 처단이 없다. 나오는 것은 "각지의 부호로부터 국권회복운동의 자금을 거두었다"와 면장 사살뿐이다. 처단 대상 박용하를 '친일 부호'로 부르는 것은 김경태 항목이다(검색 요약: "친일 부호로서 군자금 헌납에 불응한 아산군 도고면장 박용하를 처단"). 작가 확인 요청분 5번(충청도 지부, 친일 면장 처단)은 김한종 항목으로 **확인했다**: "김한종은 충청지부장으로 임명되어", 김경태·임봉주를 보내 "도고면장(道高面長) 박용하(朴容夏)를 사살하였다". 다만 김한종은 직접 처단한 사람이 아니라 사람을 보낸 쪽이다. | hint 4 source에 '김경태' E0008653을 추가한다. 또는 4번을 "친일 인사를 처단하는 활동에 참여했다"로 넓힌다(박상진 4번과 겹치는 것은 그대로다). 5번은 "…처단하는 일을 지휘했다"로 쓰면 더 정확하다(선택). | https://encykorea.aks.ac.kr/Article/E0010954 (열람), https://encykorea.aks.ac.kr/Article/E0008653 (검색만) | 미해결 |
+| B1-8 | jeong-jung-bu | hint 5 | 1 | 작가 확인 요청분(수염 일화). 정중부 항목에 **있다**: "그 자리에서 자신보다 나이가 어린 문신인 김돈중(金敦中)으로부터 촛불로 수염을 태우는 모욕을 당하였다." 무신란 항목과 김돈중 항목(인종 때, 견룡대정 시절)도 같다. 다만 백과사전은 '젊은 시절'이 아니라 '자신보다 나이가 어린 문신'으로 쓴다. 정중부는 1106년생이고 일화는 인종 때(1122~1146)의 일이라 '젊은 시절'이 틀렸다고 단정하기는 어렵다. 확인 필요. | "인종 때 자기보다 나이 어린 문신에게 수염이 불태워지는 모욕을 당한 일화가 전하며, …"로 쓰면 출처와 맞는다. | https://encykorea.aks.ac.kr/Article/E0050935 (열람), https://encykorea.aks.ac.kr/Article/E0008979 (검색만) | 미해결(확인 필요) |
+| B1-9 | jeong-jung-bu | hint 4 source | 8 | 4번 "무신들의 회의 기구인 중방을 중심으로 권력을 행사했다": 정중부 항목에는 중방이 없다. '중방' 항목(검색 요약)은 "정중부를 대표로 하는 무신들이 중방을 중심으로 무단정치를 펼쳐 나갔다"고 쓴다. 사실은 맞다. | hint 4 source를 '중방' E0053757로 바꾸거나 추가한다. figures sources에도 넣는다(achievements[2] 근거). | https://encykorea.aks.ac.kr/Article/E0050935 (열람), https://encykorea.aks.ac.kr/Article/E0053757 (검색만) | 미해결 |
+| B1-10 | an-jung-geun | hint 3·4·5 순서 | 3, 5 | 4번 확정 인물. 4번 "연해주로 건너가 의병 부대에 들어가 국내로 진격하는 작전에 나섰다"는 허위·이인영·양기탁에게 맞지 않는다. 사실을 해치지 않고 확정을 늦출 수 있다. 작가 확인 요청분(겹침 근거)은 안중근 항목으로 **확인했다**. 학교 설립은 "서양식 건물을 지어 삼흥학교를 설립하였다", "돈의학교를 인수해", 국채 보상은 "1907년에는 국채보상기성회 관서지부장이 되면서"다. 국채 보상은 양기탁 3·5번과 겹친다. 연해주 활동은 "노령으로 갔다", 1908년 6월 "함경북도 홍의동의 일본군을" 공격으로 나오며, '국내 진공 작전'이라는 말은 쓰지 않는다. | 3번: "나랏빚을 국민의 힘으로 갚자는 운동이 일어나자 지역 모금 조직을 이끌었다."(양기탁과 겹침) 4번: 지금 3번 "1907년 이후 의병 활동에 참여해 일본군과 싸웠다."(허위·이인영과 겹침) 5번: "연해주에서 의병을 이끌고 두만강을 건너 일본군을 공격했고, 1909년 하얼빈역에서 이토 히로부미를 처단한 뒤 뤼순 감옥에서 동양 평화를 주장하는 글을 쓰다 1910년 순국했다." 너무 길면 연해주 부분은 빼도 된다. | https://encykorea.aks.ac.kr/Article/E0035026 (열람) | 미해결 |
+| B1-11 | an-jung-geun | hint 5 source, figures sources | 8 | 5번 "뤼순 감옥에서 동양 평화를 주장하는 글을 쓰다가": 안중근 항목에는 『동양평화론』이라는 저술이 나오지 않는다. 이토를 "동양 평화의 교란자"라 한 진술만 있다. '동양평화론'이라는 백과사전 표제도 찾지 못했다. 사실 자체는 맞다(우리역사넷 '안중근의 동양평화론'). | hint 5 source와 figures sources에 우리역사넷 '안중근의 동양평화론'을 추가한다. | https://encykorea.aks.ac.kr/Article/E0035026 (열람), https://contents.history.go.kr/front/hm/view.do?treeId=020107&tabId=01&levelId=hm_121_0130 (검색만) | 미해결 |
+| B1-12 | goryeo-hyeonjong | hint 4·5 | 3, 5 | 4번 확정 인물. 4번 "거란과 전쟁을 치르던 중에 부처의 힘으로 나라를 지키려고 대장경을 새기기 시작했다"는 초조대장경을 가리키므로 강조·성종(고려)에게 맞지 않는다. 최우(재조대장경)도 상대가 몽골이라 맞지 않는다. 확정을 늦출 수 있다. 작가 확인 요청분 3번(지방 제도 정비)은 현종 항목으로 **확인했다**: "1018년(현종 9)에 이르러 5도양계(五道兩界) 체제 … 군현제의 기본 골격이 완성되었다." 성종(고려)의 12목과 겹치므로 겹침도 성립한다. | 4번: "왕위가 바뀐 정변이 거란이 쳐들어오는 구실이 되었다." confusable 강조와 겹친다(강조 항목: "거란이 이를 구실로 1010년 침략하자"). 5번: "정변으로 왕위에 올라 거란의 2차 침입 때 나주까지 피란했고, 전쟁 중 대장경을 새기기 시작했으며, 3차 침입은 1019년 귀주에서 크게 물리쳤다." | https://encykorea.aks.ac.kr/Article/E0063417 (열람), https://encykorea.aks.ac.kr/Article/E0001383 (검색만) | 미해결 |
+| B1-13 | goryeo-hyeonjong | hint 5 source, figures sources 표제 | 8 | 현종 항목에는 귀주 대첩의 1019년이 없고, 지명도 '구주'로 쓴다. 백과사전 표제는 '구주대첩'이다(검색 요약: "1019년(현종 10), 고려에 침입한 거란군을 구주에서 크게 격파"). 대장경도 현종 항목에는 '초조대장경'이라는 말이 없고 "불력으로 외침을 방어하고자 하여 착수, 제작한 6천여 권의 대장경"으로만 나온다. figures 표제 '현종(고려)'는 실제 표제('현종')와 다르다. | hint 5 source에 '구주대첩' E0006043을 추가한다. 규범 표기가 '귀주 대첩'이므로 힌트 문구는 그대로 둔다. figures sources 표제는 '현종'으로 고친다. | https://encykorea.aks.ac.kr/Article/E0063417 (열람), https://encykorea.aks.ac.kr/Article/E0006043 (검색만) | 미해결 |
+| B1-14 | jinheung | hint 4·5 | 3, 5 | 4번 확정 인물. 4번 "청소년 수련 단체인 화랑도를 국가 조직으로 정비했다"는 진흥왕만의 표지다. 확정을 늦출 수 있다. 1~3번은 성왕과 겹친다(2번 연합해 한강 진출, 3번 관산성). | 4번을 성왕과도 맞는 문장으로 바꾼다: "불교를 적극 장려하고 큰 절을 세우게 했다." 진흥왕은 황룡사, 성왕은 불교 진흥과 노리사치계 파견이다(성왕은 1묶음 때 성왕 항목으로 확인). 화랑도는 5번 앞에 넣는다: "화랑도를 국가 조직으로 정비했고, 한강 하류까지 차지하고 대가야를 정복했으며, … 순수비를 세웠다." 확인 필요: 황룡사 서술은 작가가 진흥왕 항목에서 확인하고 쓴다. | https://encykorea.aks.ac.kr/Article/E0055013 (검색만), https://encykorea.aks.ac.kr/Article/E0029457 (1묶음 열람) | 미해결 |
+| B1-15 | jangsu | hint 4·5 | 3, 5 | 4번 확정 인물. 4번 "414년 아버지 왕의 공적을 새긴 거대한 비석을 세웠다"는 장수왕만의 표지다. 사실은 장수왕 항목으로 확인했다("414년에는 … 부왕인 광개토왕의 업적을 과시하기 위한 광개토왕릉비를 건립하였다"). 확정을 늦출 수 있다. | 4번: "남중국 왕조와 북위에 모두 사신을 보내 외교 관계를 넓혔다." 장수왕 항목: "즉위하던 해에 동진에 사절을 파견", "435년 … 북위에 사절을 파견". 개로왕도 송(458)과 북위(472)에 사신을 보냈으므로 confusable 개로왕과 겹친다. 5번: "414년 아버지 왕의 공적을 새긴 비석을 세우고 427년 평양으로 도읍을 옮겼으며, 475년 백제의 한성을 함락해 그 나라 왕을 죽였다." | https://encykorea.aks.ac.kr/Article/E0048605 (열람), https://encykorea.aks.ac.kr/Article/E0001616 (열람) | 미해결 |
+| B1-16 | gaero | hint 4·5, hint 4 source | 3, 5, 8 | 4번 확정 인물. 4번 도림 일화는 개로왕만의 표지다. 작가 확인 요청분(도림)은 개로왕 항목으로 **확인했다**: "도림은 개로왕이 바둑을 좋아하는 점을 이용해 신임을 얻은 뒤, 개로왕이 고구려의 침공에 대비할 생각을 못하게 하였다." 다만 "큰 공사를 벌이다 나라 살림이 기울었다"는 개로왕 항목이 아니라 '도림' 항목에 있다(검색 요약: "토목 공사를 크게 일으켰다. 이로 말미암아 백제의 국가 재정이 흔들리고"). | 4번: "적국의 공격으로 도읍이 함락되는 위기를 겪었다."(고국원왕 4번과 같은 내용이라 겹친다) 5번: "적국이 보낸 승려의 꾐에 빠져 큰 공사를 벌였다는 이야기가 전하며, 472년 북위에 고구려를 함께 치자는 글을 보냈으나 475년 한성이 함락되어 죽임을 당했다." 도림 문장의 source에 '도림' E0015615를 추가한다. | https://encykorea.aks.ac.kr/Article/E0001616 (열람), https://encykorea.aks.ac.kr/Article/E0015615 (검색만) | 미해결 |
+| B1-17 | muryeong | hint 4·5, hint 4 source | 3, 5, 8 | 4번 확정 인물. 4번 22담로는 무령왕만의 표지다. 확정을 늦출 수 있다. 22담로를 직접 서술한 것은 '담로' 항목이다(검색 요약: "『양서』 백제전에 따르면 전국적으로 22개의 담로가 존재", "왕족 출신의 자제종족이 중심이 된 지방관이 파견"). | 4번: "고구려에 한강 유역을 빼앗긴 뒤 흔들리던 나라를 다시 안정시키는 데 힘썼다."(성왕과 겹침) 5번: "지방 거점인 22담로에 왕족을 보냈고, 1971년 공주에서 발굴된 벽돌무덤의 지석으로 그 무덤의 주인공임이 확인되었다." 22담로 문장의 source에 '담로' E0013778을 추가한다. | https://encykorea.aks.ac.kr/Article/E0019017 (검색만), https://encykorea.aks.ac.kr/Contents/Item/E0013778 (검색만) | 미해결 |
+| B1-18 | bak-sang-jin | hint 5 source, figures sources | 8 | 5번 "1915년 대구에서 대한광복회를 결성해": 박상진 항목은 결성 장소를 쓰지 않는다("그 해 7월 풍기광복단의 인사와 합작해 대한광복회를 조직하고 총사령으로 취임하였다"). 박상진 항목에서 대구가 나오는 것은 1915년 1월 조선국권회복단 결성지(안일암)뿐이다. 대구는 '대한광복회' 항목에 있다: "1915년 7월 15일(음) 대구 달성공원에서". 작가가 쓴 표제 '대한광복회'는 실제 표제와 같다. | hint 5 source와 figures sources에 '대한광복회' E0014922를 추가한다. | https://encykorea.aks.ac.kr/Article/E0020757 (열람), https://encykorea.aks.ac.kr/Article/E0014922 (열람) | 미해결 |
+| B1-19 | jeon-du-hwan | figures sources, hint 1·2·5 source | 8 | 확인 필요: 한국민족문화대백과사전에서 '전두환' 인물 표제를 찾지 못했다(1묶음 노태우 A1-16과 같은 상황). 12·12 군사반란, 사일삼 호헌조치, 5·18 등 사건 항목에만 나온다. 없는 항목을 출처로 들었을 수 있다. 내용은 모두 사실이다. 5번 "1980년 간접 선거로 대통령"은 통일주체국민회의 간선(제11대)으로, 4·13 호헌 조치는 사일삼 호헌조치 항목("1987년 4월 13일 전두환 대통령이 모든 개헌 논의를 중단")으로 확인된다. | figures sources와 1·2·5번 source를 대통령기록관 '전두환 대통령 약력'으로 바꾼다(1·2번은 이 약력으로 뒷받침된다). 3번에는 '12·12 군사반란' E0034018, 5번에는 '사일삼 호헌조치' E0073741을 추가한다. 백과사전 인물 항목이 정말 없는지는 작가·DB 담당이 다시 확인한다. | https://www.pa.go.kr/online_contents/president/history11.jsp (검색만), https://encykorea.aks.ac.kr/Article/E0034018 (검색만), https://encykorea.aks.ac.kr/Article/E0073741 (검색만) | 미해결(확인 필요) |
+| B1-20 | yi-won-ik | hint 4·5 source | 8 | 작가 확인 요청분(광해군 때 영의정·대동법 건의). 사실은 **확인했다**: 이원익 항목 "광해군 즉위 후 다시 영의정이 되었을 때 … 대동법을 경기도지방에 한해 실시". 그러나 같은 문장이 "호조참의 한백겸이 건의한 대동법"이라 하여 건의자를 한백겸으로 쓴다. 반면 같은 항목 요약은 "대동법 시행을 건의하였다"고 쓴다. 이원익 항목만으로는 '건의'의 주체가 흔들린다. '대동사목' 항목(검색 요약)은 1608년 경기도 실시가 이원익의 건의에 따른 것이라 쓰고, '대동법' 항목은 한백겸·이원익이 함께 보완했다고 쓴다. | 4·5번 source에 '대동법' E0014246과 '대동사목' E0014252를 추가한다. 건의자 논란을 피하려면 5번을 "…경기도에서 먼저 시행하는 일을 이끌었고"로 바꾼다. | https://encykorea.aks.ac.kr/Article/E0045372 (검색만), https://encykorea.aks.ac.kr/Article/E0014246 (검색만), https://encykorea.aks.ac.kr/Article/E0014252 (검색만) | 미해결 |
+| B1-21 | (공통 30명) | figures sources url, hints source url | 8 | 30명 모두 figures sources의 url이 null이고, 힌트 source url은 127건이 null이다(validate.js 경고 157건). 실제와 다른 표제도 있다. figures의 '현종(고려)'와 '성종(조선)'은 실제 표제가 '현종'·'성종'이다. 같은 인물의 hint source는 '현종'·'성종'으로 적혀 있어 두 파일의 표기도 서로 다르다. | D절 표의 URL·표제로 채운다. | D절 | 미해결 |
+
+### C. 인물별 점검 요약 (항목 3·4·5, 작가·오케스트레이터 확인 요청분)
+
+- 확정 단계는 몇 번째 힌트에서 confusable 인물과 갈리는지를 적은 것이다. 30명 모두 **1번 힌트만으로는 답이 하나로 정해지지 않고(항목 4 통과), 5번까지 보면 하나로 좁혀진다(항목 5 통과)**. 1번이 가장 좁은 경우도 같은 범주에 여러 인물이 있다. 예를 들어 우거왕 1번 "고조선 시기의 인물"에는 단군·위만·준왕이 들어가고, 장수왕·개로왕·무령왕 1번 "○○의 국왕"도 마찬가지다.
+- 항목 7: 150개 모두 백과사전 서술을 새로 풀어 썼다. 기출 문장이나 『삼국사기』·『고려사』·『사기』 조선열전 번역문을 그대로 옮긴 흔적은 찾지 못했다. 우거왕 3번은 우거왕 항목의 "진국 등 여러 나라가 한나라와 직접 교통하는 것을 금지"를 풀어 쓴 것이고 원문 번역이 아니다. 다만 검수자가 기출 원문 전체와 대조하지는 못했다.
+
+| 인물 id | 확정 단계 | 겹침 확인(사실 여부 포함) | 근거 URL |
+|---|---|---|---|
+| bak-sang-jin | 5 | 1~4번이 김한종과 겹친다. 4번(친일 부호 처단)은 박상진 항목 "칠곡부호 장승원을 처단하게 하였다"(1917년 11월)로 확인했다. 활동 기간은 B1-6(맞음), source는 B1-18. | https://encykorea.aks.ac.kr/Article/E0020757 (열람) |
+| yang-gi-tak | 4(허용) | 4번 신민회는 DB 안에서는 양기탁에게만 맞는다. 하지만 창립 인물이 여럿이다(양기탁 항목: "안창호·전덕기·이회영·이동휘·이동녕·이갑 등과 … 신민회를 조직"). 그래서 DB 밖까지 보면 4번만으로 답이 정해지지 않는다. 신민회를 빼면 남는 표지가 대한매일신보뿐이라 늦출 방법도 마땅치 않다. **허용.** 안창호·신채호를 수록할 때 confusable로 묶는다. 3번(국채 보상)은 안중근과 겹친다. 베델과의 대한매일신보 발행("영국인 기자 베델과 제휴")과 국채 보상(대한매일신보사가 중심체)도 확인했다. | https://encykorea.aks.ac.kr/Article/E0035440 (열람), https://encykorea.aks.ac.kr/Article/E0006527 (검색만) |
+| min-yeong-hwan | 5 | 1·3·4번이 최익현과 겹친다. 4번은 "조약에 찬동한 5적의 처형과 조약의 파기를 요구하였다"로 확인했다. 5번의 1896년 대관식("특명 전권공사로 임명")과 유서("국민에게 각성을 요망하는 글" 등 세 통)도 확인했다. 문제 없음. | https://encykorea.aks.ac.kr/Article/E0020206 (열람) |
+| choe-ik-hyeon | 5 | 1~4번이 민영환·허위·이인영·흥선 대원군과 겹친다. 4번 청토오적소("조약의 무효를 국내외에 선포하고"), 5번 태인 의병("1906년 윤4월 전라북도 태인")과 대마도 순국을 최익현 항목으로 확인했다. **5번의 "흥선 대원군"**: 5번은 가장 쉬운 힌트이고, 1873년 상소와 1906년 태인 의병만으로도 답이 정해진다. 대원군의 이름은 상소의 대상일 뿐 정답을 드러내지 않는다. 지나치게 쉽게 만들지 않으므로 **허용**한다. 이름을 피하고 싶다면 "왕의 아버지로서 실권을 쥔 이의 정치를 비판한 상소"로 쓸 수 있다. state는 B1-3. | https://encykorea.aks.ac.kr/Article/E0057582 (열람) |
+| an-jung-geun | 4 → 수정안 | B1-10, B1-11 참조. era '개항기'(오케스트레이터 확인 요청분)는 **맞다**. 활동 기간은 1907년~1910년 3월이고, 순국("3월 26일 … 뤼순감옥 … 순국")이 국권 피탈(1910.8) 전이라 schema 1절의 개항기 안에 든다. state '대한제국'도 schema 2절 예시와 맞다. | https://encykorea.aks.ac.kr/Article/E0035026 (열람) |
+| choe-yeong | 5 | 1~4번이 이성계와 겹친다. 3번은 "이듬해 안우·이방실 등과 함께 이를 격퇴하여 개성을 수복"으로, 4번은 최영 "스스로 팔도도통사가 되어"와 이성계 우군도통사로 확인했다. 5번 홍산("홍산에서 왜구를 크게 무찔렀으며")과 처형("그 해 12월에 참수")도 확인했다. 기간은 B1-5. | https://encykorea.aks.ac.kr/Article/E0057469 (열람) |
+| choe-chung-heon | 5 | 1·2·3번이 이의방·정중부와, 4번(도방)이 최우와 겹친다. 검색 요약으로 확인한 사실은 다음과 같다. 3번 왕 폐립: 명종 1197, 희종 1211. 4번 도방: "최충헌이 집권하자 다시 설치되어 그 기능이 크게 강화". 5번: 봉사십조, 교정도감(1209, 교정별감). 문제 없음. | https://encykorea.aks.ac.kr/Article/E0057707 (검색만), https://encykorea.aks.ac.kr/Article/E0015646 (검색만), https://encykorea.aks.ac.kr/Article/E0005565 (검색만) |
+| yi-ui-bang | 5 | 1~4번이 정중부와 겹친다. 4번(동료 무신 제거)은 "선화사로 참여해 난을 일으키려 한 이고를 죽이고"로 확인했다. 5번은 "1174년 정중부의 아들 정균과 공모한 승려 종참에 의해 살해당하였다"로 확인했다. 문제 없음. | https://encykorea.aks.ac.kr/Article/E0045521 (열람) |
+| gang-jo | 5 | 2~4번이 현종과 겹친다. 작가 확인 요청분 5번 "서북면의 군대를 이끌고 개경에 들어와"는 검색 요약으로 **확인했다**: "목종 때 서북면도순검사가 되었는데 … 개경으로 진격하여 김치양 세력을 제거하고 현종을 왕위에 옹립". 거란전은 "서북면 행영도통사가 되어 통주 삼수채에서 거란군과 싸워"로 확인했다. 3번 "외척 세력"은 김치양·천추태후 세력이다. 문제 없음. | https://encykorea.aks.ac.kr/Article/E0001383 (검색만), http://encykorea.aks.ac.kr/Contents/Item/E0001385 (검색만) |
+| goryeo-hyeonjong | 4 → 수정안 | B1-12, B1-13 참조. 1·2번이 성종(고려)과, 2번이 강조와 겹친다. 즉위·나주 피란은 현종 항목으로 확인했다("1009년 2월에 왕위에 올랐다", "나주까지 피난"). | https://encykorea.aks.ac.kr/Article/E0063417 (열람) |
+| myo-cheong | 4(허용) | 1~3번이 이자겸과 겹친다(인종 때, 인종 때 반란, 금과의 관계). 4번 풍수지리 천도론에서 답이 정해진다. 묘청의 표지는 모두 서경 천도에 걸려 있어 이자겸·김부식과 겹치면서 사실을 지키는 4번 문장을 만들기 어렵다. 천도론을 5번으로 미루면 4번에 넣을 내용이 남지 않는다. **허용.** 기간과 achievements는 B1-1. roles '개혁가·혁명가, 종교인'은 schema 3절 예시와 맞다. | https://encykorea.aks.ac.kr/Article/E0018892 (열람) |
+| song-si-yeol | 4(허용) | 1~3번이 숙종과 겹친다(3번 원자 문제는 기사환국 항목으로 1묶음에서 확인). 4번 북벌은 DB 안에서는 송시열에게만 맞는다. 하지만 북벌은 효종(미수록)과 함께 묻는 표지라 DB 밖까지 보면 유일하지 않다. 숙종과 겹치는 대체 문장은 2번(환국)과 겹쳐 정보가 늘지 않는다. **허용.** 효종을 수록할 때 confusable로 묶는다. 기축봉사(1649), 효종 때 북벌의 핵심 인물, 예송, 정읍 사사를 확인했다. | https://encykorea.aks.ac.kr/Article/E0030898 (검색만), https://encykorea.aks.ac.kr/Article/E0024667 (검색만) |
+| yi-won-ik | 5 | confusable이 미등록 광해군 하나뿐이라 DB 안에서 겹침을 볼 상대가 없다(E절). 2번(임진왜란 지방관)과 3번(광해군 때 재상)은 사실이다(이원익 항목 요약: "선조, 광해군, 인조 3대에 걸쳐 다섯 차례나 영의정", "평양성 탈환에 공을 세웠고"). 대동법 건의는 B1-20. | https://encykorea.aks.ac.kr/Article/E0045372 (검색만) |
+| jo-gwang-jo | 5 | confusable_ids가 비어 있다(E절). 검색 요약으로 3번 향약("『여씨향약』을 8도에 실시"), 4번 소격서 혁파, 5번 현량과(1519)·위훈삭제·기묘사화를 확인했다. 사실 문제 없음. | https://encykorea.aks.ac.kr/Article/E0051606 (검색만), https://encykorea.aks.ac.kr/Article/E0063316 (검색만) |
+| yeo-un-hyeong | 5 | 2·3번이 김규식과, 4번이 김구(암살)와 겹친다. 2번 신한청년당은 "1918년 … 신한청년당의 조직을 주도하고 총무간사로 활동"으로 확인했다('참여'보다 '주도'가 정확하지만 틀리지 않음). 5번 조선건국동맹(1944년 8월, 위원장)과 건준 위원장도 확인했다. state '대한민국'은 schema 2절 예시와 같다. 문제 없음. | https://encykorea.aks.ac.kr/Article/E0036436 (검색만), https://encykorea.aks.ac.kr/Article/E0073803 (검색만) |
+| jinheung | 4 → 수정안 | B1-14 참조. 551년 연호 '개국', 562년 대가야 정복(이사부), 화랑도 제정, 재위 540~576을 확인했다. | https://encykorea.aks.ac.kr/Article/E0055013 (검색만) |
+| jangsu | 4 → 수정안 | B1-15 참조. 2·3번이 광개토왕·진흥왕과 겹친다. | https://encykorea.aks.ac.kr/Article/E0048605 (열람) |
+| gogugwon | 5 | 2번은 장수·개로왕, 3번은 개로왕(전사)·성왕, 4번은 개로왕(도읍 함락)과 겹친다. 5번의 342년 전연 침입(환도성 함락)과 371년 평양성 전사("유시에 맞아 전사")는 검색 요약으로 확인했다. 1번 "삼국 시대 한 나라의 국왕"은 매우 넓지만 가장 어려운 힌트라 허용 범위다. 문제 없음. | https://encykorea.aks.ac.kr/Article/E0003339 (검색만) |
+| gaero | 4 → 수정안 | B1-16 참조. 472년 북위 국서와 475년 피살("포로가 되어 살해당했다")을 확인했다. | https://encykorea.aks.ac.kr/Article/E0001616 (열람) |
+| muryeong | 4 → 수정안 | B1-17 참조. 2번(웅진 도읍기)과 3번(양과의 교류, "512년과 521년 두 차례에 걸쳐 사신")은 성왕과 겹친다. | https://encykorea.aks.ac.kr/Article/E0019017 (검색만) |
+| ugeo | 5 | confusable이 없다(DB의 유일한 고조선 인물). 우거왕 항목으로 확인했다. 3번은 진국 교류 차단·중간무역, 4번은 "1년을 잘 싸웠으나", 5번은 니계상 삼이 보낸 자객에게 피살된 일이다. 2번 "철기 문화"는 항목에 '철기'라는 말 대신 "금속문명의 혜택"으로 나온다. 위만 조선의 철기 문화는 교과서 서술과 맞아 문제로 세지 않았다. 기간은 B1-2. | https://encykorea.aks.ac.kr/Article/E0039783 (열람) |
+| joseon-seongjong | 5 | 2번(학문 기관·편찬)과 3번(사가독서)은 세종과, 4번(법전)은 세조와 겹친다. 성종 항목 요약으로 확인했다: "1485년에 완성, 반포", "김종직 일파의 신진사림세력을 많이 등용", "홍문관을 확충하고 … 독서당을 설치, 젊은 관료들에게 휴가를 주고". 3번은 성종 항목만으로도 뒷받침된다. 문제 없음. | https://encykorea.aks.ac.kr/Article/E0029554 (검색만) |
+| yi-in-yeong | 5 | 1~4번이 허위와 같은 구조라 서로 겹친다. 작가 확인 요청분 5번은 **사실로 확인했다**. 교전 단체: '의병' 항목 "서울 주재 각국 공사관에 격문을 보내 … 국제법상 교전 단체임을 선언"과 관련 항목 "격문을 … 각국 영사관에 전달". 부친상: "1908년 1월 말 총대장 이인영이 아버지의 부음을 듣고 통수권을 군사장 허위에게 맡기고 문경으로 떠났다". 문제 없음. | https://encykorea.aks.ac.kr/Article/E0045622 (검색만), https://encykorea.aks.ac.kr/Article/E0033997 (검색만), https://encykorea.aks.ac.kr/Article/E0043232 (검색만) |
+| gim-han-jong | 5 | 1~4번이 박상진과 겹친다. B1-6, B1-7 참조(5번은 B1-7에서 확인). | https://encykorea.aks.ac.kr/Article/E0010954 (열람) |
+| bak-jong-cheol / yi-han-yeol | 5 | 오케스트레이터 요청 점검. **5번에서 확실히 갈린다.** 박종철은 1987년 1월 조사실 물고문과 은폐("5일 만인 19일에 물고문 사실을 공식 시인"), 이한열은 6월 학교 앞 시위, 최루탄 피격, 7월 사망이다. 두 5번은 서로에게 맞지 않는다. **1~4번이 너무 막연한지**: 1번(1980년대 민주화 운동 관련 인물)은 김대중·김영삼·전두환과도 엮이는 넓은 힌트다. 2번(대학생)과 3번(1987년 공권력에 의한 사망)에서 두 사람으로 좁혀진다. 1~3번은 단계마다 범위가 줄어 막연하지 않다. 4번은 두 사람을 더 가르지 못해 3번에 정보를 더하지 못하지만, 5번에서 확정하는 설계이므로 허용한다. 단, 4번 문장은 이한열에게 사실과 다르므로 B1-4대로 고친다. | https://encykorea.aks.ac.kr/Article/E0068065 (검색만), https://encykorea.aks.ac.kr/Article/E0079011 (열람) |
+| jeon-du-hwan | 5 | 2번(장성 출신)은 박정희·노태우와, 3·4번은 노태우와 겹친다(12·12 군사반란 항목: "전두환·노태우 등이 중심이 되어"). 5번의 간선 당선과 4·13 호헌 조치는 노태우에게 맞지 않는다. source는 B1-19. | https://encykorea.aks.ac.kr/Article/E0034018 (검색만), https://encykorea.aks.ac.kr/Article/E0073741 (검색만) |
+| yu-gil-jun | 5 | 2번은 김옥균·박영효·김홍집과, 3번은 김홍집·박영효와, 4번은 김홍집과 겹친다. 유길준 항목으로 확인했다. 2번은 "조사시찰단(신사유람단)에 참가, 우리나라 최초의 일본 유학생", 4번은 "외아문참의겸군국기무처회의원"이다. 5번은 "보빙사 민영익의 수행원으로 미국으로 건너갔다"와 『서유견문』을 "1895년에 출판"이다. 문제 없음. | https://encykorea.aks.ac.kr/Article/E0041318 (열람) |
+| bak-yeong-hyo | 5 | 2번은 김홍집(1880 수신사)과, 3번은 김옥균과, 4번은 김홍집·유길준과 겹친다. 작가 확인 요청분 5번 "철종의 사위"는 박영효 항목 요약으로 확인했다(1872년 철종의 딸 영혜옹주와 혼인, 금릉위). 태극기(1882년 8월 배 위에서 제작)는 '태극기' 항목으로, 2차 갑오개혁 입각은 박영효 항목("제2차 김홍집 내각의 내부대신으로 입각")으로 확인했다. **5번의 "김홍집"**: 5번은 철종 사위와 태극기만으로도 답이 정해지는 마지막 힌트다. '김홍집과 연립 내각'은 교과서 표준 표현이고, 김홍집을 오답으로 지워 주는 효과밖에 없다. 지나치게 쉽게 만들지 않으므로 **허용**한다. | https://encykorea.aks.ac.kr/Article/E0020961 (검색만), https://encykorea.aks.ac.kr/Article/E0058892 (검색만) |
+| jeong-jung-bu | 5 | 1~3번이 이의방과, 1번이 최충헌과 겹친다. 4번(중방)은 이의방에게도 맞는다(중방 항목: 무신란 직후 "중방을 중심으로 운영"). 5번은 B1-8, 4번 source는 B1-9. | https://encykorea.aks.ac.kr/Article/E0050935 (열람) |
+
+### D. source url 수정안 (figures sources·hints source)
+
+- 인물 항목 URL은 figures sources에 넣고, 그 인물 항목을 출처로 쓴 힌트의 source url에도 넣는다.
+- 표제가 다르면 실제 표제로 고친다.
+- 사건·제도 항목은 해당 힌트 번호에 넣는다.
+- 이미 url이 들어 있는 힌트 source는 그대로 둔다: 최영 전부, 최익현 5, 송시열 3·5, 여운형 2·3, 진흥왕 2·3·5, 장수왕 4, 성종 3, 이인영 4·5, 전두환 3·4, 유길준 4, 박영효 3·4·5.
+
+| 인물 id | 인물 항목(실제 표제 / URL) | 힌트별 사건·제도 source (힌트 번호: 실제 표제 / URL) |
+|---|---|---|
+| bak-sang-jin | 박상진 / https://encykorea.aks.ac.kr/Article/E0020757 (열람) | 2·3·4·5: 대한광복회 https://encykorea.aks.ac.kr/Article/E0014922 (열람) (5번은 B1-18로 추가) |
+| yang-gi-tak | 양기탁 / https://encykorea.aks.ac.kr/Article/E0035440 (열람) | 3·5: 국채보상운동 https://encykorea.aks.ac.kr/Article/E0006527 (검색만). 4: 신민회 https://encykorea.aks.ac.kr/Article/E0032974 (검색만). 5: 대한매일신보 https://encykorea.aks.ac.kr/Contents/Item/E0014992 (검색만) 추가 권장 |
+| min-yeong-hwan | 민영환 / https://encykorea.aks.ac.kr/Article/E0020206 (열람) | 없음 |
+| choe-ik-hyeon | 최익현 / https://encykorea.aks.ac.kr/Article/E0057582 (열람) | 5: 이하응 E0046384(기입됨) |
+| an-jung-geun | 안중근 / https://encykorea.aks.ac.kr/Article/E0035026 (열람) | 5: 우리역사넷 '안중근의 동양평화론' https://contents.history.go.kr/front/hm/view.do?treeId=020107&tabId=01&levelId=hm_121_0130 (검색만) (B1-11) |
+| choe-yeong | 최영 / https://encykorea.aks.ac.kr/Article/E0057469 (열람) | 힌트는 기입됨. figures sources url만 채운다. |
+| choe-chung-heon | 최충헌 / https://encykorea.aks.ac.kr/Article/E0057707 (검색만) | 4: 도방 https://encykorea.aks.ac.kr/Article/E0015646 (검색만). 5: 봉사십조 https://encykorea.aks.ac.kr/Article/E0023879, 교정도감 https://encykorea.aks.ac.kr/Article/E0005565 (검색만) 추가 권장 |
+| yi-ui-bang | 이의방 / https://encykorea.aks.ac.kr/Article/E0045521 (열람) | 없음 |
+| gang-jo | 강조 / https://encykorea.aks.ac.kr/Article/E0001383 (검색만) | 3·5: 강조의정변 http://encykorea.aks.ac.kr/Contents/Item/E0001385 (검색만) 추가 권장 |
+| goryeo-hyeonjong | '현종(고려)' → 실제 표제 '현종' / https://encykorea.aks.ac.kr/Article/E0063417 (열람) | 5: 구주대첩 https://encykorea.aks.ac.kr/Article/E0006043 (검색만) (B1-13) |
+| myo-cheong | 묘청 / https://encykorea.aks.ac.kr/Article/E0018892 (열람) | 2·5: 묘청의 난 https://encykorea.aks.ac.kr/Article/E0018893 (검색만). 4: 서경천도론 https://encykorea.aks.ac.kr/Article/E0071271 (검색만) 추가 권장 |
+| song-si-yeol | 송시열 / https://encykorea.aks.ac.kr/Article/E0030898 (검색만) | 4: 북벌론 https://encykorea.aks.ac.kr/Article/E0024667 (검색만) 추가 권장 |
+| yi-won-ik | 이원익 / https://encykorea.aks.ac.kr/Article/E0045372 (검색만) | 4·5: 대동법 https://encykorea.aks.ac.kr/Article/E0014246, 대동사목 https://encykorea.aks.ac.kr/Article/E0014252 (검색만) (B1-20) |
+| jo-gwang-jo | 조광조 / https://encykorea.aks.ac.kr/Article/E0051606 (검색만) | 5: 현량과 https://encykorea.aks.ac.kr/Article/E0063316, 기묘사화 https://encykorea.aks.ac.kr/Article/E0008223 (검색만) 추가 권장 |
+| yeo-un-hyeong | 여운형 / https://encykorea.aks.ac.kr/Article/E0036436 (검색만) | 4: 여운형 암살사건 https://encykorea.aks.ac.kr/Article/E0075783 (검색만). 5: 조선건국동맹 https://encykorea.aks.ac.kr/Article/E0073803, 조선건국준비위원회 https://encykorea.aks.ac.kr/Article/E0051909 (검색만) 추가 권장 |
+| jinheung | 진흥왕 / https://encykorea.aks.ac.kr/Article/E0055013 (검색만) | 화랑도 문장: 화랑도 https://encykorea.aks.ac.kr/Contents/Item/E0064589 (검색만) 추가 권장 |
+| jangsu | 장수왕 / https://encykorea.aks.ac.kr/Article/E0048605 (열람) | 4: 광개토왕릉비 E0005058(기입됨) |
+| gogugwon | 고국원왕 / https://encykorea.aks.ac.kr/Article/E0003339 (검색만) | 없음 |
+| gaero | 개로왕 / https://encykorea.aks.ac.kr/Article/E0001616 (열람) | 도림 문장: 도림 https://encykorea.aks.ac.kr/Article/E0015615 (검색만) (B1-16) |
+| muryeong | 무령왕 / https://encykorea.aks.ac.kr/Article/E0019017 (검색만) | 22담로 문장: 담로 https://encykorea.aks.ac.kr/Contents/Item/E0013778 (검색만). 무덤 문장: 무령왕릉 https://encykorea.aks.ac.kr/Article/E0019018 (검색만) 추가 권장 |
+| ugeo | 우거왕 / https://encykorea.aks.ac.kr/Article/E0039783 (열람) | 3: 진국 https://encykorea.aks.ac.kr/Article/E0054604 (검색만) 추가 권장 |
+| joseon-seongjong | '성종(조선)' → 실제 표제 '성종' / https://encykorea.aks.ac.kr/Article/E0029554 (검색만) | 3: 사가독서 E0025343(기입됨) |
+| yi-in-yeong | 이인영 / https://encykorea.aks.ac.kr/Article/E0045622 (검색만) | 5: 의병 https://encykorea.aks.ac.kr/Article/E0043232 (검색만) 추가 권장(교전 단체 격문) |
+| gim-han-jong | 김한종 / https://encykorea.aks.ac.kr/Article/E0010954 (열람) | 2: 대한광복회 https://encykorea.aks.ac.kr/Article/E0014922 (열람). 4: 김경태 https://encykorea.aks.ac.kr/Article/E0008653 (검색만) (B1-7) |
+| bak-jong-cheol | 박종철 / https://encykorea.aks.ac.kr/Article/E0079003 (검색만) | 4·5: 박종철 고문치사 사건 https://encykorea.aks.ac.kr/Article/E0068065 (검색만) 추가 권장 |
+| jeon-du-hwan | 백과사전 인물 항목 확인 못 함 → 대통령기록관 '전두환 대통령 약력' https://www.pa.go.kr/online_contents/president/history11.jsp (검색만) (B1-19) | 3: 12·12 군사반란 https://encykorea.aks.ac.kr/Article/E0034018 (검색만). 5: 사일삼 호헌조치 https://encykorea.aks.ac.kr/Article/E0073741 (검색만) |
+| yi-han-yeol | 이한열 / https://encykorea.aks.ac.kr/Article/E0079011 (열람) | 4·5: 6월항쟁 https://encykorea.aks.ac.kr/Article/E0068343 (검색만) 추가 권장 |
+| yu-gil-jun | 유길준 / https://encykorea.aks.ac.kr/Article/E0041318 (열람) | 5: 서유견문 https://encykorea.aks.ac.kr/Article/E0028107 (검색만) 추가 권장 |
+| bak-yeong-hyo | 박영효 / https://encykorea.aks.ac.kr/Article/E0020961 (검색만) | 5: 태극기 https://encykorea.aks.ac.kr/Article/E0058892 (검색만) 추가 권장 |
+| jeong-jung-bu | 정중부 / https://encykorea.aks.ac.kr/Article/E0050935 (열람) | 4: 중방 https://encykorea.aks.ac.kr/Article/E0053757 (검색만) (B1-9). 5: 김돈중 https://encykorea.aks.ac.kr/Article/E0008979 (검색만) 추가 권장 |
+
+### E. 참고 (문제 항목 아님)
+
+- 기존 gim-jeong-hui 4번("…신라 진흥왕의 순수비임을 밝혀냈다")과 heungseon-daewongun 3번("1873년 최익현의 상소를…")에 이번에 DB에 들어온 인물의 이름이 있다. 두 힌트 모두 정답(김정희·흥선 대원군)은 드러내지 않고 오답 후보만 알려 주므로 고치지 않아도 된다. 진흥왕 5번(북한산 순수비)과 김정희 4번도 서로의 정답을 드러내지 않는다.
+- jo-gwang-jo와 ugeo는 confusable_ids가 비어 있고, yi-won-ik은 미등록 gwanghaegun 하나뿐이다. 셋 다 DB 안에서 힌트 겹침을 확인할 상대가 없지만 오류는 아니다. 중종·김육·류성룡 등을 수록할 때 연결한다. 조광조는 성종(조선)과 '사림 등용'으로 약하게 이어지지만, 조광조 2번("사림 출신으로")이 성종에게 맞지 않아 지금은 연결하지 않아도 된다.
+- gogugwon 별칭 '쇠'는 한 글자라 validate.js의 힌트 노출 검사(두 글자 이상)에서 빠진다. 고국원왕 힌트에는 '쇠'가 없다. 1묶음 E절의 '이순'과 같은 이유로 정답 판정은 부분 일치가 아니라 완전 일치로 해야 한다.
+- bak-sang-jin achievements[2] "1918년 일제에 체포되었고"는 맞다. 대한광복회 항목: "1918년 1월 충청도 지부원들을 시작으로 주요 인물들이 체포". 순국은 1921년(김한종 항목 기준)인데 figures에 연도가 없어 문제가 없다.
+- yi-in-yeong 5번의 '영사관'은 항목마다 '공사관'과 엇갈린다. '영사관'으로 쓴 출처도 있으므로 유지해도 된다.
+- jangsu active_period end 491: 장수왕 항목이 "재위 413∼491"과 "413년~490년"을 함께 쓴다. 491을 유지해도 된다.
+
+### 4단계 2묶음 1차 회차 요약
+
+- 문제 항목은 21건(B1-1~B1-21)이다. 이 가운데 5건(B1-2, B1-3, B1-5, B1-8, B1-19)은 확인 필요다. B1-21(공통 source url)은 30명 모두에 해당한다.
+- 인물별 문제 수(B1-21 공통 항목 제외):
+  - 2건: an-jung-geun, goryeo-hyeonjong, gim-han-jong, jeong-jung-bu
+  - 1건: myo-cheong, ugeo, choe-ik-hyeon, yi-han-yeol, bak-jong-cheol(B1-4 공통 문장 동반 수정), choe-yeong, jinheung, jangsu, gaero, muryeong, bak-sang-jin, jeon-du-hwan, yi-won-ik
+  - 0건: 아래 13명
+- 4번에서 확정되는 9명:
+  - 수정안: 안중근, 현종(고려), 진흥왕, 장수왕, 개로왕, 무령왕(6명)
+  - 허용: 양기탁, 묘청, 송시열(3명)
+- 다른 인물 이름이 든 힌트(최익현 5 "흥선 대원군", 박영효 5 "김홍집")는 둘 다 허용한다.
+- 문제 없음으로 통과한 id: **yang-gi-tak, min-yeong-hwan, choe-chung-heon, yi-ui-bang, gang-jo, song-si-yeol, jo-gwang-jo, yeo-un-hyeong, gogugwon, joseon-seongjong, yi-in-yeong, yu-gil-jun, bak-yeong-hyo** (13명). 내용 기준이며, B1-21의 URL 반영과 D절 표제 수정은 남아 있다. 기존 40명은 confusable 역링크 5건을 확인한 결과 모두 통과다.
+- 남은 미해결: **21건**(공통 1건 포함).
