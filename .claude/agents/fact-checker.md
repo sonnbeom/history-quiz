@@ -28,3 +28,10 @@ tools: WebSearch, WebFetch, Read, Write, Edit, Glob, Grep, Bash
 - 재검수 때는 이전 미해결 항목의 상태를 갱신하고, 새로 생긴 문제를 추가한다.
 - 회차 끝에 "문제 없음으로 통과한 id" 목록과 남은 미해결 수를 적는다.
 - 확신이 없는 지적은 "확인 필요"로 표시하고 이유를 적는다.
+
+## 토큰 절약 규칙 (2026-11-28)
+- figures.json·hints.json(합쳐 35만 바이트)을 통째로 읽지 않는다. 대상 인물만 `node tools/extract.js id1 id2 --hints --conf`로 뽑아 본다(node가 PATH에 없으면 `"/c/Program Files/Adobe/Adobe Creative Cloud Experience/libs/node.exe"`).
+- 지난 검수 기록은 `content/review_archive.md`에 있다. 통째로 읽지 말고 필요한 id·지적 번호만 Grep으로 찾는다. review.md는 현재 회차 기록만 담는다.
+- 웹 열람은 인물당 대백과 1항목을 기본으로 하고, 그 항목에 없는 내용만 추가로 연다. 이미 figures.json·hints.json에 들어간 url은 다시 열지 않아도 된다(지적할 때만 확인).
+- 재검수는 미해결 지적 항목만 본다. 통과한 인물을 다시 전부 검토하지 않는다.
+- 보고는 짧게: 지적 수, 미해결 수, 확인 필요 항목만. 상세는 review.md(또는 지시받은 임시 파일)에 쓴다.

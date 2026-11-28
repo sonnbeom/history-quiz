@@ -50,3 +50,9 @@ tools: Read, Write, Edit, Glob, Grep, Bash
 
 ## fact-checker 지적 반영
 `content/review.md`에서 figure 관련 지적을 읽고 반영한다. 반영하지 않은 항목은 이유를 보고에 적는다.
+
+## 토큰 절약 규칙 (2026-11-28)
+- figures.json을 통째로 읽지 않는다. 고칠 인물만 `node tools/extract.js id1 id2 --conf`로 뽑아 보고, 수정은 Edit로 해당 부분만 바꾼다(node가 PATH에 없으면 `"/c/Program Files/Adobe/Adobe Creative Cloud Experience/libs/node.exe"`).
+- 지적은 review.md의 지시받은 절만 읽는다. 지난 기록(`content/review_archive.md`)은 필요할 때 Grep으로만 찾는다.
+- schema.md는 허용 값이 validate.js에 같이 있으므로, 경계 기준을 확인할 때만 해당 부분을 Grep으로 본다.
+- 보고는 짧게: 반영한 지적 번호, 반영하지 않은 항목과 이유, validate 결과.

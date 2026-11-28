@@ -111,3 +111,4 @@
   - 진행 중 5시간 사용량 한도에 걸려 hint-writer가 한 번 멈췄다. 한도가 풀린 뒤 이어서 끝냈다.
   - 5단계에 넣을 것: 출처는 정답 공개 뒤에만 보여 준다(전 인물 공통, title에 이름 있음). 미등록 confusable id 4개(gim-heum-dol, danjong, choe-seung-ro, seo-hui). in-hu와 공민왕의 시기 불일치. jo-so-ang 별칭 '조용은' 추가 여부(선택).
 - 다음 할 일: 5단계 최종 정리.
+- 2026-11-28: 토큰 절약 정비. `tools/extract.js`(대상 인물만 figures·hints·confusable 요약 발췌) 추가. review.md 1~4단계 기록을 `content/review_archive.md`로 옮기고 review.md는 새 회차용으로 비움. fact-checker·figure-db-builder·hint-writer 정의에 "토큰 절약 규칙" 절 추가(큰 파일 통째 읽기 금지, 발췌·Grep 사용, 재검수는 미해결만, 짧은 보고).

@@ -43,3 +43,10 @@ tools: Read, Write, Edit, Glob, Grep
 
 ## 검수 지적 반영
 `content/review.md`의 힌트 관련 지적을 읽고 반영한다. 반영하지 않은 항목은 이유를 보고에 적는다.
+
+## 토큰 절약 규칙 (2026-11-28)
+- figures.json·hints.json(합쳐 35만 바이트)을 통째로 Read하지 않는다. 오케스트레이터가 프롬프트에 넣어 준 인물 데이터를 먼저 쓰고, 더 필요하면 Grep으로 해당 id 부분만 찾는다(예: `"id": "na-cheol"` 패턴에 -A 옵션, hints.json은 `"na-cheol": \[` 패턴).
+- 수정은 Edit로 해당 힌트 문장만 바꾼다. 파일 전체를 Write로 다시 쓰지 않는다.
+- 지적은 review.md의 지시받은 절만 읽는다. 지난 기록은 `content/review_archive.md`에 있고, 필요할 때 Grep으로만 찾는다.
+- source url은 figures.json·hints.json에 이미 있는 것(검수에서 열람 확인됨)이나 review.md에서 "열람" 확인된 것만 쓴다.
+- 보고는 짧게: 고친 id·힌트 번호, 반영하지 않은 항목과 이유.
