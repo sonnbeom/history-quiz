@@ -23,7 +23,7 @@
 - [x] 2. figure-db-builder → schema.md (2026-11-26)
 - [x] 3. 샘플 10명: figure-db-builder → hint-writer → fact-checker 반복 (2026-11-26 완료, 4차 검수 통과)
 - [x] 4. 나머지 인물 힌트·검수 — 전 묶음 완료(119명 검수 통과, 2026-11-28)
-- [ ] 5. 최종 정리: 전체 인물 수, 시대별 분포, 자주 나온 검수 문제, 사용자가 직접 확인할 출처 이용 조건
+- [x] 5. 최종 정리: 전체 인물 수, 시대별 분포, 자주 나온 검수 문제, 사용자가 직접 확인할 출처 이용 조건 — docs/final_summary.md (2026-11-28)
 
 ## TODO (새 세션은 여기부터) — 2026-11-28 기준
 현재 작업 방식(2026-11-28 변경: 사용량은 고려하지 않음, 묶음 하나 ①~④를 끝까지 하고 채팅 보고 후 멈춤. 이전: 토큰을 아끼려 해서 **작업 하나(아래 체크 한 칸)씩만 하고 기록·커밋·push 후 멈춘다.** 사용자가 "이어서 해"라고 하면 다음 칸을 한다. 묶음 하나 ≈ 28만 토큰, 약 15분.)
@@ -37,7 +37,7 @@
 - [x] 3c ②~④ — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
 - [x] 4a ②~④ — hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
 - [x] 4b ②~④ — hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
-- [ ] 5단계 최종 정리 (위 5번 항목 내용) → 단계 5 체크 ← **다음 할 일**
+- [x] 5단계 최종 정리 — docs/final_summary.md
 - 남은 자잘한 것: 미등록 confusable id 4개(gim-heum-dol, danjong, choe-seung-ro, seo-hui), in-hu confusable gongmin 시기 불일치 — 5단계 때 정리 방침 결정.
 
 ## 결정된 사항
@@ -112,3 +112,5 @@
   - 5단계에 넣을 것: 출처는 정답 공개 뒤에만 보여 준다(전 인물 공통, title에 이름 있음). 미등록 confusable id 4개(gim-heum-dol, danjong, choe-seung-ro, seo-hui). in-hu와 공민왕의 시기 불일치. jo-so-ang 별칭 '조용은' 추가 여부(선택).
 - 다음 할 일: 5단계 최종 정리.
 - 2026-11-28: 토큰 절약 정비. `tools/extract.js`(대상 인물만 figures·hints·confusable 요약 발췌) 추가. review.md 1~4단계 기록을 `content/review_archive.md`로 옮기고 review.md는 새 회차용으로 비움. fact-checker·figure-db-builder·hint-writer 정의에 "토큰 절약 규칙" 절 추가(큰 파일 통째 읽기 금지, 발췌·Grep 사용, 재검수는 미해결만, 짧은 보고).
+- 2026-11-28: 5단계 완료 → `docs/final_summary.md`(인물 119명·힌트 595개, 시대·국가·역할·분야 분포, 검수 지적 유형별 집계, 앱 개발 주의점, 사용자가 확인할 이용 조건). 오케스트레이터 결정: 미등록 confusable id 4개 삭제(sinmun·sejo·goryeo-seongjong), in-hu↔gongmin 연결 해제(시기 불일치), jo-so-ang 별칭 '조용은' 추가. validate 오류 0·경고 0·미등록 0.
+- **콘텐츠 범위 작업 전부 완료.** 다음은 사용자 결정: 저작권·이용 조건 확인(final_summary.md 6절), 인물 추가 여부, 앱 개발 착수.

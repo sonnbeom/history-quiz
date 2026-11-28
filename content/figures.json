@@ -709,8 +709,7 @@
     "confusable_ids": [
       "choe-yeong",
       "gi-cheol",
-      "choe-mu-seon",
-      "in-hu"
+      "choe-mu-seon"
     ]
   },
   {
@@ -851,7 +850,6 @@
     ],
     "confusable_ids": [
       "munmu",
-      "gim-heum-dol",
       "gim-chun-chu",
       "hyegong"
     ]
@@ -1048,7 +1046,6 @@
     ],
     "confusable_ids": [
       "sejong",
-      "danjong",
       "joseon-seongjong",
       "joseon-taejong"
     ]
@@ -1781,8 +1778,6 @@
     ],
     "confusable_ids": [
       "gwangjong",
-      "choe-seung-ro",
-      "seo-hui",
       "goryeo-hyeonjong",
       "joseon-seongjong"
     ]
@@ -3550,8 +3545,7 @@
       }
     ],
     "confusable_ids": [
-      "gi-cheol",
-      "gongmin"
+      "gi-cheol"
     ]
   },
   {
@@ -4444,7 +4438,9 @@
   {
     "id": "jo-so-ang",
     "name": "조소앙",
-    "aliases": [],
+    "aliases": [
+      "조용은"
+    ],
     "era": "일제강점기",
     "state": "대한민국 임시정부",
     "roles": [
