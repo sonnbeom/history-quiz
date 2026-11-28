@@ -22,18 +22,18 @@
 - [x] 1. exam-researcher → exam_figures.md (2026-11-26 완료, 사용자 승인 대기)
 - [x] 2. figure-db-builder → schema.md (2026-11-26)
 - [x] 3. 샘플 10명: figure-db-builder → hint-writer → fact-checker 반복 (2026-11-26 완료, 4차 검수 통과)
-- [ ] 4. 나머지 인물 힌트·검수 — 1묶음·2묶음·3a 완료(80명 검수 통과), 3b 힌트만 작성
+- [ ] 4. 나머지 인물 힌트·검수 — 1묶음·2묶음·3a·3b 완료(90명 검수 통과)
 - [ ] 5. 최종 정리: 전체 인물 수, 시대별 분포, 자주 나온 검수 문제, 사용자가 직접 확인할 출처 이용 조건
 
 ## TODO (새 세션은 여기부터) — 2026-11-27 기준
-현재 작업 방식: 사용자가 토큰을 아끼려 해서 **작업 하나(아래 체크 한 칸)씩만 하고 기록·커밋·push 후 멈춘다.** 사용자가 "이어서 해"라고 하면 다음 칸을 한다. 묶음 하나 ≈ 28만 토큰, 약 15분.
+현재 작업 방식(2026-11-28 변경: 사용량은 고려하지 않음, 묶음 하나 ①~④를 끝까지 하고 채팅 보고 후 멈춤. 이전: 토큰을 아끼려 해서 **작업 하나(아래 체크 한 칸)씩만 하고 기록·커밋·push 후 멈춘다.** 사용자가 "이어서 해"라고 하면 다음 칸을 한다. 묶음 하나 ≈ 28만 토큰, 약 15분.)
 각 묶음 순서: ① hint-writer(힌트 작성, url은 figures에 있는 것만, 없으면 null) → ② fact-checker 1차 검수(인물당 대백과 1항목만 열람, review.md에 "4단계 3x 1차 검수" 절) → ③ figure-db-builder(figures.json만)·hint-writer(hints.json만) 병렬 수정 → ④ fact-checker 재검수(지적 항목만, 새 열람 최소) → `node tools/validate.js` 오류 0 확인.
 
 - [x] 3a 10명 (척준경~의천) — 검수 통과
 - [x] 3b ① 힌트 작성 — ji-nul, yo-se, gwanghaegun, jeong-seon, bak-je-ga, chae-je-gong, yeonsangun, gwon-yul, sin-rip, gim-si-min
 - [x] 3b ② 1차 검수 — review.md "4단계 3b 1차 검수" 절, B1-1~B1-13(미해결 12, B1-3 기록용)
-- [ ] 3b ③ 수정 → ④ 재검수 ← **다음 할 일**
-- [ ] 3c ①~④ — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
+- [x] 3b ③ 수정 → ④ 재검수 — 2차 B2-1~3 → 3차 확인, 미해결 0 (총 90명)
+- [ ] 3c ①~④ ← **다음 할 일** — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
 - [ ] 4a ①~④ — hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
 - [ ] 4b ①~④ — hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
 - [ ] 5단계 최종 정리 (위 5번 항목 내용) → 단계 4·5 체크
@@ -95,4 +95,8 @@
   - 기존 문제(범위 밖): yi-won-ik 힌트 3에 "광해군" 이름이 들어 있음 → gwanghaegun 수록으로 DB 인물 이름 노출. 3b 검수 때 같이 수정.
 - 2026-11-28: 3b 1차 검수 완료 → B1-1~B1-13. 핵심: 10명 url 전부 null(B1-1, 열람 URL 표 있음), 광해군 3번에서 조기 확정(B1-2 순서 재배치안), yi-won-ik 3번 '광해군' 대체 문장(B1-9), 요세 5번 근거 없는 표현(B1-4), 권율 roles에 문신·관료 추가(B1-6), 표제 차이 탄금대전투·진주전투·백련사(B1-5·7·8, url 채울 때 본문 열람 필요), 박제가·정선 활동 시기(B1-10·11). validate 오류 0·경고 117(url 없음).
   - 환경 메모: PATH에 node·python 없음 → validate는 Adobe 동봉 node v20.18.0으로 실행됨. 홈(C:\Users\FAST)에서 시작한 세션은 프로젝트 에이전트를 이름으로 못 부름 → history-quiz 폴더에서 세션을 시작하거나 general-purpose에게 정의 파일을 읽혀 실행.
-- 다음 할 일: 3b ③ 수정(builder는 figures.json만, writer는 hints.json만, 병렬) → ④ 재검수 → validate → 커밋 후 멈춤. 이후 3c → 4a → 4b → 5단계.
+- (완료) 3b ③ 수정(builder는 figures.json만, writer는 hints.json만, 병렬) → ④ 재검수 → validate → 커밋 후 멈춤. 이후 3c → 4a → 4b → 5단계.
+- 2026-11-28: 3b 완료 — B1 반영(builder·writer 병렬) → 2차 검수 B2-1~3(1차 수정안 결함 2건 포함: 광해군 3번 "17세기 전반"이 숙종·영조 모두 제거, 이원익 "재상에 올랐다" 사실 오류) → 오케스트레이터가 수정안대로 반영·3차 확인, 미해결 0. yo-se 결사 출처는 '백련사결사' E0070731(E0022065는 절 항목). validate 오류 0·경고 58.
+  - 사용자 지시(2026-11-28): 사용량은 고려하지 않는다. 차근차근 묶음 단위로 끝내고 채팅으로 보고.
+  - 환경: hint-writer는 셸이 없어 validate를 못 돌림 → 오케스트레이터가 돌린다.
+- 다음 할 일: 3c ①~④ → 4a → 4b → 5단계.
