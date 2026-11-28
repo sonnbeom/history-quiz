@@ -3676,11 +3676,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '지눌'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0054108"
       },
       {
         "title": "한국민족문화대백과사전 '수선사'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0031457"
       }
     ],
     "confusable_ids": [
@@ -3709,7 +3709,7 @@
     },
     "achievements": [
       "처음 지눌의 정혜결사에 참여했다가 뒤에 강진 만덕산에서 백련결사를 이끌었다.",
-      "법화 신앙과 참회, 염불을 강조해 민중 속으로 불교를 넓혔다.",
+      "법화 신앙과 참회, 정토 신앙을 강조했고, 지역민부터 왕실·무신 권력자까지 결사에 참여했다.",
       "백련결사 시작 연도가 자료마다 달라 시작은 비워 두고 입적한 1245년을 끝으로 잡았다."
     ],
     "related_events": [
@@ -3720,11 +3720,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '요세'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0039331"
       },
       {
-        "title": "한국민족문화대백과사전 '백련사'",
-        "url": null
+        "title": "한국민족문화대백과사전 '백련사(白蓮社)'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0022065"
       }
     ],
     "confusable_ids": [
@@ -3766,7 +3766,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '광해군'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0005335"
       }
     ],
     "confusable_ids": [
@@ -3790,13 +3790,13 @@
       "문화·예술"
     ],
     "active_period": {
-      "start": 1734,
+      "start": 1711,
       "end": 1751
     },
     "achievements": [
       "우리나라의 실제 산천을 그리는 진경산수화를 완성했다.",
       "금강전도(1734)와 인왕제색도(1751)가 대표작이다.",
-      "활동 시기는 두 대표작이 그려진 1734년부터 1751년까지로 잡았다."
+      "활동 시기는 신묘년 풍악도첩(1711)부터 인왕제색도(1751)까지로 잡았다."
     ],
     "related_events": [
       "진경산수화",
@@ -3807,7 +3807,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '정선'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0050379"
       }
     ],
     "confusable_ids": [
@@ -3833,13 +3833,14 @@
     ],
     "active_period": {
       "start": 1778,
-      "end": 1779
+      "end": 1791,
+      "approx": true
     },
     "achievements": [
       "1778년 청에 다녀온 뒤 『북학의』를 지어 청의 발달한 문물을 배우자고 주장했다.",
       "수레와 배의 이용, 상공업 발전과 소비 장려를 강조했다.",
       "1779년 정조가 설치한 규장각의 검서관이 되었다.",
-      "활동 시기는 『북학의』 저술(1778)과 검서관 임명(1779)을 기준으로 잡았다."
+      "활동 시기는 『북학의』 저술(1778)부터 13년간의 규장각 근무가 끝날 무렵(1791년경)까지로 잡았다."
     ],
     "related_events": [
       "북학의",
@@ -3849,11 +3850,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '박제가'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0021136"
       },
       {
         "title": "한국민족문화대백과사전 '북학의'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0024784"
       }
     ],
     "confusable_ids": [
@@ -3895,11 +3896,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '채제공'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0055646"
       },
       {
         "title": "한국민족문화대백과사전 '신해통공'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0033551"
       }
     ],
     "confusable_ids": [
@@ -3940,7 +3941,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '연산군'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0036803"
       }
     ],
     "confusable_ids": [
@@ -3957,6 +3958,7 @@
     "era": "조선 후기",
     "state": "조선",
     "roles": [
+      "문신·관료",
       "무신·장수"
     ],
     "fields": [
@@ -3980,11 +3982,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '권율'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0007022"
       },
       {
         "title": "한국민족문화대백과사전 '행주대첩'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0062859"
       }
     ],
     "confusable_ids": [
@@ -4021,11 +4023,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '신립'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0032901"
       },
       {
-        "title": "한국민족문화대백과사전 '탄금대 전투'",
-        "url": null
+        "title": "한국민족문화대백과사전 '탄금대전투'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0058773"
       }
     ],
     "confusable_ids": [
@@ -4062,11 +4064,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김시민'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0009658"
       },
       {
-        "title": "한국민족문화대백과사전 '진주 대첩'",
-        "url": null
+        "title": "한국민족문화대백과사전 '진주전투'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0054918"
       }
     ],
     "confusable_ids": [
