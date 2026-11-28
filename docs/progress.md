@@ -114,3 +114,4 @@
 - 2026-11-28: 토큰 절약 정비. `tools/extract.js`(대상 인물만 figures·hints·confusable 요약 발췌) 추가. review.md 1~4단계 기록을 `content/review_archive.md`로 옮기고 review.md는 새 회차용으로 비움. fact-checker·figure-db-builder·hint-writer 정의에 "토큰 절약 규칙" 절 추가(큰 파일 통째 읽기 금지, 발췌·Grep 사용, 재검수는 미해결만, 짧은 보고).
 - 2026-11-28: 5단계 완료 → `docs/final_summary.md`(인물 119명·힌트 595개, 시대·국가·역할·분야 분포, 검수 지적 유형별 집계, 앱 개발 주의점, 사용자가 확인할 이용 조건). 오케스트레이터 결정: 미등록 confusable id 4개 삭제(sinmun·sejo·goryeo-seongjong), in-hu↔gongmin 연결 해제(시기 불일치), jo-so-ang 별칭 '조용은' 추가. validate 오류 0·경고 0·미등록 0.
 - **콘텐츠 범위 작업 전부 완료.** 다음은 사용자 결정: 저작권·이용 조건 확인(final_summary.md 6절), 인물 추가 여부, 앱 개발 착수.
+- 2026-11-28: 저작권은 사용자 판단으로 "지킬 규칙"으로 정리(final_summary.md 6절). 다음 작업은 인물 도트 이미지로 결정. 화풍은 이순신 기준 이미지(64px, 1.5등신)로 확정. 사용자가 외부 AI로 생성하고, Claude는 `[인물]` 칸 작성과 검수를 맡는다. 규칙과 진행표는 `img-prompt/README.md`, 1묶음 10명은 `img-prompt/batch1.md`.
