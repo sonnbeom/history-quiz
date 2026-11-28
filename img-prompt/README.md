@@ -5,7 +5,8 @@
 ## 파일
 - `portrait_template.md`: 최종 공통 프롬프트. `[공통 규격]`은 바꾸지 않는다.
 - `batchN.md`: 묶음별로 `[인물]` 칸을 채운 목록(10명씩).
-- 기준 이미지: `ref-image/ref-character/yisunsin_dot_64.png` (이순신. 화풍 기준이며 수록 인물은 아님. 저장소에는 커밋하지 않음)
+- 기준 이미지: `ref-image/ref-character/yisunsin_dot_64.png` (이순신. 화풍 기준이며 수록 인물은 아님)
+- 생성한 이미지는 모두 커밋·push한다(2026-11-28 사용자 결정). 단 남의 저작물(ex-character.png, ref-screen 스크린샷)은 공개 저장소라 올리지 않는다
 
 ## 확정된 화풍 (2026-11-28)
 - 64x64 도트, 1.5등신 SD, 정면, 투명 배경, 위아래 여백 2px, 몸 중심 가로 가운데
