@@ -31,8 +31,8 @@
 
 - [x] 3a 10명 (척준경~의천) — 검수 통과
 - [x] 3b ① 힌트 작성 — ji-nul, yo-se, gwanghaegun, jeong-seon, bak-je-ga, chae-je-gong, yeonsangun, gwon-yul, sin-rip, gim-si-min
-- [ ] 3b ② 1차 검수 ← **다음 할 일**. 함께 볼 것: yi-won-ik 힌트 3의 "광해군" 노출, 아래 "4단계 3·4묶음" 기록의 3b 확인 목록
-- [ ] 3b ③ 수정 → ④ 재검수
+- [x] 3b ② 1차 검수 — review.md "4단계 3b 1차 검수" 절, B1-1~B1-13(미해결 12, B1-3 기록용)
+- [ ] 3b ③ 수정 → ④ 재검수 ← **다음 할 일**
 - [ ] 3c ①~④ — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
 - [ ] 4a ①~④ — hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
 - [ ] 4b ①~④ — hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
@@ -93,4 +93,6 @@
 - 2026-11-27: 3b 힌트 작성 완료(힌트 있는 인물 90명, validate 오류 0). url은 bak-je-ga 4번 '규장각' 외 전부 null. 검수 전.
   - 검수 때 볼 것: figures에 없는 지식으로 쓴 부분(요세 4·5 법화경·참회, 광해군 4 분조, 연산군 4 사초·폐비, 권율 2·3·5 이치·도원수, 김시민 3 수령 등). 정선·연산군 4번은 confusable과 안 겹침. 권율·신립·김시민 1번 같은 문장(의도).
   - 기존 문제(범위 밖): yi-won-ik 힌트 3에 "광해군" 이름이 들어 있음 → gwanghaegun 수록으로 DB 인물 이름 노출. 3b 검수 때 같이 수정.
-- 다음 할 일: 3b(10명) 1차 검수 → 수정 → 재검수 → 커밋 후 멈춤. 이후 3c → 4a → 4b → 5단계. 이후 3b → 3c → 4a → 4b → 5단계.
+- 2026-11-28: 3b 1차 검수 완료 → B1-1~B1-13. 핵심: 10명 url 전부 null(B1-1, 열람 URL 표 있음), 광해군 3번에서 조기 확정(B1-2 순서 재배치안), yi-won-ik 3번 '광해군' 대체 문장(B1-9), 요세 5번 근거 없는 표현(B1-4), 권율 roles에 문신·관료 추가(B1-6), 표제 차이 탄금대전투·진주전투·백련사(B1-5·7·8, url 채울 때 본문 열람 필요), 박제가·정선 활동 시기(B1-10·11). validate 오류 0·경고 117(url 없음).
+  - 환경 메모: PATH에 node·python 없음 → validate는 Adobe 동봉 node v20.18.0으로 실행됨. 홈(C:\Users\FAST)에서 시작한 세션은 프로젝트 에이전트를 이름으로 못 부름 → history-quiz 폴더에서 세션을 시작하거나 general-purpose에게 정의 파일을 읽혀 실행.
+- 다음 할 일: 3b ③ 수정(builder는 figures.json만, writer는 hints.json만, 병렬) → ④ 재검수 → validate → 커밋 후 멈춤. 이후 3c → 4a → 4b → 5단계.
