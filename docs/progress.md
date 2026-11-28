@@ -22,10 +22,10 @@
 - [x] 1. exam-researcher → exam_figures.md (2026-11-26 완료, 사용자 승인 대기)
 - [x] 2. figure-db-builder → schema.md (2026-11-26)
 - [x] 3. 샘플 10명: figure-db-builder → hint-writer → fact-checker 반복 (2026-11-26 완료, 4차 검수 통과)
-- [ ] 4. 나머지 인물 힌트·검수 — 1묶음·2묶음·3a·3b 완료(90명 검수 통과)
+- [ ] 4. 나머지 인물 힌트·검수 — 1묶음·2묶음·3a·3b 완료(90명 검수 통과), 3c·4a·4b 힌트 작성 완료(119명 전원 힌트 있음)
 - [ ] 5. 최종 정리: 전체 인물 수, 시대별 분포, 자주 나온 검수 문제, 사용자가 직접 확인할 출처 이용 조건
 
-## TODO (새 세션은 여기부터) — 2026-11-27 기준
+## TODO (새 세션은 여기부터) — 2026-11-28 기준
 현재 작업 방식(2026-11-28 변경: 사용량은 고려하지 않음, 묶음 하나 ①~④를 끝까지 하고 채팅 보고 후 멈춤. 이전: 토큰을 아끼려 해서 **작업 하나(아래 체크 한 칸)씩만 하고 기록·커밋·push 후 멈춘다.** 사용자가 "이어서 해"라고 하면 다음 칸을 한다. 묶음 하나 ≈ 28만 토큰, 약 15분.)
 각 묶음 순서: ① hint-writer(힌트 작성, url은 figures에 있는 것만, 없으면 null) → ② fact-checker 1차 검수(인물당 대백과 1항목만 열람, review.md에 "4단계 3x 1차 검수" 절) → ③ figure-db-builder(figures.json만)·hint-writer(hints.json만) 병렬 수정 → ④ fact-checker 재검수(지적 항목만, 새 열람 최소) → `node tools/validate.js` 오류 0 확인.
 
@@ -33,9 +33,10 @@
 - [x] 3b ① 힌트 작성 — ji-nul, yo-se, gwanghaegun, jeong-seon, bak-je-ga, chae-je-gong, yeonsangun, gwon-yul, sin-rip, gim-si-min
 - [x] 3b ② 1차 검수 — review.md "4단계 3b 1차 검수" 절, B1-1~B1-13(미해결 12, B1-3 기록용)
 - [x] 3b ③ 수정 → ④ 재검수 — 2차 B2-1~3 → 3차 확인, 미해결 0 (총 90명)
-- [ ] 3c ①~④ ← **다음 할 일** — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
-- [ ] 4a ①~④ — hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
-- [ ] 4b ①~④ — hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
+- [ ] 3c·4a·4b ① 힌트 작성 완료(29명, d1fd8f4, url 전부 null) → ② 1차 검수 ← **다음 할 일(처음부터 다시)**
+- [ ] 3c ②~④ — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
+- [ ] 4a ②~④ — hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
+- [ ] 4b ②~④ — hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
 - [ ] 5단계 최종 정리 (위 5번 항목 내용) → 단계 4·5 체크
 - 남은 자잘한 것: 미등록 confusable id 4개(gim-heum-dol, danjong, choe-seung-ro, seo-hui), in-hu confusable gongmin 시기 불일치 — 5단계 때 정리 방침 결정.
 
@@ -99,4 +100,9 @@
 - 2026-11-28: 3b 완료 — B1 반영(builder·writer 병렬) → 2차 검수 B2-1~3(1차 수정안 결함 2건 포함: 광해군 3번 "17세기 전반"이 숙종·영조 모두 제거, 이원익 "재상에 올랐다" 사실 오류) → 오케스트레이터가 수정안대로 반영·3차 확인, 미해결 0. yo-se 결사 출처는 '백련사결사' E0070731(E0022065는 절 항목). validate 오류 0·경고 58.
   - 사용자 지시(2026-11-28): 사용량은 고려하지 않는다. 차근차근 묶음 단위로 끝내고 채팅으로 보고.
   - 환경: hint-writer는 셸이 없어 validate를 못 돌림 → 오케스트레이터가 돌린다.
-- 다음 할 일: 3c ①~④ → 4a → 4b → 5단계.
+- (완료) 3c ① 이후는 아래 기록 참고.
+- 2026-11-28: 사용자 지시로 3c·4a·4b를 한꺼번에 진행. 병렬 방식: 묶음마다 에이전트가 content/tmp/의 임시 파일(hints_3c.json 등, review_3c.md 등)에만 쓰고 오케스트레이터가 hints.json·review.md에 합친다(같은 파일 동시 수정 충돌 방지). ③ 수정은 builder 1명·writer 1명이 세 묶음을 한꺼번에.
+  - ① 힌트 작성 3건 병렬 완료 → hints.json에 합침(119명 전원), validate 오류 0·경고 172(대부분 url null). 커밋 d1fd8f4.
+  - ② 1차 검수 3건(지적 번호 3c=D1, 4a=E1, 4b=F1)을 병렬로 시작했으나 세션 종료로 중단, 결과 파일 없음, 재개 불가 → 처음부터 다시 돌려야 한다.
+  - 작성자들이 남긴 검수 확인 요청(나철 3번 을사오적 처단 계획, 전봉준 4번 청일전쟁 정세, 박규수 3번 이하 확정, 황상규 4번 김원봉과 폭탄 반입, 발해 무왕 4번 독자 연호, 원성왕 3·4번 김지정과 겹침, 예종 3번 사실상 확정, 김윤후 5번 노비 문서 소각, 표제 확인: '태종'·'예종'·'원종'·'승화후 온'·'백산상회' 등)은 검수 프롬프트에 다시 넣는다.
+- 다음 할 일: 3c·4a·4b ② 1차 검수(병렬, tmp 파일) → review.md에 합침 → ③ 수정 → ④ 재검수 → validate → 커밋·push → 5단계.
