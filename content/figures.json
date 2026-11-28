@@ -4109,7 +4109,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '태종'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0059039"
       }
     ],
     "confusable_ids": [
@@ -4149,11 +4149,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '조병갑'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0051789"
       },
       {
-        "title": "한국민족문화대백과사전 '동학농민운동'",
-        "url": null
+        "title": "한국민족문화대백과사전 '동학운동'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0016865"
       }
     ],
     "confusable_ids": [
@@ -4194,11 +4194,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '전봉준'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0049437"
       },
       {
-        "title": "한국민족문화대백과사전 '동학농민운동'",
-        "url": null
+        "title": "한국민족문화대백과사전 '동학운동'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0016865"
       }
     ],
     "confusable_ids": [
@@ -4227,7 +4227,7 @@
     },
     "achievements": [
       "1862년 진주 농민 봉기 때 안핵사로 파견되었다.",
-      "평안도 관찰사로 있던 1866년 제너럴셔먼호 사건을 처리했다.",
+      "평안도 관찰사로 있던 1866년 제너럴셔먼호의 격침을 지휘했다.",
       "청에 다녀온 뒤 통상 개화론을 펴 개화 사상이 자리 잡는 데 영향을 주었다.",
       "활동 시기는 안핵사 파견(1862)부터 개항(1876)까지로 잡았다."
     ],
@@ -4240,7 +4240,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '박규수'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0020569"
       }
     ],
     "confusable_ids": [
@@ -4256,7 +4256,7 @@
       "도산"
     ],
     "era": "일제강점기",
-    "state": "대한민국 임시정부",
+    "state": "해당 없음",
     "roles": [
       "독립운동가",
       "사회운동가"
@@ -4285,11 +4285,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '안창호'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0035050"
       },
       {
         "title": "한국민족문화대백과사전 '흥사단'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0066013"
       }
     ],
     "confusable_ids": [
@@ -4334,7 +4334,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '이상재'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0044608"
+      },
+      {
+        "title": "한국민족문화대백과사전 '신간회'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0032606"
       }
     ],
     "confusable_ids": [
@@ -4378,11 +4382,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '방정환'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0021783"
       },
       {
         "title": "한국민족문화대백과사전 '어린이날'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0035938"
       }
     ],
     "confusable_ids": [
@@ -4407,13 +4411,15 @@
       "독립운동"
     ],
     "active_period": {
-      "start": 1909,
+      "start": 1907,
       "end": 1916
     },
     "achievements": [
+      "1907년 을사늑약에 앞장선 대신들을 처단하려다 유배형을 받았다.",
       "1909년 단군을 모시는 단군교를 다시 일으켰고 뒤에 대종교로 이름을 바꾸었다.",
       "대종교는 이후 만주 일대에서 항일 독립운동의 바탕이 되었다.",
-      "1916년 황해도 구월산에서 일제에 항거하며 순국했다."
+      "1916년 황해도 구월산에서 일제에 항거하며 순국했다.",
+      "활동 시기는 을사오적 처단 시도(1907)부터 순국(1916)까지로 잡았다."
     ],
     "related_events": [
       "대종교",
@@ -4423,11 +4429,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '나철'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0011526"
       },
       {
         "title": "한국민족문화대백과사전 '대종교'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0014791"
       }
     ],
     "confusable_ids": [
@@ -4468,11 +4474,15 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '조소앙'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0052303"
       },
       {
         "title": "한국민족문화대백과사전 '삼균주의'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0026495"
+      },
+      {
+        "title": "한국민족문화대백과사전 '대동단결선언'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0014234"
       }
     ],
     "confusable_ids": [
@@ -4504,7 +4514,7 @@
     "achievements": [
       "부산에서 백산상회를 세워 독립운동 자금을 마련했다.",
       "후에 백산무역주식회사로 키워 독립운동을 뒷받침했다.",
-      "대종교에 가담했다가 1942년 일제에 체포되었고 1943년 순국했다.",
+      "1931년 대종교에 들어갔고, 1942년 일제가 대종교를 탄압한 임오교변 때 체포되어 1943년 순국했다.",
       "활동 시기는 백산상회 설립(1914)부터 순국(1943)까지로 잡았다."
     ],
     "related_events": [
@@ -4515,11 +4525,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '안희제'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0035125"
       },
       {
-        "title": "한국민족문화대백과사전 '백산상회'",
-        "url": null
+        "title": "한국민족문화대백과사전 '백산무역주식회사'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0022150"
       }
     ],
     "confusable_ids": [
@@ -4542,13 +4552,13 @@
     ],
     "active_period": {
       "start": 1919,
-      "end": null
+      "end": 1931
     },
     "achievements": [
       "1919년 의열단 창단에 참여해 김원봉과 함께 활동했다.",
       "1920년 폭탄 반입 계획(밀양 폭탄 사건)으로 체포되었다.",
       "신간회 활동에도 참여했다.",
-      "활동 끝 연도가 분명하지 않아 시작만 1919년으로 잡았다."
+      "활동 시기는 의열단 창단(1919)부터 사망(1931)까지로 잡았다."
     ],
     "related_events": [
       "의열단",
@@ -4559,7 +4569,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '황상규'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0065195"
+      },
+      {
+        "title": "한국민족문화대백과사전 '의열단'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0043334"
       }
     ],
     "confusable_ids": [
@@ -4588,7 +4602,7 @@
       "1933년 『조선사회경제사』를 펴냈다.",
       "마르크스주의 유물사관으로 우리 역사가 세계사의 발전 법칙에 따라 발전했다고 보았다.",
       "일제의 식민사학이 내세운 정체성론을 반박했다.",
-      "1937년 『조선봉건사회경제사』를 펴냈다. 활동 시기는 두 저서가 나온 1933~1937년으로 잡았다."
+      "1937년 『조선봉건사회경제사』 상권을 펴냈다. 활동 시기는 두 저서가 나온 1933~1937년으로 잡았다."
     ],
     "related_events": [
       "조선사회경제사",
@@ -4598,7 +4612,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '백남운'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0022026"
+      },
+      {
+        "title": "한국민족문화대백과사전 '조선사회경제사'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0052073"
       }
     ],
     "confusable_ids": []
@@ -4624,7 +4642,7 @@
     },
     "achievements": [
       "1948년 유엔 총회에서 한국 정부의 승인을 얻기 위한 외교 활동에 참여했다.",
-      "6·25 전쟁 중이던 1950년 국무총리가 되었다.",
+      "6·25 전쟁 중 국무총리가 되었다.",
       "4·19 혁명 뒤 1960년 내각 책임제의 제2공화국 국무총리가 되었다.",
       "1961년 5·16 군사 정변으로 물러났다."
     ],
@@ -4637,7 +4655,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '장면'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0048442"
       }
     ],
     "confusable_ids": [
@@ -4677,11 +4695,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '나운규'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0011416"
       },
       {
         "title": "한국민족문화대백과사전 '아리랑'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0034276"
       }
     ],
     "confusable_ids": [
@@ -4710,7 +4728,7 @@
     },
     "achievements": [
       "868년 당에 유학해 874년 빈공과에 급제했다.",
-      "879년 황소의 난 때 토황소격문을 지어 이름을 알렸다.",
+      "880년 고변의 휘하에 들어가, 황소의 난 때 「토황소격문」(격황소서)을 지어 이름을 알렸다.",
       "885년 신라로 돌아왔다.",
       "894년 진성여왕에게 시무책 10여 조를 올렸다.",
       "활동 시기는 당 유학(868)부터 시무책 상소(894)까지로 잡았다."
@@ -4724,11 +4742,15 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '최치원'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0057711"
       },
       {
-        "title": "한국민족문화대백과사전 '시무책'",
-        "url": null
+        "title": "한국민족문화대백과사전 '시무십여조'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0032357"
+      },
+      {
+        "title": "한국민족문화대백과사전 '격황소서'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0002145"
       }
     ],
     "confusable_ids": [
@@ -4758,7 +4780,7 @@
       "end": 737
     },
     "achievements": [
-      "대조영의 맏아들로 719년 즉위했다.",
+      "대조영의 아들(적자)로 719년 즉위했다.",
       "인안이라는 독자 연호를 쓰고 북방으로 영토를 넓혔다.",
       "732년 장문휴를 보내 당의 등주를 공격했다.",
       "일본과 국교를 맺어 당과 신라를 견제했다.",
@@ -4772,11 +4794,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '무왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0019179"
       },
       {
         "title": "한국민족문화대백과사전 '발해'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0021626"
       }
     ],
     "confusable_ids": [
@@ -4802,9 +4824,9 @@
       "end": 477
     },
     "achievements": [
-      "475년 고구려의 한성 공격으로 개로왕이 전사하자 즉위했다.",
+      "475년 고구려군이 한성을 함락하고 개로왕을 죽이자 즉위했다.",
       "수도를 웅진으로 옮겨 백제를 다시 일으키려 했다.",
-      "477년 신하 해구에게 살해되었다."
+      "477년 병관좌평 해구가 보낸 자객에게 살해되었다."
     ],
     "related_events": [
       "웅진 천도",
@@ -4814,7 +4836,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '문주왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0019671"
       }
     ],
     "confusable_ids": [
@@ -4856,7 +4878,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '지증왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0054400"
       }
     ],
     "confusable_ids": [
@@ -4881,14 +4903,14 @@
       "정치"
     ],
     "active_period": {
-      "start": 642,
+      "start": 654,
       "end": 661
     },
     "achievements": [
       "642년 대야성 함락 뒤 고구려에 원병을 청했으나 성과를 얻지 못했다.",
       "648년 당에 가서 나당 동맹을 이끌어냈다.",
       "654년 왕위에 올랐고 660년 백제를 멸망시켰다.",
-      "661년 사망했다. 활동 시기는 고구려 청병(642)부터 사망(661)까지로 잡았다."
+      "661년 사망했다. 활동 시기는 재위 기간(654~661)으로 잡았다."
     ],
     "related_events": [
       "나당 동맹",
@@ -4898,7 +4920,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '태종무열왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0059042"
       }
     ],
     "confusable_ids": [
@@ -4941,7 +4963,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '문무왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0019473"
+      },
+      {
+        "title": "한국민족문화대백과사전 '경주 문무대왕릉'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0019470"
       }
     ],
     "confusable_ids": [
@@ -4978,7 +5004,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '혜공왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0063574"
       }
     ],
     "confusable_ids": [
@@ -4994,10 +5020,12 @@
     "era": "남북국",
     "state": "신라",
     "roles": [
-      "문신·관료"
+      "문신·관료",
+      "개혁가·혁명가"
     ],
     "fields": [
-      "정치"
+      "정치",
+      "군사"
     ],
     "active_period": {
       "start": 780,
@@ -5016,7 +5044,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김지정의 난'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0010621"
       }
     ],
     "confusable_ids": [
@@ -5054,7 +5082,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '원성왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0040718"
       }
     ],
     "confusable_ids": [
@@ -5096,7 +5124,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '진성여왕'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0054742"
+      },
+      {
+        "title": "한국민족문화대백과사전 '삼대목'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0026515"
       }
     ],
     "confusable_ids": [
@@ -5139,7 +5171,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '예종'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0038020"
       }
     ],
     "confusable_ids": [
@@ -5179,7 +5211,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '원종'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0040820"
       }
     ],
     "confusable_ids": [
@@ -5219,8 +5251,12 @@
     "exam_count": 2,
     "sources": [
       {
-        "title": "한국민족문화대백과사전 '승화후 온'",
-        "url": null
+        "title": "한국민족문화대백과사전 '왕온'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0039127"
+      },
+      {
+        "title": "한국민족문화대백과사전 '삼별초항쟁'",
+        "url": "https://encykorea.aks.ac.kr/Article/E0026605"
       }
     ],
     "confusable_ids": [
@@ -5260,7 +5296,7 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '김윤후'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0010122"
       }
     ],
     "confusable_ids": [
@@ -5286,13 +5322,13 @@
       "학문"
     ],
     "active_period": {
-      "start": 1493,
-      "end": 1493
+      "start": 1462,
+      "end": 1504
     },
     "achievements": [
       "성종의 명으로 1493년 음악 이론서 『악학궤범』을 완성했다.",
       "『용재총화』를 지어 당시 풍속과 일화를 기록했다.",
-      "활동 시기는 『악학궤범』이 완성된 1493년 하나로 잡았다."
+      "활동 시기는 문과 급제(1462)부터 『용재총화』를 남기고 세상을 떠난 1504년까지로 잡았다."
     ],
     "related_events": [
       "악학궤범",
@@ -5302,11 +5338,11 @@
     "sources": [
       {
         "title": "한국민족문화대백과사전 '성현'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0029691"
       },
       {
         "title": "한국민족문화대백과사전 '악학궤범'",
-        "url": null
+        "url": "https://encykorea.aks.ac.kr/Article/E0034481"
       }
     ],
     "confusable_ids": [
