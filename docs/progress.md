@@ -22,7 +22,7 @@
 - [x] 1. exam-researcher → exam_figures.md (2026-11-26 완료, 사용자 승인 대기)
 - [x] 2. figure-db-builder → schema.md (2026-11-26)
 - [x] 3. 샘플 10명: figure-db-builder → hint-writer → fact-checker 반복 (2026-11-26 완료, 4차 검수 통과)
-- [ ] 4. 나머지 인물 힌트·검수 — 1묶음·2묶음·3a·3b 완료(90명 검수 통과), 3c·4a·4b 힌트 작성 완료(119명 전원 힌트 있음)
+- [x] 4. 나머지 인물 힌트·검수 — 전 묶음 완료(119명 검수 통과, 2026-11-28)
 - [ ] 5. 최종 정리: 전체 인물 수, 시대별 분포, 자주 나온 검수 문제, 사용자가 직접 확인할 출처 이용 조건
 
 ## TODO (새 세션은 여기부터) — 2026-11-28 기준
@@ -33,11 +33,11 @@
 - [x] 3b ① 힌트 작성 — ji-nul, yo-se, gwanghaegun, jeong-seon, bak-je-ga, chae-je-gong, yeonsangun, gwon-yul, sin-rip, gim-si-min
 - [x] 3b ② 1차 검수 — review.md "4단계 3b 1차 검수" 절, B1-1~B1-13(미해결 12, B1-3 기록용)
 - [x] 3b ③ 수정 → ④ 재검수 — 2차 B2-1~3 → 3차 확인, 미해결 0 (총 90명)
-- [ ] 3c·4a·4b ① 힌트 작성 완료(29명, d1fd8f4, url 전부 null) → ② 1차 검수 ← **다음 할 일(처음부터 다시)**
-- [ ] 3c ②~④ — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
-- [ ] 4a ②~④ — hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
-- [ ] 4b ②~④ — hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
-- [ ] 5단계 최종 정리 (위 5번 항목 내용) → 단계 4·5 체크
+- [x] 3c·4a·4b ① 힌트 작성(29명, d1fd8f4)
+- [x] 3c ②~④ — joseon-taejong, jo-byeong-gap, jeon-bong-jun, bak-gyu-su, an-chang-ho, yi-sang-jae, bang-jeong-hwan, na-cheol, jo-so-ang, an-hui-je
+- [x] 4a ②~④ — hwang-sang-gyu, baek-nam-un, jang-myeon, na-un-gyu, choe-chi-won, balhae-mu, munju, jijeung, gim-chun-chu, munmu
+- [x] 4b ②~④ — hyegong, gim-ji-jeong, wonseong, jinseong, goryeo-yejong, goryeo-wonjong, seunghwahu-on, gim-yun-hu, seong-hyeon
+- [ ] 5단계 최종 정리 (위 5번 항목 내용) → 단계 5 체크 ← **다음 할 일**
 - 남은 자잘한 것: 미등록 confusable id 4개(gim-heum-dol, danjong, choe-seung-ro, seo-hui), in-hu confusable gongmin 시기 불일치 — 5단계 때 정리 방침 결정.
 
 ## 결정된 사항
@@ -105,4 +105,9 @@
   - ① 힌트 작성 3건 병렬 완료 → hints.json에 합침(119명 전원), validate 오류 0·경고 172(대부분 url null). 커밋 d1fd8f4.
   - ② 1차 검수 3건(지적 번호 3c=D1, 4a=E1, 4b=F1)을 병렬로 시작했으나 세션 종료로 중단, 결과 파일 없음, 재개 불가 → 처음부터 다시 돌려야 한다.
   - 작성자들이 남긴 검수 확인 요청(나철 3번 을사오적 처단 계획, 전봉준 4번 청일전쟁 정세, 박규수 3번 이하 확정, 황상규 4번 김원봉과 폭탄 반입, 발해 무왕 4번 독자 연호, 원성왕 3·4번 김지정과 겹침, 예종 3번 사실상 확정, 김윤후 5번 노비 문서 소각, 표제 확인: '태종'·'예종'·'원종'·'승화후 온'·'백산상회' 등)은 검수 프롬프트에 다시 넣는다.
-- 다음 할 일: 3c·4a·4b ② 1차 검수(병렬, tmp 파일) → review.md에 합침 → ③ 수정 → ④ 재검수 → validate → 커밋·push → 5단계.
+- (완료) 3c·4a·4b ②~④.
+- 2026-11-28: 3c·4a·4b ②~④ 완료. 1차 지적 40건(D1 13, E1 16, F1 11)을 반영했다(56d9204). 2차에서 새 지적 3건(D2-1, E2-1, F2-1)이 나왔고 오케스트레이터가 반영했다. validate 오류 0건, 경고 0건. 29명 검수 통과로 총 119명 전원 통과.
+  - 오케스트레이터 판단: 안창호 state "해당 없음", 김춘추 active_period는 재위 기간 654~661, 장면 국무총리는 연도 없이 "6·25 전쟁 중", 방정환 D1-8 대안 미채택.
+  - 진행 중 5시간 사용량 한도에 걸려 hint-writer가 한 번 멈췄다. 한도가 풀린 뒤 이어서 끝냈다.
+  - 5단계에 넣을 것: 출처는 정답 공개 뒤에만 보여 준다(전 인물 공통, title에 이름 있음). 미등록 confusable id 4개(gim-heum-dol, danjong, choe-seung-ro, seo-hui). in-hu와 공민왕의 시기 불일치. jo-so-ang 별칭 '조용은' 추가 여부(선택).
+- 다음 할 일: 5단계 최종 정리.
