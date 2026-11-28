@@ -115,3 +115,4 @@
 - 2026-11-28: 5단계 완료 → `docs/final_summary.md`(인물 119명·힌트 595개, 시대·국가·역할·분야 분포, 검수 지적 유형별 집계, 앱 개발 주의점, 사용자가 확인할 이용 조건). 오케스트레이터 결정: 미등록 confusable id 4개 삭제(sinmun·sejo·goryeo-seongjong), in-hu↔gongmin 연결 해제(시기 불일치), jo-so-ang 별칭 '조용은' 추가. validate 오류 0·경고 0·미등록 0.
 - **콘텐츠 범위 작업 전부 완료.** 다음은 사용자 결정: 저작권·이용 조건 확인(final_summary.md 6절), 인물 추가 여부, 앱 개발 착수.
 - 2026-11-28: 저작권은 사용자 판단으로 "지킬 규칙"으로 정리(final_summary.md 6절). 다음 작업은 인물 도트 이미지로 결정. 화풍은 이순신 기준 이미지(64px, 1.5등신)로 확정. 사용자가 외부 AI로 생성하고, Claude는 `[인물]` 칸 작성과 검수를 맡는다. 규칙과 진행표는 `img-prompt/README.md`, 1묶음 10명은 `img-prompt/batch1.md`.
+- 2026-11-28: 도트 이미지 1차 35명 중 11명 완료(assets/portraits/). 진행은 img-prompt/primary.md, 묶음 기록은 img-prompt/README.md.
